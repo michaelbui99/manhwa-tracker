@@ -1,8 +1,9 @@
 .container {
   padding: 0 7rem;
   display: flex;
-  justify-content: center;
-  h1 {
-    text-align: center;
+  .search {
+    padding-top: 2rem;
+    &__input {
+    }
   }
 }

@@ -1,5 +1,13 @@
-body {
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  background-color: rgb(237, 241, 245);
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
