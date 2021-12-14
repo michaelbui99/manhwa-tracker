@@ -48,6 +48,7 @@ const Search = () => {
     setGenres(tempGenres);
     setTags(tempTags);
     setManhwasToShow([testManhwa]);
+    console.log(testManhwa.coverImage);
   }, []);
 
   const selectGenre = (g) => {
