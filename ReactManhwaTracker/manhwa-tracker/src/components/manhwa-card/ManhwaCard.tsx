@@ -1,6 +1,7 @@
 import React, { useState } from "react";
+import Manhwa from "../../models/Manhwa";
 import styles from "./ManhwaCard.module.scss";
-export const ManhwaCard = ({ manhwa }) => {
+export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
   const [hover, setHover] = useState(false);
   const handleHover = () => {
     setHover(true);
@@ -11,6 +12,7 @@ export const ManhwaCard = ({ manhwa }) => {
   return (
     <div onMouseOver={handleHover} onMouseLeave={handleHoverEnd}>
       {hover ? <p>yes</p> : <p>no</p>}
+      <p>{manhwa.title}</p>
     </div>
   );
 };
