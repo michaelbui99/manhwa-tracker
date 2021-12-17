@@ -5,6 +5,7 @@ import {
   BreadcrumbSeparator,
   BreadcrumbItem,
   Box,
+  Heading,
 } from "@chakra-ui/react";
 export const Navbar: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ export const Navbar: React.FC = () => {
     >
       <Breadcrumb>
         <BreadcrumbItem>
-          <BreadcrumbLink fontSize="20px">Manhwa Tracker</BreadcrumbLink>
+          <Heading fontSize="20px">Manhwa Tracker</Heading>
         </BreadcrumbItem>
         <BreadcrumbItem>
           <BreadcrumbLink href="/">Home</BreadcrumbLink>
