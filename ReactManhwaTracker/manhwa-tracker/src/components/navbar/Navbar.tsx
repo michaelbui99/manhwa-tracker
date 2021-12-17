@@ -8,7 +8,12 @@ import {
 } from "@chakra-ui/react";
 export const Navbar: React.FC = () => {
   return (
-    <Box padding="0.5rem 2rem" bgColor="var(--main-bg-color)" color="white">
+    <Box
+      padding="0.5rem 2rem"
+      bgColor="var(--main-bg-color)"
+      color="white"
+      display={{ base: "none", md: "block", lg: "block" }}
+    >
       <Breadcrumb>
         <BreadcrumbItem>
           <BreadcrumbLink fontSize="20px">Manhwa Tracker</BreadcrumbLink>
