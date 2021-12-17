@@ -8,6 +8,7 @@ import { Tag } from "../../models/Tag";
 import Manhwa from "../../models/Manhwa";
 import { Status } from "../../models/Status";
 import { SourceMaterial } from "../../models/SourceMaterial";
+import { Genre } from "../../models/Genre";
 const Search: React.FC = () => {
   const [manhwas, setManhwas] = useState<Manhwa[]>([]);
   const [manhwasToShow, setManhwasToShow] = useState<Manhwa[]>([]);
@@ -18,8 +19,8 @@ const Search: React.FC = () => {
     "Comedy",
   ]);
   const [tags, setTags] = useState<Tag[]>([]);
-  const [selectedGenres, setSelectedGenres] = useState([]);
-  const [selectedTags, setSelectedTags] = useState([]);
+  const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
+  const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const testManhwa: Manhwa = {
     id: 1,
     title: "Solo leveling",
@@ -29,7 +30,7 @@ const Search: React.FC = () => {
     status: Status.RELEASING,
     sourceMaterial: SourceMaterial.WEB_NOVEL,
     releaseDate: new Date("12-12-2021"),
-    endDate: null,
+    endDate: new Date("12-12-3000"),
     chapterCount: 120,
     coverImage:
       "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
@@ -41,13 +42,13 @@ const Search: React.FC = () => {
     //TODO: Fetch genres and tags on mount
     const tempGenres = ["Fantasy", "Romance", "Action", "Comedy"];
     const tempTags = ["Anti-Hero", "Super Power", "Anti-Hero"];
-    setGenres(tempGenres);
-    setTags(tempTags);
+    // setGenres(tempGenres);
+    // setTags(tempTags);
     setManhwasToShow([testManhwa]);
     console.log(testManhwa.coverImage);
   }, []);
 
-  const selectGenre = (g) => {
+  const selectGenre = (g: Genre) => {
     setSelectedGenres(selectedGenres.concat(g));
   };
   return (
