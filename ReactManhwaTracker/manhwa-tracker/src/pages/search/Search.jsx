@@ -1,17 +1,8 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import {
-  Grid,
-  TextField,
-  FormLabel,
-  FormControl,
-  FormGroup,
-  FormControlLabel,
-  Checkbox,
-} from "@mui/material";
+import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import { SearchIcon } from "@chakra-ui/icons";
 import SearchDirectory from "../../components/search-directory/SearchDirectory";
-import InputAdornment from "@mui/material/InputAdornment";
-import SearchIcon from "@mui/icons-material/Search";
 import styles from "./Search.module.scss";
 const Search = () => {
   const [manhwas, setManhwas] = useState([]);
@@ -58,18 +49,10 @@ const Search = () => {
     <div className={styles.container}>
       <div className={styles.search}>
         <div className={styles.search__input}>
-          <TextField
-            label="Search"
-            variant="outlined"
-            size="small"
-            InputProps={{
-              startAdornment: (
-                <InputAdornment position="start">
-                  <SearchIcon />
-                </InputAdornment>
-              ),
-            }}
-          />
+          <InputGroup>
+            <InputLeftElement pointerEvents="none" children={<SearchIcon />} />
+            <Input placeholder="Search for manhwa" maxW="15rem" />
+          </InputGroup>
         </div>
         <div className={styles.search__filters}></div>
       </div>
