@@ -1,0 +1,7 @@
+export enum Status {
+  NOT_YET_RELEASED,
+  RELEASING,
+  FINISHED,
+  HIATUS,
+  CANCELLED,
+}

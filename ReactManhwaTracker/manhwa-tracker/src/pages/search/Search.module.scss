@@ -1,0 +1,17 @@
+.container {
+  padding: 0 5rem;
+  display: flex;
+  flex-direction: column;
+  .search {
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    &__input {
+    }
+    &__filters {
+      display: flex;
+      flex-direction: row;
+    }
+    &__directory {
+    }
+  }
+}

@@ -9,7 +9,7 @@ public class Manhwa {
     private String title;
     private String description;
     private String format;
-    private ManhwaStatus status;
+    private Status status;
     private LocalDate releaseDate;
     private LocalDate endDate;
     private List<Genre> titles;
@@ -55,11 +55,11 @@ public class Manhwa {
         this.format = format;
     }
 
-    public ManhwaStatus getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(ManhwaStatus status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
