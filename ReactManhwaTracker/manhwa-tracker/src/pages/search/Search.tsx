@@ -35,7 +35,11 @@ const Search: React.FC = () => {
     coverImage:
       "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
     tags: [],
-    genres: [],
+    genres: [
+      { id: 1, name: "Action" },
+      { id: 2, name: "Fantasy" },
+      { id: 3, name: "Adventure" },
+    ],
     synonyms: [],
   };
   useEffect(() => {

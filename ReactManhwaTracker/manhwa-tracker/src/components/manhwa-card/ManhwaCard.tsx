@@ -9,6 +9,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Manhwa from "../../models/Manhwa";
+import GenreAttribute from "../genre-attribute/GenreAttribute";
 import styles from "./ManhwaCard.module.scss";
 export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
   const [hover, setHover] = useState<boolean>(false);
@@ -37,6 +38,18 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
             <Button variant="outline">Details</Button>
             <Button variant="outline">Add to list</Button>
           </HStack>
+          {manhwa.genres.length >= 2 ? (
+            <HStack>
+              <GenreAttribute genre={manhwa.genres[0]} />{" "}
+              <GenreAttribute genre={manhwa.genres[1]} />
+            </HStack>
+          ) : manhwa.genres.length == 1 ? (
+            <HStack>
+              <GenreAttribute genre={manhwa.genres[0]} />
+            </HStack>
+          ) : (
+            ""
+          )}
         </Flex>
         {hover ? (
           <Box
