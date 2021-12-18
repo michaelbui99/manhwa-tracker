@@ -12,8 +12,21 @@ public class Manhwa {
     private Status status;
     private LocalDate releaseDate;
     private LocalDate endDate;
-    private List<Genre> titles;
+    private List<Genre> genres;
     private List<ManhwaSynonym> synonyms;
+
+    public Manhwa(ManhwaBuilder builder) {
+        this.id = builder.id;
+        this.chapterCount = builder.chapterCount;
+        this.title = builder.title;
+        this.description = builder.description;
+        this.format = builder.format;
+        this.status = builder.status;
+        this.releaseDate = builder.releaseDate;
+        this.endDate = builder.endDate;
+        this.genres = builder.genres;
+        this.synonyms = builder.synonyms;
+    }
 
     public int getId() {
         return id;
@@ -79,12 +92,12 @@ public class Manhwa {
         this.endDate = endDate;
     }
 
-    public List<Genre> getTitles() {
-        return titles;
+    public List<Genre> getGenres() {
+        return genres;
     }
 
-    public void setTitles(List<Genre> titles) {
-        this.titles = titles;
+    public void setGenres(List<Genre> genres) {
+        this.genres = genres;
     }
 
     public List<ManhwaSynonym> getSynonyms() {
@@ -93,5 +106,63 @@ public class Manhwa {
 
     public void setSynonyms(List<ManhwaSynonym> synonyms) {
         this.synonyms = synonyms;
+    }
+
+    public static class ManhwaBuilder{
+        private int id;
+        private int chapterCount;
+        private String title;
+        private String description;
+        private String format;
+        private Status status;
+        private LocalDate releaseDate;
+        private LocalDate endDate;
+        private List<Genre> genres;
+        private List<ManhwaSynonym> synonyms;
+
+        public ManhwaBuilder id(int id){
+            this.id = id;
+            return this;
+        }
+        public ManhwaBuilder chapterCount(int chapterCount){
+            this.chapterCount = chapterCount;
+            return this;
+        }
+        public ManhwaBuilder title(String title){
+           this.title = title;
+           return this;
+        }
+        public ManhwaBuilder description(String description){
+            this.description = description;
+            return this;
+        }
+        public ManhwaBuilder format(String format){
+            this.format = format;
+            return this;
+        }
+        public ManhwaBuilder status(Status status){
+            this.status = status;
+            return this;
+        }
+        public ManhwaBuilder releaseDate(LocalDate releaseDate){
+            this.releaseDate = releaseDate;
+            return this;
+        }
+        public ManhwaBuilder endDate(LocalDate endDate){
+            this.endDate = endDate;
+            return this;
+        }
+        public ManhwaBuilder genres(List<Genre> genres){
+            this.genres = genres;
+            return this;
+        }
+        public ManhwaBuilder synonym(List<ManhwaSynonym> synonyms){
+            this.synonyms = synonyms;
+            return this;
+        }
+        public Manhwa build(){
+            Manhwa manhwa = new Manhwa(this);
+            return manhwa;
+        }
     }
 }
