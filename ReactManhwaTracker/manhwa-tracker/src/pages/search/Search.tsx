@@ -80,7 +80,6 @@ const Search: React.FC = () => {
   };
   return (
     <div className={styles.container}>
-      <h1>{searchInput}</h1>
       <div className={styles.search}>
         <div className={styles.search__input}>
           <InputGroup>
