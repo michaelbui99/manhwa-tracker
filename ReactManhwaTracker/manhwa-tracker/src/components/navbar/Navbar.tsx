@@ -23,7 +23,7 @@ export const Navbar: React.FC = () => {
           <BreadcrumbLink href="/">Home</BreadcrumbLink>
         </BreadcrumbItem>
         <BreadcrumbItem>
-          <BreadcrumbLink href="/search">Search</BreadcrumbLink>
+          <BreadcrumbLink href="/search">Browse</BreadcrumbLink>
         </BreadcrumbItem>
       </Breadcrumb>
     </Box>
