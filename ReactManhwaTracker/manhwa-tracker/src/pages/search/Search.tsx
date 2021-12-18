@@ -19,6 +19,7 @@ const Search: React.FC = () => {
     "Comedy",
   ]);
   const [tags, setTags] = useState<Tag[]>([]);
+  const [searchInput, setSearchInput] = useState<string>("");
   const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const testManhwa: Manhwa = {
@@ -48,20 +49,47 @@ const Search: React.FC = () => {
     const tempTags = ["Anti-Hero", "Super Power", "Anti-Hero"];
     // setGenres(tempGenres);
     // setTags(tempTags);
-    setManhwasToShow([testManhwa]);
+    setManhwas([testManhwa]);
+    setManhwasToShow(manhwas);
     console.log(testManhwa.coverImage);
   }, []);
+  useEffect(() => {
+    filterManhwas();
+  }, [manhwasToShow]);
+
+  const filterManhwas = (): void => {
+    if (searchInput) {
+      setManhwasToShow(
+        manhwas.filter((m) =>
+          m.title.toLowerCase().includes(searchInput.toLowerCase())
+        )
+      );
+    } else {
+      setManhwasToShow(manhwas);
+    }
+  };
+  const handleSearchInputChange = (
+    e: React.FormEvent<HTMLInputElement>
+  ): void => {
+    setSearchInput(e.currentTarget.value);
+    filterManhwas();
+  };
 
   const selectGenre = (g: Genre) => {
     setSelectedGenres(selectedGenres.concat(g));
   };
   return (
     <div className={styles.container}>
+      <h1>{searchInput}</h1>
       <div className={styles.search}>
         <div className={styles.search__input}>
           <InputGroup>
             <InputLeftElement pointerEvents="none" children={<SearchIcon />} />
-            <Input placeholder="Search for manhwa" maxW="15rem" />
+            <Input
+              placeholder="Search for manhwa"
+              maxW="15rem"
+              onInput={handleSearchInputChange}
+            />
           </InputGroup>
         </div>
         <div className={styles.search__filters}></div>
