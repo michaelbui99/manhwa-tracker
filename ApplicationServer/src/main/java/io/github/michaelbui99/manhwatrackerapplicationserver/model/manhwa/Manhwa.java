@@ -164,5 +164,6 @@ public class Manhwa {
             Manhwa manhwa = new Manhwa(this);
             return manhwa;
         }
+
     }
 }
