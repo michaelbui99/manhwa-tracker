@@ -1,3 +1,5 @@
+import { registerEnumType } from "type-graphql";
+
 export enum Status {
   NOT_YET_RELEASED,
   RELEASING,
@@ -5,3 +7,8 @@ export enum Status {
   HIATUS,
   CANCELLED,
 }
+
+registerEnumType(Status, {
+  name: "Status",
+  description: "The release status of the manhwa",
+});
