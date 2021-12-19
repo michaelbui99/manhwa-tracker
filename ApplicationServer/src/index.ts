@@ -1,7 +1,8 @@
+import "reflect-metadata";
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
-import { ManhwaResolver } from "./resolvers/manhwa-resolver";
 import { buildSchema } from "type-graphql";
+import { ManhwaResolver } from "./resolvers/manhwa-resolver";
 
 const main = async () => {
   const app = express();

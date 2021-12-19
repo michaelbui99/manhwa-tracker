@@ -5,8 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const apollo_server_express_1 = require("apollo-server-express");
-const manhwa_resolver_1 = require("./resolvers/manhwa-resolver");
 const type_graphql_1 = require("type-graphql");
+const manhwa_resolver_1 = require("./resolvers/manhwa-resolver");
 const main = async () => {
     const app = (0, express_1.default)();
     const apolloServer = new apollo_server_express_1.ApolloServer({

@@ -1,4 +1,4 @@
-import Manhwa from "src/models/Manhwa";
+import Manhwa from "../models/Manhwa";
 import { Query, Resolver } from "type-graphql";
 
 @Resolver()

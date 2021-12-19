@@ -13,7 +13,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.ManhwaResolver = void 0;
-const Manhwa_1 = __importDefault(require("src/models/Manhwa"));
+const Manhwa_1 = __importDefault(require("../models/Manhwa"));
 const type_graphql_1 = require("type-graphql");
 let ManhwaResolver = class ManhwaResolver {
     allManhwas() {
