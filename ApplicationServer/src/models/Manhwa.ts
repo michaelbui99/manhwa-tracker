@@ -10,28 +10,28 @@ export default class Manhwa {
   id: number;
   @Field()
   title: string;
-  @Field()
-  description: string;
+  @Field({ nullable: true })
+  description?: string;
   @Field()
   format: string;
   @Field((type) => Status)
   status: Status;
   @Field((type) => SourceMaterial)
   sourceMaterial: SourceMaterial;
-  @Field()
-  releaseDate: Date;
-  @Field()
-  endDate: Date;
+  @Field({ nullable: true })
+  releaseDate?: Date;
+  @Field({ nullable: true })
+  endDate?: Date;
   @Field()
   chapterCount: number;
-  @Field()
-  coverImage: string;
-  @Field((type) => [Tag])
-  tags: Tag[];
-  @Field((type) => [Genre])
-  genres: Genre[];
-  @Field((type) => [Synonym])
-  synonyms: Synonym[];
+  @Field({ nullable: true })
+  coverImage?: string;
+  @Field((type) => [Tag], { nullable: true })
+  tags?: Tag[];
+  @Field((type) => [Genre], { nullable: true })
+  genres?: Genre[];
+  @Field((type) => [Synonym], { nullable: true })
+  synonyms?: Synonym[];
   constructor({
     id,
     title,
@@ -48,16 +48,16 @@ export default class Manhwa {
   }: {
     id: number;
     title: string;
-    description: string;
+    description?: string;
     format: string;
     sourceMaterial: SourceMaterial;
-    releaseDate: Date;
-    endDate: Date;
+    releaseDate?: Date;
+    endDate?: Date;
     chapterCount: number;
-    coverImage: string;
-    tags: Tag[];
-    genres: Genre[];
-    synonyms: Synonym[];
+    coverImage?: string;
+    tags?: Tag[];
+    genres?: Genre[];
+    synonyms?: Synonym[];
   }) {
     this.id = id;
     this.title = title;

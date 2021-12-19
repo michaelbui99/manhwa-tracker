@@ -1,7 +1,6 @@
 import "reflect-metadata";
 import Manhwa from "../models/manhwa";
 import { Arg, Query, Resolver } from "type-graphql";
-import { Service } from "typedi";
 import { ServiceFactory } from "../factories/service-factory";
 // TODO: Implement ManhwaService and use in Queries and Mutations
 
