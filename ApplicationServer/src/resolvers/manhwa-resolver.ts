@@ -1,5 +1,5 @@
 import "reflect-metadata";
-import Manhwa from "../models/Manhwa";
+import Manhwa from "../models/manhwa";
 import { Arg, Query, Resolver } from "type-graphql";
 
 // TODO: Implement ManhwaService and use in Queries and Mutations
