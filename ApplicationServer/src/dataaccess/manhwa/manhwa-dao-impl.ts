@@ -2,7 +2,6 @@ import { Pool } from "pg";
 import Manhwa from "src/models/manhwa";
 import { BaseDAO } from "../base-dao";
 import { ManhwaDAO } from "./manhwa-dao";
-import { Service } from "typedi";
 
 export class ManhwaDAOImpl implements ManhwaDAO {
   async getAsync(id: number): Promise<Manhwa> {

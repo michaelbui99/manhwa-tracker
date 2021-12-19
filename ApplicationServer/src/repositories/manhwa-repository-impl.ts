@@ -1,7 +1,6 @@
 import { ManhwaDAO } from "src/dataaccess/manhwa/manhwa-dao";
 import Manhwa from "src/models/manhwa";
 import { ManhwaRepository } from "./manhwa-repository";
-import { Service } from "typedi";
 
 export class ManhwaRepositoryImpl implements ManhwaRepository {
   constructor(private readonly manhwaDAO: ManhwaDAO) {}
