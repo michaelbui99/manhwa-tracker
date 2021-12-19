@@ -26,10 +26,10 @@ export default class Manhwa {
   chapterCount: number;
   @Field()
   coverImage: string;
-  @Field()
+  @Field((type) => [Tag])
   tags: Tag[];
-  @Field()
+  @Field((type) => [Genre])
   genres: Genre[];
-  @Field()
+  @Field((type) => [Synonym])
   synonyms: Synonym[];
 }
