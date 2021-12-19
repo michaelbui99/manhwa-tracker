@@ -11,6 +11,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const Status_1 = require("./Status");
 const SourceMaterial_1 = require("./SourceMaterial");
+const Tag_1 = require("./Tag");
+const Genre_1 = require("./Genre");
+const Synonym_1 = require("./Synonym");
 const type_graphql_1 = require("type-graphql");
 let Manhwa = class Manhwa {
 };
@@ -55,15 +58,15 @@ __decorate([
     __metadata("design:type", String)
 ], Manhwa.prototype, "coverImage", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)((type) => [Tag_1.Tag]),
     __metadata("design:type", Array)
 ], Manhwa.prototype, "tags", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)((type) => [Genre_1.Genre]),
     __metadata("design:type", Array)
 ], Manhwa.prototype, "genres", void 0);
 __decorate([
-    (0, type_graphql_1.Field)(),
+    (0, type_graphql_1.Field)((type) => [Synonym_1.Synonym]),
     __metadata("design:type", Array)
 ], Manhwa.prototype, "synonyms", void 0);
 Manhwa = __decorate([
