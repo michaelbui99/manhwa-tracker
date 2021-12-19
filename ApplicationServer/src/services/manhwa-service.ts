@@ -1,5 +1,5 @@
 import Manhwa from "src/models/manhwa";
 
 export interface ManhwaService {
-  getById(id: number): Manhwa;
+  getByIdAsync(id: number): Promise<Manhwa>;
 }

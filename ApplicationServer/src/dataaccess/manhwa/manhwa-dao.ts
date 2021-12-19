@@ -1,8 +1,8 @@
 import Manhwa from "src/models/manhwa";
 
 export interface ManhwaDAO {
-  get(id: number): Manhwa;
-  getAll(): Manhwa[];
-  create(manhwa: Manhwa): Manhwa;
-  delete(id: number): void;
+  getAsync(id: number): Promise<Manhwa>;
+  getAllAsync(): Promise<Manhwa[]>;
+  createAsync(manhwa: Manhwa): Promise<Manhwa>;
+  deleteAsync(id: number): void;
 }

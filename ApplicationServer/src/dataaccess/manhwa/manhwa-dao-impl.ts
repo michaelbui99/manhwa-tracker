@@ -1,29 +1,27 @@
 import { Pool } from "pg";
-import manhwa from "src/models/manhwa";
+import Manhwa from "src/models/manhwa";
 import { BaseDAO } from "../base-dao";
 import { ManhwaDAO } from "./manhwa-dao";
+import { Service } from "typedi";
 
-export class BaseDAOImpl implements ManhwaDAO {
-  get(id: number): manhwa {
+export class ManhwaDAOImpl implements ManhwaDAO {
+  async getAsync(id: number): Promise<Manhwa> {
     const baseDAO = new BaseDAO();
     const connection: Pool = baseDAO.getConnection();
-    connection.query("SELECT * FROM manhwa where id = $1", [id], (err, res) => {
-      if (err) {
-        throw err;
-      }
-
-      console.log(res.rows);
-    });
-
+    const { rows }: { rows: Manhwa[] } = await connection.query(
+      "SELECT * FROM manhwa where id = $1",
+      [id]
+    );
+    console.log(rows);
+    return rows[0];
+  }
+  getAllAsync(): Promise<Manhwa[]> {
     throw new Error("Method not implemented.");
   }
-  getAll(): manhwa[] {
+  createAsync(manhwa: Manhwa): Promise<Manhwa> {
     throw new Error("Method not implemented.");
   }
-  create(manhwa: manhwa): manhwa {
-    throw new Error("Method not implemented.");
-  }
-  delete(id: number): void {
+  deleteAsync(id: number): void {
     throw new Error("Method not implemented.");
   }
 }

@@ -1,20 +1,17 @@
-import "reflect-metadata";
-import express from "express";
-import { ApolloServer } from "apollo-server-express";
+import { ApolloServer } from "apollo-server";
 import { buildSchema } from "type-graphql";
 import { ManhwaResolver } from "./resolvers/manhwa-resolver";
 
 const main = async () => {
-  const app = express();
+  // Server setup
   const apolloServer = new ApolloServer({
-    schema: await buildSchema({ resolvers: [ManhwaResolver] }),
+    schema: await buildSchema({
+      resolvers: [ManhwaResolver],
+    }),
   });
-  await apolloServer.start();
-  apolloServer.applyMiddleware({ app });
 
-  app.listen(8080, () => {
-    console.log("Server started on localhost:8080");
-  });
+  const { url } = await apolloServer.listen(8080);
+  console.log(`Server is running. GraphQL Playground available at ${url}`);
 };
 
 main().catch((err) => console.log(err));
