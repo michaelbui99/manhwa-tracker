@@ -1,0 +1,1 @@
+{"version":3,"file":"SourceMaterial.js","sourceRoot":"","sources":["../../src/models/SourceMaterial.ts"],"names":[],"mappings":";;;AAAA,+CAAgD;AAEhD,IAAY,cAKX;AALD,WAAY,cAAc;IACxB,6DAAS,CAAA;IACT,iEAAW,CAAA;IACX,6DAAS,CAAA;IACT,2DAAQ,CAAA;AACV,CAAC,EALW,cAAc,GAAd,sBAAc,KAAd,sBAAc,QAKzB;AACD,IAAA,+BAAgB,EAAC,cAAc,EAAE;IAC/B,IAAI,EAAE,gBAAgB;IACtB,WAAW,EAAE,6CAA6C;CAC3D,CAAC,CAAC"}

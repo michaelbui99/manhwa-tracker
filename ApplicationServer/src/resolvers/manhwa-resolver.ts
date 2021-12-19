@@ -1,4 +1,10 @@
+import Manhwa from "src/models/Manhwa";
+import { Query, Resolver } from "type-graphql";
 
-export class ManhwaResolver(){
-
+@Resolver()
+export class ManhwaResolver {
+  @Query(() => [Manhwa])
+  allManhwas() {
+    return null;
+  }
 }

@@ -1,9 +1,13 @@
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
+import { ManhwaResolver } from "./resolvers/manhwa-resolver";
+import { buildSchema } from "type-graphql";
 
 const main = async () => {
   const app = express();
-  const apolloServer = new ApolloServer({});
+  const apolloServer = new ApolloServer({
+    schema: await buildSchema({ resolvers: [ManhwaResolver] }),
+  });
   await apolloServer.start();
   apolloServer.applyMiddleware({ app });
 
