@@ -4,6 +4,10 @@ import { ManhwaRepository } from "src/repositories/manhwa-repository";
 
 export class ManhwaServiceImpl implements ManhwaService {
   constructor(private readonly manhwaRepository: ManhwaRepository) {}
+  async getAllAsync(): Promise<Manhwa[]> {
+    const manhwas = await this.manhwaRepository.getAll();
+    return manhwas;
+  }
 
   async getByIdAsync(id: number): Promise<Manhwa> {
     const manhwa = await this.manhwaRepository.getById(id);

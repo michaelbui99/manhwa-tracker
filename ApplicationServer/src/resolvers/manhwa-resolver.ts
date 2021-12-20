@@ -9,7 +9,9 @@ export class ManhwaResolver {
   private readonly manhwaService = ServiceFactory.getManhwaService();
 
   @Query(() => [Manhwa])
-  async allManhwas() {}
+  async allManhwas() {
+    return await this.manhwaService.getAllAsync();
+  }
 
   @Query(() => [Manhwa])
   manhwaByTitle(@Arg("title", { nullable: false }) title: string) {

@@ -45,6 +45,7 @@ export default class Manhwa {
     tags,
     genres,
     synonyms,
+    status,
   }: {
     id: number;
     title: string;
@@ -58,6 +59,7 @@ export default class Manhwa {
     tags?: Tag[];
     genres?: Genre[];
     synonyms?: Synonym[];
+    status: Status;
   }) {
     this.id = id;
     this.title = title;
@@ -71,5 +73,6 @@ export default class Manhwa {
     this.tags = tags;
     this.genres = genres;
     this.synonyms = synonyms;
+    this.status = status;
   }
 }

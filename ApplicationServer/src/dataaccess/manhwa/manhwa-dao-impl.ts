@@ -16,7 +16,7 @@ export class ManhwaDAOImpl implements ManhwaDAO {
   }
 
   async getAsync(id: number): Promise<Manhwa> {
-    const { rows }: { rows: Manhwa[] } = await this.connection.query(
+    const { rows }: { rows: QueryResult } = await this.connection.query(
       "SELECT * FROM manhwa WHERE id = $1",
       [id]
     );
@@ -24,21 +24,52 @@ export class ManhwaDAOImpl implements ManhwaDAO {
     let manhwa = new Manhwa({
       id: fetchedManhwa.id,
       chapterCount: fetchedManhwa.id,
-      coverImage: fetchedManhwa.coverImage,
+      coverImage: fetchedManhwa.coverimage,
       description: fetchedManhwa.description,
-      endDate: fetchedManhwa.endDate,
+      endDate: fetchedManhwa.enddate,
       format: fetchedManhwa.format,
-      sourceMaterial: fetchedManhwa.sourceMaterial,
+      sourceMaterial: fetchedManhwa.sourcematerial,
       title: fetchedManhwa.title,
       genres: await this.getGenresByManhwaId(fetchedManhwa.id),
-      releaseDate: fetchedManhwa.releaseDate,
+      releaseDate: fetchedManhwa.releasedate,
       synonyms: await this.getSynonymsByManhwaId(fetchedManhwa.id),
       tags: await this.getTagsByManhwaId(fetchedManhwa.id),
+      status: fetchedManhwa.status,
     });
+    console.log(manhwa);
     return manhwa;
   }
-  getAllAsync(): Promise<Manhwa[]> {
-    throw new Error("Method not implemented.");
+  async getAllAsync(): Promise<Manhwa[]> {
+    let manhwas: Manhwa[] = [];
+    const { rows }: { rows: QueryResult } = await this.connection.query(
+      "SELECT * FROM manhwa"
+    );
+    const fetchedManhwas = rows;
+    for (const r of fetchedManhwas) {
+      const genres = await this.getGenresByManhwaId(r.id);
+      const tags = await this.getTagsByManhwaId(r.id);
+      const synonyms = await this.getTagsByManhwaId(r.id);
+      let manhwa = new Manhwa({
+        id: r.id,
+        chapterCount: r.id,
+        coverImage: r.coverimage,
+        description: r.description,
+        endDate: r.enddate,
+        format: r.format,
+        sourceMaterial: r.sourcematerial,
+        title: r.title,
+        genres: genres,
+        releaseDate: r.releasedate,
+        synonyms: synonyms,
+        tags: tags,
+        status: r.status,
+      });
+      manhwas.push(manhwa);
+    }
+    console.log("This is called");
+
+    console.log(manhwas);
+    return manhwas;
   }
   createAsync(manhwa: Manhwa): Promise<Manhwa> {
     throw new Error("Method not implemented.");
@@ -49,7 +80,7 @@ export class ManhwaDAOImpl implements ManhwaDAO {
 
   private async getGenresByManhwaId(id: number): Promise<Genre[]> {
     const genres: QueryResult = await this.connection.query(
-      "select * from genre join manhwa_genre mg on genre.id = mg.genre_id where manhwa_id = $1",
+      "select * from genre join manhwa_genre mg on genre.id = mg.genreId where manhwaId = $1",
       [id]
     );
     return genres.rows;
@@ -57,7 +88,7 @@ export class ManhwaDAOImpl implements ManhwaDAO {
 
   private async getTagsByManhwaId(id: number): Promise<Tag[]> {
     const tags: QueryResult = await this.connection.query(
-      "select * from _tag join manhwa_tag mt on _tag.id = mt.tag_id where manhwa_id = $1",
+      "select * from _tag join manhwa_tag mt on _tag.id = mt.tagId where manhwaId = $1",
       [id]
     );
     return tags.rows;
@@ -65,7 +96,7 @@ export class ManhwaDAOImpl implements ManhwaDAO {
 
   private async getSynonymsByManhwaId(id: number): Promise<Synonym[]> {
     const synonyms: QueryResult = await this.connection.query(
-      "select * from synonym join manhwa_synonym ms on synonym.title = ms.synonym_title and synonym.title_language = ms.synonym_title_language where manhwa_id = $1",
+      "select * from synonym join manhwa_synonym ms on synonym.title = ms.synonymTitle and synonym.titleLanguage = ms.synonymTitleLanguage where manhwaId = $1",
       [id]
     );
     return synonyms.rows;
