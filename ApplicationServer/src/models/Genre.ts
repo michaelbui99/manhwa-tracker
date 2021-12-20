@@ -6,4 +6,8 @@ export class Genre {
   id: number;
   @Field()
   name: string;
+  constructor(id: number, name: string) {
+    this.id = id;
+    this.name = name;
+  }
 }
