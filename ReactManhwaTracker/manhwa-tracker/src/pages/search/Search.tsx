@@ -1,61 +1,80 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
-import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import {
+  Center,
+  Input,
+  InputGroup,
+  InputLeftElement,
+  Spinner,
+} from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import SearchDirectory from "../../components/search-directory/SearchDirectory";
 import styles from "./Search.module.scss";
 import { Tag } from "../../models/Tag";
 import Manhwa from "../../models/Manhwa";
-import { Status } from "../../models/Status";
-import { SourceMaterial } from "../../models/SourceMaterial";
 import { Genre } from "../../models/Genre";
+import { gql, useApolloClient } from "@apollo/client";
 const Search: React.FC = () => {
   const [manhwas, setManhwas] = useState<Manhwa[]>([]);
   const [manhwasToShow, setManhwasToShow] = useState<Manhwa[]>([]);
-  const [genres, setGenres] = useState([
-    "Fantasy",
-    "Romance",
-    "Action",
-    "Comedy",
-  ]);
+  const [genres, setGenres] = useState<Genre[]>([]);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
+  const [error, setError] = useState<boolean>(false);
   const [tags, setTags] = useState<Tag[]>([]);
   const [searchInput, setSearchInput] = useState<string>("");
   const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
-  const testManhwa: Manhwa = {
-    id: 1,
-    title: "Solo leveling",
-    description:
-      "In a world where awakened beings called “Hunters” must battle deadly monsters to protect humanity, Sung Jinwoo, nicknamed “the weakest hunter of all mankind,” finds himself in a constant struggle for survival. One day, after a brutal encounter in an overpowered dungeon wipes out his party and threatens to end his life, a mysterious System chooses him as its sole player: Jinwoo has been granted the rare opportunity to level up his abilities, possibly beyond any known limits. Follow Jinwoo’s journey as he takes on ever-stronger enemies, both human and monster, to discover the secrets deep within the dungeons and the ultimate extent of his powers.",
-    format: "Manga (South Korean)",
-    status: Status.RELEASING,
-    sourceMaterial: SourceMaterial.WEB_NOVEL,
-    releaseDate: new Date("12-12-2021"),
-    endDate: new Date("12-12-3000"),
-    chapterCount: 120,
-    coverImage:
-      "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105398-b673Vt5ZSuz3.jpg",
-    tags: [],
-    genres: [
-      { id: 1, name: "Action" },
-      { id: 2, name: "Fantasy" },
-      { id: 3, name: "Adventure" },
-    ],
-    synonyms: [],
+  const client = useApolloClient();
+  const fetchData = async () => {
+    const ALLMANHWAS = gql`
+      {
+        allManhwas {
+          chapterCount
+          coverImage
+          description
+          endDate
+          format
+          genres {
+            id
+            name
+          }
+          id
+          releaseDate
+          sourceMaterial
+          status
+          title
+          __typename
+        }
+      }
+    `;
+    try {
+      const request = client.query({ query: ALLMANHWAS });
+      const response = await request;
+      return response.data.allManhwas;
+    } catch (err) {
+      console.log(err);
+      throw err;
+    }
   };
+
   useEffect(() => {
-    //TODO: Fetch genres and tags on mount
-    const tempGenres = ["Fantasy", "Romance", "Action", "Comedy"];
-    const tempTags = ["Anti-Hero", "Super Power", "Anti-Hero"];
-    // setGenres(tempGenres);
-    // setTags(tempTags);
-    setManhwas([testManhwa]);
-    setManhwasToShow(manhwas);
-    console.log(testManhwa.coverImage);
+    // On mount side effects
+    async function resolvedata() {
+      try {
+        const data = await fetchData();
+        setManhwas(data);
+        setManhwasToShow(manhwas);
+        setIsLoading(false);
+      } catch (err) {
+        setError(true);
+      }
+    }
+    resolvedata();
   }, []);
+
   useEffect(() => {
     filterManhwas();
-  }, [manhwasToShow]);
+  }, [manhwasToShow, manhwas]);
 
   const filterManhwas = (): void => {
     if (searchInput) {
@@ -94,7 +113,20 @@ const Search: React.FC = () => {
         <div className={styles.search__filters}></div>
       </div>
       <div className={styles.search__directory}>
-        <SearchDirectory manhwas={manhwasToShow} />
+        {isLoading ? (
+          <Center>
+            <Spinner size="lg" />
+          </Center>
+        ) : (
+          <SearchDirectory manhwas={manhwasToShow} />
+        )}
+        {error ? (
+          <Center>
+            <p>Something went wrong...</p>
+          </Center>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

@@ -48,7 +48,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
               <GenreAttribute genre={manhwa.genres[0]} />{" "}
               <GenreAttribute genre={manhwa.genres[1]} />
             </HStack>
-          ) : manhwa.genres.length == 1 ? (
+          ) : manhwa.genres.length === 1 ? (
             <HStack>
               <GenreAttribute genre={manhwa.genres[0]} />
             </HStack>

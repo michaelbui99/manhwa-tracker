@@ -14,7 +14,7 @@ const SearchDirectory: React.FC<{ manhwas: Manhwa[] }> = ({ manhwas }) => {
         gap={6}
       >
         {manhwas.map((m) => (
-          <ManhwaCard manhwa={m} />
+          <ManhwaCard manhwa={m} key={m.id} />
         ))}
       </Grid>
     </div>
