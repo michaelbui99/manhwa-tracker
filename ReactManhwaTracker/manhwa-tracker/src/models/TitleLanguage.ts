@@ -1,6 +1,6 @@
 export enum TitleLanguage {
-  EN,
-  JP,
-  KR,
-  ZH,
+  EN = "EN",
+  JP = "JP",
+  KR = "KR",
+  ZH = "ZH",
 }
