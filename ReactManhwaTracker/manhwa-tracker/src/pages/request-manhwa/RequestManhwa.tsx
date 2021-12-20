@@ -10,10 +10,37 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import * as React from "react";
+import { useState, useEffect } from "react";
+import { gql, useApolloClient } from "@apollo/client";
 import { SourceMaterial } from "../../models/SourceMaterial";
 import { Status } from "../../models/Status";
+import { Genre } from "../../models/Genre";
 
 const RequestManhwa: React.FC = () => {
+  const client = useApolloClient();
+  const [genres, setGenres] = useState<Genre[]>();
+  const ALLGENRES = gql`
+    {
+      allGenres {
+        id
+        name
+      }
+    }
+  `;
+  useEffect(() => {
+    async function fectchGenres() {
+      const { data } = await client.query({ query: ALLGENRES });
+      const fetchedGenres = data.allGenres;
+      return fetchedGenres;
+    }
+    async function resolveGenres() {
+      const fetchedGenres = await fectchGenres();
+      setGenres(fetchedGenres);
+      console.log(genres);
+    }
+
+    resolveGenres();
+  }, []);
   return (
     <Box className="content">
       <Center>
