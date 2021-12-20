@@ -32,7 +32,7 @@ const RequestManhwa: React.FC = () => {
             <FormLabel htmlFor="description" fontSize="1.3rem" marginTop="2rem">
               Description
             </FormLabel>
-            <Textarea variant="filled" />
+            <Textarea variant="filled" boxShadow="md" />
             <FormHelperText>
               Use official description from creator / author if posssible
             </FormHelperText>
@@ -40,7 +40,7 @@ const RequestManhwa: React.FC = () => {
             <FormLabel fontSize="1.3rem" marginTop="2rem">
               Release Status
             </FormLabel>
-            <Select variant="filled">
+            <Select variant="filled" boxShadow="md">
               {Object.values(Status).map((status) => (
                 <option value={status}>{status}</option>
               ))}
