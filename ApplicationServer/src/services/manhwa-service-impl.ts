@@ -1,16 +1,16 @@
+import { ManhwaDAO } from "src/dataaccess/manhwa/manhwa-dao";
 import Manhwa from "src/models/manhwa";
 import { ManhwaService } from "./manhwa-service";
-import { ManhwaRepository } from "src/repositories/manhwa-repository";
 
 export class ManhwaServiceImpl implements ManhwaService {
-  constructor(private readonly manhwaRepository: ManhwaRepository) {}
+  constructor(private readonly manhwaDAO: ManhwaDAO) {}
   async getAllAsync(): Promise<Manhwa[]> {
-    const manhwas = await this.manhwaRepository.getAll();
+    const manhwas = await this.manhwaDAO.getAllAsync();
     return manhwas;
   }
 
   async getByIdAsync(id: number): Promise<Manhwa> {
-    const manhwa = await this.manhwaRepository.getById(id);
+    const manhwa = await this.manhwaDAO.getAsync(id);
     return manhwa;
   }
 }
