@@ -10,8 +10,9 @@ import {
   Flex,
   HStack,
 } from "@chakra-ui/react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 export const Navbar: React.FC = () => {
+  const navigate = useNavigate();
   return (
     <Box
       padding="0.5rem 2rem"
@@ -22,14 +23,22 @@ export const Navbar: React.FC = () => {
       <Flex flexDir="row" justifyContent="space-between">
         <Heading fontSize="20px">Manhwa Tracker</Heading>
         <HStack>
-          <Button colorScheme="teal" size="sm">
-            <Link to="/">Home</Link>
+          <Button colorScheme="teal" size="sm" onClick={() => navigate("/")}>
+            Home
           </Button>
-          <Button colorScheme="teal" size="sm">
-            <Link to="/search">Browse</Link>
+          <Button
+            colorScheme="teal"
+            size="sm"
+            onClick={() => navigate("/search")}
+          >
+            Browse
           </Button>
-          <Button colorScheme="teal" size="sm">
-            <Link to="/requestmanhwa">Request Manhwa</Link>
+          <Button
+            colorScheme="teal"
+            size="sm"
+            onClick={() => navigate("/requestmanhwa")}
+          >
+            Request Manhwa
           </Button>
         </HStack>
       </Flex>
