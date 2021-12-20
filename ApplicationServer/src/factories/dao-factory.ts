@@ -1,5 +1,5 @@
-import { GenreDAO } from "src/dataaccess/genre/genre-dao";
-import { GenreDAOImpl } from "src/dataaccess/genre/genre-dao-impl";
+import { GenreDAO } from "../dataaccess/genre/genre-dao";
+import { GenreDAOImpl } from "../dataaccess/genre/genre-dao-impl";
 import { ManhwaDAO } from "../dataaccess/manhwa/manhwa-dao";
 import { ManhwaDAOImpl } from "../dataaccess/manhwa/manhwa-dao-impl";
 

@@ -1,6 +1,6 @@
-import { GenreService } from "src/services/genre/genre-service";
-import { GenreServiceImpl } from "src/services/genre/genre-service-impl";
-import { ManhwaService } from "../services/manhwa-service";
+import { GenreService } from "../services/genre/genre-service";
+import { GenreServiceImpl } from "../services/genre/genre-service-impl";
+import { ManhwaService } from "../services/manhwa/manhwa-service";
 import { ManhwaServiceImpl } from "../services/manhwa/manhwa-service-impl";
 import { DAOFactory } from "./dao-factory";
 
