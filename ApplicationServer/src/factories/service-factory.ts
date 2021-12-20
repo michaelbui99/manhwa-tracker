@@ -1,5 +1,6 @@
 import { ManhwaService } from "../services/manhwa-service";
 import { ManhwaServiceImpl } from "../services/manhwa-service-impl";
+import { DAOFactory } from "./dao-factory";
 import { RepositoryFactory } from "./repository-factory";
 
 export class ServiceFactory {
@@ -7,9 +8,7 @@ export class ServiceFactory {
 
   static getManhwaService() {
     if (!this.manhwaService) {
-      this.manhwaService = new ManhwaServiceImpl(
-        RepositoryFactory.getManhwaRepository()
-      );
+      this.manhwaService = new ManhwaServiceImpl(DAOFactory.getManhwaDAO());
     }
     return this.manhwaService;
   }
