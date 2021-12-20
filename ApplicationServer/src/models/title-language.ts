@@ -1,10 +1,10 @@
 import { registerEnumType } from "type-graphql";
 
 export enum TitleLanguage {
-  EN,
-  JP,
-  KR,
-  ZH,
+  EN = "EN",
+  JP = "JP",
+  KR = "KR",
+  ZH = "ZH",
 }
 
 registerEnumType(TitleLanguage, {

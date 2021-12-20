@@ -1,11 +1,11 @@
 import { registerEnumType } from "type-graphql";
 
 export enum Status {
-  NOT_YET_RELEASED,
-  RELEASING,
-  FINISHED,
-  HIATUS,
-  CANCELLED,
+  NOT_YET_RELEASED = "NOT_YET_RELEASED",
+  RELEASING = "RELEASING",
+  FINISHED = "FINISHED",
+  HIATUS = "HIATUS",
+  CANCELLED = "CANCELLED",
 }
 
 registerEnumType(Status, {
