@@ -36,7 +36,6 @@ export class ManhwaDAOImpl implements ManhwaDAO {
       tags: await this.getTagsByManhwaId(fetchedManhwa.id),
       status: fetchedManhwa.status,
     });
-    console.log(manhwa);
     return manhwa;
   }
   async getAllAsync(): Promise<Manhwa[]> {
@@ -66,9 +65,6 @@ export class ManhwaDAOImpl implements ManhwaDAO {
       });
       manhwas.push(manhwa);
     }
-    console.log("This is called");
-
-    console.log(manhwas);
     return manhwas;
   }
   createAsync(manhwa: Manhwa): Promise<Manhwa> {
