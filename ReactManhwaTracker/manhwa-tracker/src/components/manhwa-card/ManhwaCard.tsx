@@ -40,9 +40,11 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
             <Heading as="h3" size="md" textAlign="center" padding="0.4rem 0">
               {manhwa.title}
             </Heading>
+
             <Image src={manhwa.coverImage} />
           </Box>
-          {/* Displays 2 genres at max */}
+
+          {/* Genres. Displays 2 genres at max */}
           {manhwa.genres.length >= 2 ? (
             <HStack>
               <GenreAttribute genre={manhwa.genres[0]} />{" "}
@@ -59,6 +61,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
             <Button variant="outline">Add to list</Button>
           </HStack>
         </Flex>
+
         {/* Description shown on hover */}
         {hover ? (
           <Box
