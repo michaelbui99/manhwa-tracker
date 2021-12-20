@@ -10,6 +10,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import * as React from "react";
+import { SourceMaterial } from "../../models/SourceMaterial";
 import { Status } from "../../models/Status";
 
 const RequestManhwa: React.FC = () => {
@@ -26,7 +27,13 @@ const RequestManhwa: React.FC = () => {
             <FormLabel htmlFor="title" fontSize="1.3rem">
               Title
             </FormLabel>
-            <Input id="title" type="text" variant="filled" boxShadow="md" />
+            <Input
+              id="title"
+              type="text"
+              variant="filled"
+              boxShadow="md"
+              required={true}
+            />
             <FormHelperText>Use the english title if possible</FormHelperText>
 
             <FormLabel htmlFor="description" fontSize="1.3rem" marginTop="2rem">
@@ -47,6 +54,18 @@ const RequestManhwa: React.FC = () => {
             </Select>
             <FormHelperText>
               Choose current release status of the requested manhwa
+            </FormHelperText>
+
+            <FormLabel fontSize="1.3rem" marginTop="2rem">
+              Source Material
+            </FormLabel>
+            <Select variant="filled" boxShadow="md">
+              {Object.values(SourceMaterial).map((sourceMaterial) => (
+                <option value={sourceMaterial}>{sourceMaterial}</option>
+              ))}
+            </Select>
+            <FormHelperText>
+              Choose what the source material of the manhwa is based on
             </FormHelperText>
           </FormControl>
         </Box>
