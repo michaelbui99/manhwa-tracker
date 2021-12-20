@@ -1,13 +1,6 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import {
-  ApolloClient,
-  gql,
-  InMemoryCache,
-  useApolloClient,
-  useQuery,
-} from "@apollo/client";
-import {
   Center,
   Input,
   InputGroup,
@@ -19,27 +12,12 @@ import SearchDirectory from "../../components/search-directory/SearchDirectory";
 import styles from "./Search.module.scss";
 import { Tag } from "../../models/Tag";
 import Manhwa from "../../models/Manhwa";
-import { Status } from "../../models/Status";
-import { SourceMaterial } from "../../models/SourceMaterial";
 import { Genre } from "../../models/Genre";
+import { gql, useApolloClient } from "@apollo/client";
 const Search: React.FC = () => {
   const [manhwas, setManhwas] = useState<Manhwa[]>([]);
   const [manhwasToShow, setManhwasToShow] = useState<Manhwa[]>([]);
   const [genres, setGenres] = useState<Genre[]>([]);
-  const ALLMANHWAS = gql`
-    {
-      allManhwas {
-        title
-        description
-        genres {
-          id
-          name
-        }
-        id
-        coverImage
-      }
-    }
-  `;
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [error, setError] = useState<boolean>(false);
   const [tags, setTags] = useState<Tag[]>([]);
@@ -47,21 +25,56 @@ const Search: React.FC = () => {
   const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const client = useApolloClient();
-  const fetchManhwas = () => {};
+  const fetchData = async () => {
+    const ALLMANHWAS = gql`
+      {
+        allManhwas {
+          chapterCount
+          coverImage
+          description
+          endDate
+          format
+          genres {
+            id
+            name
+          }
+          id
+          releaseDate
+          sourceMaterial
+          status
+          title
+          __typename
+        }
+      }
+    `;
+    try {
+      const request = client.query({ query: ALLMANHWAS });
+      const response = await request;
+      return response.data.allManhwas;
+    } catch (err) {
+      console.log(err);
+      throw err;
+    }
+  };
+
   useEffect(() => {
     // On mount side effects
-    client
-      .query({ query: ALLMANHWAS })
-      .then((r: any) => {
-        setManhwas(r.data.allManhwas);
+    async function resolvedata() {
+      try {
+        const data = await fetchData();
+        setManhwas(data);
+        setManhwasToShow(manhwas);
         setIsLoading(false);
-      })
-      .catch((err) => setError(true));
-    setManhwasToShow(manhwas);
+      } catch (err) {
+        setError(true);
+      }
+    }
+    resolvedata();
   }, []);
+
   useEffect(() => {
     filterManhwas();
-  }, [manhwasToShow]);
+  }, [manhwasToShow, manhwas]);
 
   const filterManhwas = (): void => {
     if (searchInput) {
