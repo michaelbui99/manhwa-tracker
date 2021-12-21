@@ -1,10 +1,10 @@
 import { Pool, QueryResult } from "pg";
-import { Genre } from "../models/genre";
-import Manhwa from "../../models/manhwa";
+import { Genre } from "src/models/manhwa/genre";
+import Manhwa from "../../models/manhwa/manhwa";
 import { BaseDAO } from "../base-dao";
 import { ManhwaDAO } from "./manhwa-dao";
-import { Tag } from "../models/tag";
-import { Synonym } from "src/models/synonym";
+import { Tag } from "src/models/manhwa/tag";
+import { Synonym } from "src/models/manhwa/synonym";
 
 export class ManhwaDAOImpl implements ManhwaDAO {
   private baseDAO: BaseDAO;
@@ -16,7 +16,7 @@ export class ManhwaDAOImpl implements ManhwaDAO {
   }
 
   async getAsync(id: number): Promise<Manhwa> {
-    const { rows }: { rows: QueryResult } = await this.connection.query(
+    const { rows }: { rows: any[] } = await this.connection.query(
       "SELECT * FROM manhwa WHERE id = $1",
       [id]
     );
@@ -40,14 +40,14 @@ export class ManhwaDAOImpl implements ManhwaDAO {
   }
   async getAllAsync(): Promise<Manhwa[]> {
     let manhwas: Manhwa[] = [];
-    const { rows }: { rows: QueryResult } = await this.connection.query(
+    const { rows }: { rows: any } = await this.connection.query(
       "SELECT * FROM manhwa"
     );
     const fetchedManhwas = rows;
     for (const r of fetchedManhwas) {
       const genres = await this.getGenresByManhwaId(r.id);
       const tags = await this.getTagsByManhwaId(r.id);
-      const synonyms = await this.getTagsByManhwaId(r.id);
+      const synonyms = await this.getSynonymsByManhwaId(r.id);
       let manhwa = new Manhwa({
         id: r.id,
         chapterCount: r.id,

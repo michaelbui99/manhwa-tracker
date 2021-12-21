@@ -1,4 +1,4 @@
-import { Genre } from "src/models/genre";
+import { Genre } from "src/models/manhwa/genre";
 
 export interface GenreService {
   getAllAsync(): Promise<Genre[]>;

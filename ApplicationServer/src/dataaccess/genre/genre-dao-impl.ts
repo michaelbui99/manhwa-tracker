@@ -1,5 +1,5 @@
 import { Pool } from "pg";
-import { Genre } from "../../models/genre";
+import { Genre } from "../../models/manhwa/genre";
 import { BaseDAO } from "../base-dao";
 import { GenreDAO } from "./genre-dao";
 

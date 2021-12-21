@@ -1,5 +1,5 @@
 import { ManhwaDAO } from "src/dataaccess/manhwa/manhwa-dao";
-import Manhwa from "src/models/manhwa";
+import Manhwa from "src/models/manhwa/manhwa";
 import { ManhwaService } from "./manhwa-service";
 
 export class ManhwaServiceImpl implements ManhwaService {
