@@ -9,7 +9,7 @@ import {
   Button,
   Text,
 } from "@chakra-ui/react";
-import Manhwa from "../../models/Manhwa";
+import Manhwa from "../../models/manhwa/manhwa";
 import GenreAttribute from "../genre-attribute/GenreAttribute";
 import styles from "./ManhwaCard.module.scss";
 
