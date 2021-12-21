@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useState } from "react";
+import { useState, useRef } from "react";
 import {
   Box,
   Heading,
@@ -9,11 +9,24 @@ import {
   MenuItem,
   Menu,
   IconButton,
+  Drawer,
+  DrawerBody,
+  DrawerHeader,
+  DrawerOverlay,
+  DrawerContent,
+  useDisclosure,
+  DrawerCloseButton,
+  Text,
+  VStack,
+  Center,
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
-import { HamburgerIcon } from "@chakra-ui/icons";
+import { HamburgerIcon, AddIcon } from "@chakra-ui/icons";
+
 export const Navbar: React.FC = () => {
   const navigate = useNavigate();
+  const btnRef = useRef();
+  const { isOpen, onOpen, onClose } = useDisclosure();
   const [opened, setOpened] = useState<boolean>(false);
   const handleHamburgerClick = () => {
     setOpened(!opened);
@@ -47,9 +60,30 @@ export const Navbar: React.FC = () => {
             >
               Request Manhwa
             </Button>
+            <IconButton
+              aria-label="Manage"
+              icon={<HamburgerIcon />}
+              colorScheme="teal"
+              onClick={onOpen}
+            />
           </HStack>
         </Flex>
       </Box>
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+        <DrawerOverlay />
+        <DrawerContent>
+          <DrawerCloseButton />
+          <Center>
+            <DrawerHeader borderBottomWidth="1px">{"<USERNAME>"}</DrawerHeader>
+          </Center>
+          <DrawerBody>
+            <VStack>
+              <Text fontSize="xl">Manage your lists</Text>
+              <Button leftIcon={<AddIcon />}>Create new list</Button>
+            </VStack>
+          </DrawerBody>
+        </DrawerContent>
+      </Drawer>
 
       {/* Mobile navbar */}
       <Box

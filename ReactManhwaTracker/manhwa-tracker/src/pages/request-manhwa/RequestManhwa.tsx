@@ -27,6 +27,7 @@ const RequestManhwa: React.FC = () => {
       }
     }
   `;
+
   useEffect(() => {
     // on mount side effects
     async function fectchGenres() {
@@ -42,6 +43,7 @@ const RequestManhwa: React.FC = () => {
 
     resolveGenres();
   }, []);
+
   return (
     <Box className="content">
       <Center>

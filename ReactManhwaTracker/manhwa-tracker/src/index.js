@@ -9,6 +9,7 @@ const client = new ApolloClient({
   uri: "http://localhost:8080",
   cache: new InMemoryCache(),
 });
+
 ReactDOM.render(
   <React.StrictMode>
     <ApolloProvider client={client}>
