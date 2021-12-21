@@ -6,13 +6,13 @@ import { ManhwaDAO } from "./manhwa-dao";
 import { Tag } from "src/models/manhwa/tag";
 import { Synonym } from "src/models/manhwa/synonym";
 
-export class ManhwaDAOImpl implements ManhwaDAO {
+export class ManhwaDAOImpl extends BaseDAO implements ManhwaDAO {
   private baseDAO: BaseDAO;
   private connection: Pool;
 
   constructor() {
-    this.baseDAO = new BaseDAO();
-    this.connection = this.baseDAO.getConnection();
+    super();
+    this.connection = getConnection();
   }
 
   async getAsync(id: number): Promise<Manhwa> {

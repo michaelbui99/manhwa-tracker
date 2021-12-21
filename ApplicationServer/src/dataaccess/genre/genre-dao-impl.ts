@@ -3,12 +3,11 @@ import { Genre } from "../../models/manhwa/Genre";
 import { BaseDAO } from "../base-dao";
 import { GenreDAO } from "./genre-dao";
 
-export class GenreDAOImpl implements GenreDAO {
-  baseDAO: BaseDAO;
+export class GenreDAOImpl extends BaseDAO implements GenreDAO {
   connection: Pool;
   constructor() {
-    this.baseDAO = new BaseDAO();
-    this.connection = this.baseDAO.getConnection();
+    super();
+    this.connection = this.getConnection();
   }
   async getAllAsync(): Promise<Genre[]> {
     const { rows } = await this.connection.query("SELECT * FROM genre ");
