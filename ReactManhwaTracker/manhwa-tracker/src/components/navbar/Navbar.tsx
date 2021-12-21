@@ -69,6 +69,7 @@ export const Navbar: React.FC = () => {
           </HStack>
         </Flex>
       </Box>
+
       <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay />
         <DrawerContent>

@@ -12,7 +12,7 @@ import SearchDirectory from "../../components/search-directory/SearchDirectory";
 import styles from "./Search.module.scss";
 import { Tag } from "../../models/Tag";
 import Manhwa from "../../models/Manhwa";
-import { Genre } from "../../models/Genre";
+import { Genre } from "../../models/manhwa/genre";
 import { gql, useApolloClient } from "@apollo/client";
 const Search: React.FC = () => {
   const [manhwas, setManhwas] = useState<Manhwa[]>([]);

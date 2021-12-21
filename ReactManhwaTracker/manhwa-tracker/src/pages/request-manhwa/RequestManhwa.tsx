@@ -14,7 +14,7 @@ import { useState, useEffect } from "react";
 import { gql, useApolloClient } from "@apollo/client";
 import { SourceMaterial } from "../../models/SourceMaterial";
 import { Status } from "../../models/Status";
-import { Genre } from "../../models/Genre";
+import { Genre } from "../../models/manhwa/genre";
 
 const RequestManhwa: React.FC = () => {
   const client = useApolloClient();
