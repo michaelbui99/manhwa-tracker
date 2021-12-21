@@ -10,10 +10,38 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import * as React from "react";
+import { useState, useEffect } from "react";
+import { gql, useApolloClient } from "@apollo/client";
 import { SourceMaterial } from "../../models/SourceMaterial";
 import { Status } from "../../models/Status";
+import { Genre } from "../../models/Genre";
 
 const RequestManhwa: React.FC = () => {
+  const client = useApolloClient();
+  const [genres, setGenres] = useState<Genre[]>();
+  const ALLGENRES = gql`
+    {
+      allGenres {
+        id
+        name
+      }
+    }
+  `;
+  useEffect(() => {
+    // on mount side effects
+    async function fectchGenres() {
+      const { data } = await client.query({ query: ALLGENRES });
+      const fetchedGenres = data.allGenres;
+      return fetchedGenres;
+    }
+    async function resolveGenres() {
+      const fetchedGenres = await fectchGenres();
+      setGenres(fetchedGenres);
+      console.log(genres);
+    }
+
+    resolveGenres();
+  }, []);
   return (
     <Box className="content">
       <Center>
@@ -23,6 +51,7 @@ const RequestManhwa: React.FC = () => {
           padding="1rem 2rem"
           borderRadius="10px"
         >
+          {/* Title */}
           <FormControl>
             <FormLabel htmlFor="title" fontSize="1.3rem">
               Title
@@ -36,6 +65,7 @@ const RequestManhwa: React.FC = () => {
             />
             <FormHelperText>Use the english title if possible</FormHelperText>
 
+            {/* Description */}
             <FormLabel htmlFor="description" fontSize="1.3rem" marginTop="2rem">
               Description
             </FormLabel>
@@ -44,6 +74,7 @@ const RequestManhwa: React.FC = () => {
               Use official description from creator / author if posssible
             </FormHelperText>
 
+            {/* Release Status */}
             <FormLabel fontSize="1.3rem" marginTop="2rem">
               Release Status
             </FormLabel>
@@ -56,6 +87,7 @@ const RequestManhwa: React.FC = () => {
               Choose current release status of the requested manhwa
             </FormHelperText>
 
+            {/* Source Material */}
             <FormLabel fontSize="1.3rem" marginTop="2rem">
               Source Material
             </FormLabel>
