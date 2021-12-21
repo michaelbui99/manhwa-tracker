@@ -1,8 +1,8 @@
-import { Status } from "./Status";
-import { SourceMaterial } from "./SourceMaterial";
-import { Tag } from "./Tag";
-import { Genre } from "./Genre";
-import { Synonym } from "./Synonym";
+import { Status } from "./status";
+import { SourceMaterial } from "./source-material";
+import { Tag } from "./tag";
+import { Genre } from "./genre";
+import { Synonym } from "./synonym";
 export default interface Manhwa {
   id: number;
   title: string;

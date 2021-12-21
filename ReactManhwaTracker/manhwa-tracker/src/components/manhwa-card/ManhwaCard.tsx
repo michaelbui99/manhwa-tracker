@@ -8,8 +8,9 @@ import {
   HStack,
   Button,
   Text,
+  Container,
 } from "@chakra-ui/react";
-import Manhwa from "../../models/Manhwa";
+import Manhwa from "../../models/manhwa/manhwa";
 import GenreAttribute from "../genre-attribute/GenreAttribute";
 import styles from "./ManhwaCard.module.scss";
 
@@ -68,7 +69,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
 
         {/* Description shown on hover */}
         {hover ? (
-          <Box
+          <Container
             width="300px"
             height="200px"
             position="absolute"
@@ -81,7 +82,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
             visibility={{ base: "hidden", md: "visible" }}
           >
             <Text textOverflow="ellipsis">{manhwa.description}</Text>
-          </Box>
+          </Container>
         ) : (
           ""
         )}

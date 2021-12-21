@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Box, Flex, Text, Badge } from "@chakra-ui/react";
-import { Genre } from "../../models/Genre";
+import { Genre } from "../../models/manhwa/genre";
 
 const GenreAttribute: React.FC<{ genre: Genre }> = ({ genre }) => {
   return (

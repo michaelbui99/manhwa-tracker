@@ -10,9 +10,9 @@ import {
 import { SearchIcon } from "@chakra-ui/icons";
 import SearchDirectory from "../../components/search-directory/SearchDirectory";
 import styles from "./Search.module.scss";
-import { Tag } from "../../models/Tag";
-import Manhwa from "../../models/Manhwa";
-import { Genre } from "../../models/Genre";
+import { Tag } from "../../models/manhwa/tag";
+import Manhwa from "../../models/manhwa/manhwa";
+import { Genre } from "../../models/manhwa/genre";
 import { gql, useApolloClient } from "@apollo/client";
 const Search: React.FC = () => {
   const [manhwas, setManhwas] = useState<Manhwa[]>([]);

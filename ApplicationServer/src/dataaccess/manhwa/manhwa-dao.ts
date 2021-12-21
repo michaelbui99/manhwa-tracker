@@ -1,4 +1,4 @@
-import Manhwa from "src/models/manhwa";
+import Manhwa from "src/models/manhwa/manhwa";
 
 export interface ManhwaDAO {
   getAsync(id: number): Promise<Manhwa>;
