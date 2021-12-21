@@ -2,6 +2,7 @@ import * as React from "react";
 import { Grid, GridItem } from "@chakra-ui/react";
 import Manhwa from "./../../models/Manhwa";
 import { ManhwaCard } from "../manhwa-card/ManhwaCard";
+
 const SearchDirectory: React.FC<{ manhwas: Manhwa[] }> = ({ manhwas }) => {
   return (
     <div>

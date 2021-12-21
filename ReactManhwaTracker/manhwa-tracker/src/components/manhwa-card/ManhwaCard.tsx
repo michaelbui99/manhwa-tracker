@@ -12,15 +12,19 @@ import {
 import Manhwa from "../../models/Manhwa";
 import GenreAttribute from "../genre-attribute/GenreAttribute";
 import styles from "./ManhwaCard.module.scss";
+
 export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
-  const navigate = useNavigate();
   const [hover, setHover] = useState<boolean>(false);
+  const navigate = useNavigate();
+
   const handleHover = () => {
     setHover(true);
   };
+
   const handleHoverEnd = () => {
     setHover(false);
   };
+
   return (
     <div onMouseOver={handleHover} onMouseLeave={handleHoverEnd}>
       <Box
