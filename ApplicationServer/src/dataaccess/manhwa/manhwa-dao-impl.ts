@@ -12,7 +12,7 @@ export class ManhwaDAOImpl extends BaseDAO implements ManhwaDAO {
 
   constructor() {
     super();
-    this.connection = getConnection();
+    this.connection = this.getConnection();
   }
 
   async getAsync(id: number): Promise<Manhwa> {

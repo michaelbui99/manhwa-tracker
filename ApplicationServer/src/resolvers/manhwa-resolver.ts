@@ -2,9 +2,8 @@ import "reflect-metadata";
 import Manhwa from "../models/manhwa/manhwa";
 import { Arg, Query, Resolver } from "type-graphql";
 import { ServiceFactory } from "../factories/service-factory";
-// TODO: Implement ManhwaService and use in Queries and Mutations
 
-@Resolver((of) => Manhwa)
+@Resolver()
 export class ManhwaResolver {
   private readonly manhwaService = ServiceFactory.getManhwaService();
 

@@ -1,14 +1,16 @@
 import { Pool } from "pg";
-import { Genre } from "../../models/manhwa/Genre";
+import { Genre } from "../../models/manhwa/genre";
 import { BaseDAO } from "../base-dao";
 import { GenreDAO } from "./genre-dao";
 
 export class GenreDAOImpl extends BaseDAO implements GenreDAO {
   connection: Pool;
+
   constructor() {
     super();
     this.connection = this.getConnection();
   }
+
   async getAllAsync(): Promise<Genre[]> {
     const { rows } = await this.connection.query("SELECT * FROM genre ");
     const genres: Genre[] = [];
