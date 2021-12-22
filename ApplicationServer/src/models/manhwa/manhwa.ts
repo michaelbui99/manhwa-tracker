@@ -3,10 +3,10 @@ import { SourceMaterial } from "./source-material";
 import { Tag } from "./tag";
 import { Genre } from "./genre";
 import { Synonym } from "./synonym";
-import { Field, ObjectType } from "type-graphql";
+import { Field, Int, ObjectType } from "type-graphql";
 @ObjectType()
 export default class Manhwa {
-  @Field()
+  @Field((type) => Int)
   id: number;
   @Field()
   title: string;
