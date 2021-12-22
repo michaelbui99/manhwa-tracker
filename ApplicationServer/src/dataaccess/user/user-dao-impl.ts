@@ -11,6 +11,26 @@ export class UserDAOImpl extends BaseDAO implements UserDAO {
     this.connection = this.getConnection();
   }
 
+  async getAllAsync(): Promise<User[]> {
+    try {
+      const { rows } = await this.connection.query("SELECT * FROM _USER");
+      const allUsers = [];
+
+      for (let i = 0; i < rows.length; i++) {
+        const user = new User();
+        user.id = rows[i].id;
+        user.email = rows[i].email;
+        user.password = rows[i].password;
+        allUsers.push(user);
+      }
+
+      return allUsers;
+    } catch (err) {
+      console.log(err);
+      throw err;
+    }
+  }
+
   async createAsync(email: string, password: string): Promise<User> {
     try {
       const { rows } = await this.connection.query(
