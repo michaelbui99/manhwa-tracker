@@ -47,22 +47,22 @@ public class Manhwa
     /// The total count of released chapters.
     /// </summary>
     public int ChapterCount { get; set; }
-    
+
     /// <summary>
     /// URL for the CoverImage if any exists.
     /// </summary>
     public string? CoverImage { get; set; }
-    
+
     /// <summary>
     /// All the tags that describes the Manhwa, e.g. Dungeon, Anti-Hero etc.
     /// </summary>
     public IEnumerable<Tag> Tags { get; set; }
-    
+
     /// <summary>
     /// All the genres of the Manwha, e.g. Fantasy, Action, Comedy etc.
     /// </summary>
     public IEnumerable<Genre> Genres { get; set; }
-    
+
     /// <summary>
     /// The alternative titles and titles in other languages for the Manhwa.
     /// </summary>
