@@ -1,13 +1,18 @@
+using GraphQL.Server.Ui.Playground;
 using ManhwaTrackerApplicationServer.Controllers;
+using ManhwaTrackerApplicationServer.Services;
+
+DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
+// TODO: Add Mutation type when at least one mutation has been defined
+builder.Services.AddGraphQLServer().AddQueryType<Query>();
+builder.Services.AddScoped<IManhwaService, ManhwaService>();
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>();
 
 var app = builder.Build();
 
@@ -28,7 +33,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.UseGraphQLPlayground();
+app.UseGraphQLPlayground(new PlaygroundOptions()
+{
+    GraphQLEndPoint = "/graphql"
+}, "/graphql-ui");
 
 // app.MapControllers();
 
