@@ -1,21 +1,28 @@
 ﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Repositories;
 
 namespace ManhwaTrackerApplicationServer.Services;
 
 public class ManhwaService : IManhwaService
 {
-    public Task<IEnumerable<Manhwa>> GetAllAsync()
+    private readonly IManhwaRepository _manhwaRepository;
+
+    public ManhwaService(IManhwaRepository manhwaRepository)
     {
-        throw new NotImplementedException();
+        _manhwaRepository = manhwaRepository;
+    }
+    public async Task<IEnumerable<Manhwa>> GetAllAsync()
+    {
+        return await _manhwaRepository.GetAllAsync();
     }
 
-    public Task<Manhwa> GetByIdAsync()
+    public async Task<Manhwa> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _manhwaRepository.GetByIdAsync(id);
     }
 
-    public Task<List<Manhwa>> GetByTitleAsync()
+    public async Task<IEnumerable<Manhwa>> GetByTitleAsync(string title)
     {
-        throw new NotImplementedException();
+        return await _manhwaRepository.GetByTitleAsync(title);
     }
 }

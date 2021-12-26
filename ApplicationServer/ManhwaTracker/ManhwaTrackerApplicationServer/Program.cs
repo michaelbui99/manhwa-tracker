@@ -1,6 +1,7 @@
 using GraphQL.Server.Ui.Playground;
 using ManhwaTrackerApplicationServer.Controllers;
 using ManhwaTrackerApplicationServer.DataAccess;
+using ManhwaTrackerApplicationServer.Repositories;
 using ManhwaTrackerApplicationServer.Services;
 using Microsoft.EntityFrameworkCore;
 
@@ -11,9 +12,11 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllers();
 // TODO: Add Mutation type when at least one mutation has been defined
-builder.Services.AddGraphQLServer().AddQueryType<Query>();
+builder.Services.AddGraphQLServer().AddQueryType<Query>()
+    .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
-builder.Services.AddScoped<ManhwaTrackerDbContext>();
+builder.Services.AddSingleton<ManhwaTrackerDbContext>();
+builder.Services.AddScoped<IManhwaRepository, ManhwaRepository>();
 
 builder.Services.AddEndpointsApiExplorer();
 

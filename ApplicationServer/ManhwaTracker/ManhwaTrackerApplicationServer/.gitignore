@@ -457,3 +457,6 @@ $RECYCLE.BIN/
 # Environment
 .env
 **/.env
+
+# DB
+Migrations
