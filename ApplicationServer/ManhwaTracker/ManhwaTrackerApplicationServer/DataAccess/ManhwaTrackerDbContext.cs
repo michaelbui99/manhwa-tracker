@@ -1,5 +1,6 @@
 ﻿using DotNetEnv;
 using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Models.ManhwaRequest;
 using ManhwaTrackerApplicationServer.Models.User;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
@@ -18,6 +19,7 @@ public class ManhwaTrackerDbContext : DbContext
          NpgsqlConnection.GlobalTypeMapper.MapEnum<Status>();
          NpgsqlConnection.GlobalTypeMapper.MapEnum<TitleLanguage>();
          NpgsqlConnection.GlobalTypeMapper.MapEnum<SourceMaterial>();
+         NpgsqlConnection.GlobalTypeMapper.MapEnum<RequestStatus>();
     }
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
@@ -33,6 +35,7 @@ public class ManhwaTrackerDbContext : DbContext
         modelBuilder.HasPostgresEnum<Status>();
         modelBuilder.HasPostgresEnum<SourceMaterial>();
         modelBuilder.HasPostgresEnum<TitleLanguage>();
+        modelBuilder.HasPostgresEnum<RequestStatus>();
         
         // Setting up composite primary keys
         modelBuilder.Entity<Synonym>().HasKey(s => new {s.Title, s.TitleLanguage});

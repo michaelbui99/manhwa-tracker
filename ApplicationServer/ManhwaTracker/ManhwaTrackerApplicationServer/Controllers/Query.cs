@@ -1,15 +1,19 @@
 ﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Services;
+using ManhwaTrackerApplicationServer.Services.Genre;
+using ManhwaTrackerApplicationServer.Services.Manhwa;
 
 namespace ManhwaTrackerApplicationServer.Controllers;
 
 public class Query
 {
   private readonly IManhwaService _manhwaService;
+  private readonly IGenreService _genreService;
 
-  public Query(IManhwaService manhwaService)
+  public Query(IManhwaService manhwaService, IGenreService genreService)
   {
     _manhwaService = manhwaService;
+    _genreService = genreService;
   }
 
   /// <summary>
@@ -43,5 +47,14 @@ public class Query
    public async Task<Manhwa> ManhwaById(int id)
    {
        return await _manhwaService.GetByIdAsync(id);
+   }
+
+    /// <summary>
+    /// Fetches a list of all Genres that any Manhwa can have.
+    /// </summary>
+    /// <returns>All genres</returns>
+   public async Task<IEnumerable<Genre>> AllGenres()
+   {
+       return await _genreService.GetAllAsync();
    }
 }

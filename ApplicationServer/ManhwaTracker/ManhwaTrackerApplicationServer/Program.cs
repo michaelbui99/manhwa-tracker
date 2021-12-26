@@ -2,7 +2,11 @@ using GraphQL.Server.Ui.Playground;
 using ManhwaTrackerApplicationServer.Controllers;
 using ManhwaTrackerApplicationServer.DataAccess;
 using ManhwaTrackerApplicationServer.Repositories;
+using ManhwaTrackerApplicationServer.Repositories.Genre;
+using ManhwaTrackerApplicationServer.Repositories.Manhwa;
 using ManhwaTrackerApplicationServer.Services;
+using ManhwaTrackerApplicationServer.Services.Genre;
+using ManhwaTrackerApplicationServer.Services.Manhwa;
 using Microsoft.EntityFrameworkCore;
 
 DotNetEnv.Env.Load();
@@ -17,6 +21,8 @@ builder.Services.AddGraphQLServer().AddQueryType<Query>()
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
 builder.Services.AddSingleton<ManhwaTrackerDbContext>();
 builder.Services.AddScoped<IManhwaRepository, ManhwaRepository>();
+builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+builder.Services.AddScoped<IGenreService, GenreService>();
 
 builder.Services.AddEndpointsApiExplorer();
 

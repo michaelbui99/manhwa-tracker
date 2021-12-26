@@ -1,6 +1,4 @@
-﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
-
-namespace ManhwaTrackerApplicationServer.Services;
+﻿namespace ManhwaTrackerApplicationServer.Services.Manhwa;
 
 /// <summary>
 /// Provides operations for fetching, creation, deletion and updating of Manhwa
@@ -11,14 +9,14 @@ public interface IManhwaService
    /// Fetches a list of all <c>Manhwa</c> registered in the system
    /// </summary>
    /// <returns>All registered Manhwas</returns>
-   public Task<IEnumerable<Manhwa>> GetAllAsync();
+   public Task<IEnumerable<Models.Manhwa.Manhwa>> GetAllAsync();
    
    /// <summary>
    /// Fetches a single <c>Manhwa</c> by its <c>Id</c>
    /// </summary>
    /// <param name="id">id of the manhwa</param>
    /// <returns>Single Manhwa with the given id</returns>
-   public Task<Manhwa> GetByIdAsync(int id);
+   public Task<Models.Manhwa.Manhwa> GetByIdAsync(int id);
    
    /// <summary>
    /// Fetches a list of <c>Manhwa</c> by title.
@@ -29,5 +27,5 @@ public interface IManhwaService
    /// </remarks>
    /// <param name="title">title that will be used for generating the list of manhwas</param>
    /// <returns>All manhwa where Title contains the <c>title</c> param</returns>
-   public Task<IEnumerable<Manhwa>> GetByTitleAsync(string title);
+   public Task<IEnumerable<Models.Manhwa.Manhwa>> GetByTitleAsync(string title);
 }

@@ -1,7 +1,9 @@
-﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
-using ManhwaTrackerApplicationServer.Repositories;
+﻿using ManhwaTrackerApplicationServer.Repositories.Manhwa;
 
-namespace ManhwaTrackerApplicationServer.Services;
+namespace ManhwaTrackerApplicationServer.Services.Manhwa;
+
+using ManhwaTrackerApplicationServer.Repositories;
+using ManhwaTrackerApplicationServer.Models.Manhwa;
 
 /// <inheritdoc cref="IManhwaService"/>
 public class ManhwaService : IManhwaService
