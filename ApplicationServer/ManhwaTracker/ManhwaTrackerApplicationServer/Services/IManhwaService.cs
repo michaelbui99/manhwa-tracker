@@ -16,7 +16,7 @@ public interface IManhwaService
    /// <summary>
    /// Fetches a single <c>Manhwa</c> by its <c>Id</c>
    /// </summary>
-   /// <param name="id"></param>
+   /// <param name="id">id of the manhwa</param>
    /// <returns>Single Manhwa with the given id</returns>
    public Task<Manhwa> GetByIdAsync(int id);
    
