@@ -1,26 +1,26 @@
 :root {
-  --main-bg-color: rgb(10, 22, 37);
+    --main-bg-color: rgb(10, 22, 37);
 }
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
 }
 body {
-  box-sizing: border-box;
-  background-color: rgb(237, 241, 245);
-  font-family: "Roboto", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    background-color: rgb(237, 241, 245);
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
 }
 
 .content {
-  padding: 1rem 5rem;
+    padding: 1rem 5rem;
 }
