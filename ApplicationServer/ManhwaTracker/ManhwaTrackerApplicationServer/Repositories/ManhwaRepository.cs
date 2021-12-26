@@ -1,29 +1,30 @@
-﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
+﻿using ManhwaTrackerApplicationServer.DataAccess;
+using ManhwaTrackerApplicationServer.Models.Manhwa;
 using Microsoft.EntityFrameworkCore;
 
 namespace ManhwaTrackerApplicationServer.Repositories;
 
 public class ManhwaRepository : IManhwaRepository
 {
-    private readonly DbContext _dbContext;
+    private readonly ManhwaTrackerDbContext _dbContext;
 
-    public ManhwaRepository(DbContext dbContext)
+    public ManhwaRepository(ManhwaTrackerDbContext dbContext)
     {
         _dbContext = dbContext;
     }
-    
-    public Task<IEnumerable<Manhwa>> GetAllAsync()
+
+    public async Task<IEnumerable<Manhwa>> GetAllAsync()
     {
-        throw new NotImplementedException();
+        return await _dbContext.Manhwas.ToListAsync();
     }
 
-    public Task<Manhwa> GetByIdAsync(int id)
+    public async Task<Manhwa> GetByIdAsync(int id)
     {
-        throw new NotImplementedException();
+        return await _dbContext.Manhwas.FirstOrDefaultAsync(manhwa => manhwa.Id == id);
     }
 
-    public Task<IEnumerable<Manhwa>> GetByTitleAsync()
+    public async Task<IEnumerable<Manhwa>> GetByTitleAsync(string title)
     {
-        throw new NotImplementedException();
+        return await _dbContext.Manhwas.Where(manhwa => manhwa.Title.ToLower().Contains(title.ToLower())).ToListAsync();
     }
 }

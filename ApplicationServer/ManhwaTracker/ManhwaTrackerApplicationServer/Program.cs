@@ -13,7 +13,7 @@ builder.Services.AddControllers();
 // TODO: Add Mutation type when at least one mutation has been defined
 builder.Services.AddGraphQLServer().AddQueryType<Query>();
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
-builder.Services.AddScoped<DbContext, ManhwaTrackerDbContext>();
+builder.Services.AddScoped<ManhwaTrackerDbContext>();
 
 builder.Services.AddEndpointsApiExplorer();
 
