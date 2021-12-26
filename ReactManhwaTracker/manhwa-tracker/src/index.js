@@ -6,17 +6,17 @@ import "./index.css";
 import App from "./App";
 
 const client = new ApolloClient({
-  uri: "http://localhost:8080",
-  cache: new InMemoryCache(),
+    uri: "https://localhost:8080/graphql",
+    cache: new InMemoryCache(),
 });
 
 ReactDOM.render(
-  <React.StrictMode>
-    <ApolloProvider client={client}>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
-    </ApolloProvider>
-  </React.StrictMode>,
-  document.getElementById("root")
+    <React.StrictMode>
+        <ApolloProvider client={client}>
+            <ChakraProvider>
+                <App />
+            </ChakraProvider>
+        </ApolloProvider>
+    </React.StrictMode>,
+    document.getElementById("root")
 );
