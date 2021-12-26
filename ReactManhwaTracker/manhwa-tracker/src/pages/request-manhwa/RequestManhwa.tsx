@@ -1,13 +1,13 @@
 import {
-  Box,
-  Center,
-  FormControl,
-  FormHelperText,
-  FormLabel,
-  Input,
-  Select,
-  Textarea,
-  VStack,
+    Box,
+    Center,
+    FormControl,
+    FormHelperText,
+    FormLabel,
+    Input,
+    Select,
+    Textarea,
+    VStack,
 } from "@chakra-ui/react";
 import * as React from "react";
 import { useState, useEffect } from "react";
@@ -15,97 +15,120 @@ import { gql, useApolloClient } from "@apollo/client";
 import { SourceMaterial } from "../../models/manhwa/source-material";
 import { Status } from "../../models/manhwa/status";
 import { Genre } from "../../models/manhwa/genre";
+import { Tag } from "../../models/manhwa/tag";
 
 const RequestManhwa: React.FC = () => {
-  const client = useApolloClient();
-  const [genres, setGenres] = useState<Genre[]>();
-  const ALLGENRES = gql`
-    {
-      allGenres {
-        id
-        name
-      }
-    }
-  `;
+    const client = useApolloClient();
+    const [genres, setGenres] = useState<Genre[]>([]);
+    const [tags, setTags] = useState<Tag[]>([]);
+    const GENRES_AND_TAGS = gql`
+        {
+            allGenres {
+                id
+                name
+            }
+            allTags {
+                id
+                name
+            }
+        }
+    `;
 
-  useEffect(() => {
-    // on mount side effects
-    async function fectchGenres() {
-      const { data } = await client.query({ query: ALLGENRES });
-      const fetchedGenres = data.allGenres;
-      return fetchedGenres;
-    }
-    async function resolveGenres() {
-      const fetchedGenres = await fectchGenres();
-      setGenres(fetchedGenres);
-      console.log(genres);
-    }
+    useEffect(() => {
+        // on mount side effects
+        async function fetchGenresAndTags() {
+            const { data } = await client.query({ query: GENRES_AND_TAGS });
+            const fetchedGenres = data.allGenres;
+            const fetchedTags = data.allTags;
+            return { genres: fetchedGenres, tags: fetchedTags };
+        }
+        async function resolveGenresAndTags() {
+            const data = await fetchGenresAndTags();
+            console.log(data);
+            const fetchedGenres = data.genres;
+            const fetchedTags = data.tags;
+            setGenres(fetchedGenres);
+            setTags(fetchedTags);
+        }
 
-    resolveGenres();
-  }, []);
+        resolveGenresAndTags();
+    }, []);
 
-  return (
-    <Box className="content">
-      <Center>
-        <Box
-          width={{ base: "250px", md: "500px" }}
-          boxShadow="lg"
-          padding="1rem 2rem"
-          borderRadius="10px"
-        >
-          {/* Title */}
-          <FormControl>
-            <FormLabel htmlFor="title" fontSize="1.3rem">
-              Title
-            </FormLabel>
-            <Input
-              id="title"
-              type="text"
-              variant="filled"
-              boxShadow="md"
-              required={true}
-            />
-            <FormHelperText>Use the english title if possible</FormHelperText>
+    return (
+        <Box className="content">
+            <Center>
+                <Box
+                    width={{ base: "250px", md: "500px" }}
+                    boxShadow="lg"
+                    padding="1rem 2rem"
+                    borderRadius="10px"
+                >
+                    {/* Title */}
+                    <FormControl>
+                        <FormLabel htmlFor="title" fontSize="1.3rem">
+                            Title
+                        </FormLabel>
+                        <Input
+                            id="title"
+                            type="text"
+                            variant="filled"
+                            boxShadow="md"
+                            required={true}
+                        />
+                        <FormHelperText>
+                            Use the english title if possible
+                        </FormHelperText>
 
-            {/* Description */}
-            <FormLabel htmlFor="description" fontSize="1.3rem" marginTop="2rem">
-              Description
-            </FormLabel>
-            <Textarea variant="filled" boxShadow="md" />
-            <FormHelperText>
-              Use official description from creator / author if posssible
-            </FormHelperText>
+                        {/* Description */}
+                        <FormLabel
+                            htmlFor="description"
+                            fontSize="1.3rem"
+                            marginTop="2rem"
+                        >
+                            Description
+                        </FormLabel>
+                        <Textarea variant="filled" boxShadow="md" />
+                        <FormHelperText>
+                            Use official description from creator / author if
+                            posssible
+                        </FormHelperText>
 
-            {/* Release Status */}
-            <FormLabel fontSize="1.3rem" marginTop="2rem">
-              Release Status
-            </FormLabel>
-            <Select variant="filled" boxShadow="md">
-              {Object.values(Status).map((status) => (
-                <option value={status}>{status}</option>
-              ))}
-            </Select>
-            <FormHelperText>
-              Choose current release status of the requested manhwa
-            </FormHelperText>
+                        {/* Release Status */}
+                        <FormLabel fontSize="1.3rem" marginTop="2rem">
+                            Release Status
+                        </FormLabel>
+                        <Select variant="filled" boxShadow="md">
+                            {Object.values(Status).map((status) => (
+                                <option value={status}>{status}</option>
+                            ))}
+                        </Select>
+                        <FormHelperText>
+                            Choose current release status of the requested
+                            manhwa
+                        </FormHelperText>
 
-            {/* Source Material */}
-            <FormLabel fontSize="1.3rem" marginTop="2rem">
-              Source Material
-            </FormLabel>
-            <Select variant="filled" boxShadow="md">
-              {Object.values(SourceMaterial).map((sourceMaterial) => (
-                <option value={sourceMaterial}>{sourceMaterial}</option>
-              ))}
-            </Select>
-            <FormHelperText>
-              Choose what the source material of the manhwa is based on
-            </FormHelperText>
-          </FormControl>
+                        {/* Source Material */}
+                        <FormLabel fontSize="1.3rem" marginTop="2rem">
+                            Source Material
+                        </FormLabel>
+                        <Select variant="filled" boxShadow="md">
+                            {Object.values(SourceMaterial).map(
+                                (sourceMaterial) => (
+                                    <option value={sourceMaterial}>
+                                        {sourceMaterial}
+                                    </option>
+                                )
+                            )}
+                        </Select>
+                        <FormHelperText>
+                            Choose what the source material of the manhwa is
+                            based on
+                        </FormHelperText>
+                    </FormControl>
+                </Box>
+            </Center>
         </Box>
-      </Center>
-    </Box>
-  );
+    );
 };
 
 export default RequestManhwa;

@@ -18,21 +18,22 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllers();
-// TODO: Add Mutation type when at least one mutation has been defined
-builder.Services.AddGraphQLServer().AddQueryType<Query>()
-    .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
 builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder => { builder.WithOrigins(Env.GetString("WEBAPP_IP")); });
 });
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
-builder.Services.AddSingleton<ManhwaTrackerDbContext>();
+builder.Services.AddTransient<ManhwaTrackerDbContext>();
 builder.Services.AddScoped<IManhwaRepository, ManhwaRepository>();
 builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<ITagService, TagService>();
+builder.Services.AddScoped<Query>();
 
+// TODO: Add Mutation type when at least one mutation has been defined
+builder.Services.AddGraphQLServer().AddQueryType<Query>()
+    .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
 builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();

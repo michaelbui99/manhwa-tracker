@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 public class TagRepository : ITagRepository
 {
     private readonly ManhwaTrackerDbContext _dbContext;
+    private readonly NLog.Logger _logger = NLog.LogManager.GetCurrentClassLogger();
 
     public TagRepository(ManhwaTrackerDbContext dbContext)
     {
@@ -14,6 +15,7 @@ public class TagRepository : ITagRepository
 
     public async Task<IEnumerable<Models.Manhwa.Tag>> GetAllAsync()
     {
-        return await _dbContext.Tags.ToListAsync();
+        var tags = await _dbContext.Tags.ToListAsync();
+        return tags;
     }
 }

@@ -9,6 +9,7 @@ using ManhwaTrackerApplicationServer.Models.Manhwa;
 public class GenreRepository : IGenreRepository
 {
     private readonly ManhwaTrackerDbContext _dbContext;
+    private readonly NLog.Logger _logger = NLog.LogManager.GetCurrentClassLogger();
 
     public GenreRepository(ManhwaTrackerDbContext dbContext)
     {
@@ -18,6 +19,7 @@ public class GenreRepository : IGenreRepository
     /// <inheritdoc cref="IGenreRepository.GetAllAsync"/>
     public async Task<IEnumerable<Genre>> GetAllAsync()
     {
-        return await _dbContext.Genres.ToListAsync();
+        var genres =  await _dbContext.Genres.ToListAsync();
+        return genres;
     }
 }

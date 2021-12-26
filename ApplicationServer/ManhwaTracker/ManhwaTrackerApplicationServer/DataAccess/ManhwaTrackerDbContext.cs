@@ -14,7 +14,7 @@ public class ManhwaTrackerDbContext : DbContext
     public DbSet<Tag> Tags { get; set; }
     public DbSet<User> Users { get; set; }
 
-    static ManhwaTrackerDbContext()
+     public ManhwaTrackerDbContext()
     {
          NpgsqlConnection.GlobalTypeMapper.MapEnum<Status>();
          NpgsqlConnection.GlobalTypeMapper.MapEnum<TitleLanguage>();
