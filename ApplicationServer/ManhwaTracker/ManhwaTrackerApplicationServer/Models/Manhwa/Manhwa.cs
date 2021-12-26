@@ -1,4 +1,6 @@
-﻿namespace ManhwaTrackerApplicationServer.Models.Manhwa;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ManhwaTrackerApplicationServer.Models.Manhwa;
 
 /// <summary>
 /// Manhwa (Korean Comic) that can be added to user created lists.
@@ -8,6 +10,7 @@ public class Manhwa
     /// <summary>
     /// Internal ID of the Manhwa
     /// </summary>
+    [Key]
     public int Id { get; set; }
 
     /// <summary>

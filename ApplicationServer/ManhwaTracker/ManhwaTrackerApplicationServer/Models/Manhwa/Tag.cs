@@ -1,7 +1,10 @@
-﻿namespace ManhwaTrackerApplicationServer.Models.Manhwa;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ManhwaTrackerApplicationServer.Models.Manhwa;
 
 public class Tag
 {
+    [Key]
     public int Id { get; set; }
     public string? Name { get; set; }
     
