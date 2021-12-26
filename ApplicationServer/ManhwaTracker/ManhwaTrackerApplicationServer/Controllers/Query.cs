@@ -2,6 +2,7 @@
 using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
+using ManhwaTrackerApplicationServer.Services.Tag;
 
 namespace ManhwaTrackerApplicationServer.Controllers;
 
@@ -9,11 +10,13 @@ public class Query
 {
   private readonly IManhwaService _manhwaService;
   private readonly IGenreService _genreService;
+  private readonly ITagService _tagService;
 
-  public Query(IManhwaService manhwaService, IGenreService genreService)
+  public Query(IManhwaService manhwaService, IGenreService genreService, ITagService tagService)
   {
     _manhwaService = manhwaService;
     _genreService = genreService;
+    _tagService = tagService;
   }
 
   /// <summary>
@@ -57,4 +60,9 @@ public class Query
    {
        return await _genreService.GetAllAsync();
    }
+
+    public async Task<IEnumerable<Tag>> AllTags()
+    {
+        return await _tagService.GetAllAsync();
+    }
 }

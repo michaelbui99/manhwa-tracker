@@ -4,9 +4,11 @@ using ManhwaTrackerApplicationServer.DataAccess;
 using ManhwaTrackerApplicationServer.Repositories;
 using ManhwaTrackerApplicationServer.Repositories.Genre;
 using ManhwaTrackerApplicationServer.Repositories.Manhwa;
+using ManhwaTrackerApplicationServer.Repositories.Tag;
 using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
+using ManhwaTrackerApplicationServer.Services.Tag;
 using Microsoft.EntityFrameworkCore;
 
 DotNetEnv.Env.Load();
@@ -23,6 +25,8 @@ builder.Services.AddSingleton<ManhwaTrackerDbContext>();
 builder.Services.AddScoped<IManhwaRepository, ManhwaRepository>();
 builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IGenreService, GenreService>();
+builder.Services.AddScoped<ITagRepository, TagRepository>();
+builder.Services.AddScoped<ITagService, TagService>();
 
 builder.Services.AddEndpointsApiExplorer();
 
