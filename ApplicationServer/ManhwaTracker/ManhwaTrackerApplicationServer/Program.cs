@@ -1,3 +1,4 @@
+using DotNetEnv;
 using GraphQL.Server.Ui.Playground;
 using ManhwaTrackerApplicationServer.Controllers;
 using ManhwaTrackerApplicationServer.DataAccess;
@@ -20,6 +21,10 @@ builder.Services.AddControllers();
 // TODO: Add Mutation type when at least one mutation has been defined
 builder.Services.AddGraphQLServer().AddQueryType<Query>()
     .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(builder => { builder.WithOrigins(Env.GetString("WEBAPP_IP")); });
+});
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
 builder.Services.AddSingleton<ManhwaTrackerDbContext>();
 builder.Services.AddScoped<IManhwaRepository, ManhwaRepository>();
@@ -39,6 +44,8 @@ if (app.Environment.IsDevelopment())
     // app.UseSwaggerUI();
 }
 
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
+
 app.UseRouting().UseEndpoints(endpoints =>
 {
     endpoints.MapGraphQL();
@@ -47,7 +54,9 @@ app.UseRouting().UseEndpoints(endpoints =>
 
 app.UseHttpsRedirection();
 
+
 app.UseAuthorization();
+
 
 app.UseGraphQLPlayground(new PlaygroundOptions()
 {
