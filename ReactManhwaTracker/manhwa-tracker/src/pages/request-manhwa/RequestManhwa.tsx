@@ -12,6 +12,7 @@ import {
     UnorderedList,
     ListItem,
     Button,
+    Flex,
 } from "@chakra-ui/react";
 import * as React from "react";
 import { useState, useEffect } from "react";
@@ -20,6 +21,8 @@ import { SourceMaterial } from "../../models/manhwa/source-material";
 import { Status } from "../../models/manhwa/status";
 import { Genre } from "../../models/manhwa/genre";
 import { Tag } from "../../models/manhwa/tag";
+import { Synonym } from "../../models/manhwa/synonym";
+import { TitleLanguage } from "../../models/manhwa/title-language";
 
 // TODO: Refactor the form inputs into seperate components for better readability
 // TODO: Refactor into multi stage/step form to reduce how much the user have to scroll
@@ -30,10 +33,21 @@ const RequestManhwa: React.FC = () => {
     const [tags, setTags] = useState<Tag[]>([]);
     const [addedGenres, setAddedGenres] = useState<Genre[]>([]);
     const [addedTags, setAddedTags] = useState<Genre[]>([]);
+    const [addedSynonyms, setAddedSynonyms] = useState<Synonym[]>([]);
     const [selectedGenre, setSelectedGenre] = useState<Genre>();
     const [selectedTag, setSelectedTag] = useState<Tag>();
+    const [selectedSynonymLanguage, setSelectedSynonymLanugage] =
+        useState<TitleLanguage>();
+    const [synonymTitle, setSynonymTitle] = useState<null | string>();
     const [releaseDate, setReleaseDate] = useState<Date>(new Date());
     const [endDate, setEndDate] = useState<null | Date>(null);
+    const [title, setTitle] = useState<null | string>();
+    const [description, setDescription] = useState<null | string>();
+    const [coverImage, setCoverImage] = useState<null | string>();
+    const [sourceMaterial, setSourceMaterial] =
+        useState<SourceMaterial | null>();
+    const [releaseStatus, setReleaseStatus] = useState<Status | null>();
+
     const GENRES_AND_TAGS = gql`
         {
             allGenres {
@@ -80,6 +94,8 @@ const RequestManhwa: React.FC = () => {
         }
     };
 
+    const sendRequest = () => {};
+
     return (
         <Box className="content">
             <Center>
@@ -100,6 +116,7 @@ const RequestManhwa: React.FC = () => {
                             variant="filled"
                             boxShadow="md"
                             required={true}
+                            onInput={(e) => setTitle(e.currentTarget.value)}
                         />
                         <FormHelperText>
                             Use the english title if possible
@@ -113,7 +130,13 @@ const RequestManhwa: React.FC = () => {
                         >
                             Description
                         </FormLabel>
-                        <Textarea variant="filled" boxShadow="md" />
+                        <Textarea
+                            variant="filled"
+                            boxShadow="md"
+                            onChange={(e) =>
+                                setDescription(e.currentTarget.value)
+                            }
+                        />
                         <FormHelperText>
                             Use official description from creator / author if
                             posssible
@@ -123,7 +146,15 @@ const RequestManhwa: React.FC = () => {
                         <FormLabel fontSize="1.3rem" marginTop="2rem">
                             Release Status
                         </FormLabel>
-                        <Select variant="filled" boxShadow="md">
+                        <Select
+                            variant="filled"
+                            boxShadow="md"
+                            onChange={(e) =>
+                                setReleaseStatus(
+                                    e.currentTarget.value as Status
+                                )
+                            }
+                        >
                             <option disabled selected>
                                 -- select an option --
                             </option>
@@ -140,7 +171,15 @@ const RequestManhwa: React.FC = () => {
                         <FormLabel fontSize="1.3rem" marginTop="2rem">
                             Source Material
                         </FormLabel>
-                        <Select variant="filled" boxShadow="md">
+                        <Select
+                            variant="filled"
+                            boxShadow="md"
+                            onChange={(e) =>
+                                setSourceMaterial(
+                                    e.currentTarget.value as SourceMaterial
+                                )
+                            }
+                        >
                             <option disabled selected>
                                 -- select an option --
                             </option>
@@ -155,6 +194,36 @@ const RequestManhwa: React.FC = () => {
                         <FormHelperText>
                             Choose what the source material of the manhwa is
                             based on
+                        </FormHelperText>
+
+                        {/* Release date */}
+                        <FormLabel fontSize="1.3rem" marginTop="2rem">
+                            Release date
+                        </FormLabel>
+                        <Input
+                            type="date"
+                            onChange={(e: any) =>
+                                setReleaseDate(e.target.valueAsDate)
+                            }
+                        />
+                        <FormHelperText>
+                            Pick the date of when the first chapter of the
+                            Manhwa was released
+                        </FormHelperText>
+
+                        {/* End date */}
+                        <FormLabel fontSize="1.3rem" marginTop="2rem">
+                            End date
+                        </FormLabel>
+                        <Input
+                            type="date"
+                            onChange={(e: any) =>
+                                setEndDate(e.target.valueAsDate)
+                            }
+                        />
+                        <FormHelperText>
+                            Pick the date of when the last chapter of the Manhwa
+                            was released if any
                         </FormHelperText>
 
                         {/* Genres */}
@@ -257,35 +326,39 @@ const RequestManhwa: React.FC = () => {
                             then press "Add"
                         </FormHelperText>
 
-                        {/* Release date */}
-                        <FormLabel fontSize="1.3rem" marginTop="2rem">
-                            Release date
+                        {/* Cover image */}
+                        <FormLabel
+                            htmlFor="description"
+                            fontSize="1.3rem"
+                            marginTop="2rem"
+                        >
+                            Cover Image URL
                         </FormLabel>
                         <Input
-                            type="date"
-                            onChange={(e: any) =>
-                                setReleaseDate(e.target.valueAsDate)
+                            id="title"
+                            type="text"
+                            variant="filled"
+                            boxShadow="md"
+                            required={true}
+                            onInput={(e) =>
+                                setCoverImage(e.currentTarget.value)
                             }
                         />
-                        <FormHelperText>
-                            Pick the date of when the first chapter of the
-                            Manhwa was released
-                        </FormHelperText>
 
-                        {/* End date */}
-                        <FormLabel fontSize="1.3rem" marginTop="2rem">
-                            End date
-                        </FormLabel>
-                        <Input
-                            type="date"
-                            onChange={(e: any) =>
-                                setEndDate(e.target.valueAsDate)
-                            }
-                        />
-                        <FormHelperText>
-                            Pick the date of when the last chapter of the Manhwa
-                            was released if any
-                        </FormHelperText>
+                        <Flex
+                            flexDirection="row"
+                            justifyContent="space-between"
+                            marginTop="2rem"
+                        >
+                            <Button>Cancel</Button>
+                            <Button
+                                type="submit"
+                                onClick={sendRequest}
+                                colorScheme="teal"
+                            >
+                                Send Request
+                            </Button>
+                        </Flex>
                     </FormControl>
                 </Box>
             </Center>
