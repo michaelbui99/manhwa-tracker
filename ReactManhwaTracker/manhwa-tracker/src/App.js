@@ -4,19 +4,21 @@ import Search from "./pages/search/Search";
 import { Navbar } from "./components/navbar/Navbar";
 import RequestManhwa from "./pages/request-manhwa/RequestManhwa";
 import "./App.css";
+import ManhwaDetails from "./pages/manhwa-details/ManhwaDetails";
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar></Navbar>
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/search" element={<Search />} />
-          <Route path="/requestmanhwa" element={<RequestManhwa />} />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
+    return (
+        <BrowserRouter>
+            <div className="App">
+                <Navbar></Navbar>
+                <Routes>
+                    <Route index element={<Home />} />
+                    <Route path="/search" element={<Search />} />
+                    <Route path="/requestmanhwa" element={<RequestManhwa />} />
+                    <Route path="/manhwa/:id" element={<ManhwaDetails />} />
+                </Routes>
+            </div>
+        </BrowserRouter>
+    );
 }
 
 export default App;
