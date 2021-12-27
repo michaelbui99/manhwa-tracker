@@ -7,6 +7,15 @@ using ManhwaTrackerApplicationServer.Models.Manhwa;
 /// </summary>
 public static class ManhwaModelValidator 
 {
+    /// <summary>
+    /// Validates a <c>Manhwa</c> instance
+    /// </summary>
+    /// <param name="manhwa">The <c>Manhwa</c> to be validated</param>
+    /// <exception cref="ArgumentException"><c>manhwa</c> is null</exception>
+    /// <exception cref="ArgumentException"><c>Title</c> is null or empty string</exception>
+    /// <exception cref="ArgumentException"><c>ChapterCount</c> is negative, i.e. less than 0</exception>
+    /// <exception cref="ArgumentException">contains no genres</exception>
+    /// <exception cref="ArgumentException">contains no tags</exception>
     public static void ValidateManhwaModel(Manhwa manhwa)
     {
         if (manhwa == null)
