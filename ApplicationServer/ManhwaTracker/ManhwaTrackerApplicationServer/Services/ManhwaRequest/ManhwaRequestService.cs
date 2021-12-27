@@ -1,5 +1,6 @@
 ﻿using ManhwaTrackerApplicationServer.Models.ManhwaRequest;
 using ManhwaTrackerApplicationServer.Models.User;
+using ManhwaTrackerApplicationServer.Models.Validation;
 using ManhwaTrackerApplicationServer.Repositories.ManhwaRequest;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
 
@@ -34,36 +35,12 @@ public class ManhwaRequestService : IManhwaRequestService
     public async Task<Models.ManhwaRequest.ManhwaRequest> CreateAsync(Models.ManhwaRequest.ManhwaRequest request)
     {
         // TODO: Add check for if Manhwa has already been registered before
-        // TODO: Move validation to a separate validator or make custom ValidationAttributes
         if (request == null)
         {
             throw new ArgumentException("Invalid request. Request cannot be null");
         }
-
-        if (request.Manhwa == null)
-        {
-            throw new ArgumentException("Invalid request. Manhwa being requested cannot be null");
-        }
-
-        if (string.IsNullOrEmpty(request.Manhwa.Title))
-        {
-            throw new ArgumentException("Invalid request. Manhwa must have an title");
-        }
-
-        if (request.Manhwa.ChapterCount < 0)
-        {
-            throw new ArgumentException("Invalid request. Chapter count of Manhwa must be 0 or greater");
-        }
-
-        if (!request.Manhwa.Genres.Any())
-        {
-            throw new ArgumentException("Invalid request. Manhwa must have at least 1 genre");
-        }
-
-        if (!request.Manhwa.Tags.Any())
-        {
-            throw new ArgumentException("Invalid request. Manhwa must have at least 1 tag");
-        }
+        
+        ManhwaModelValidator.ValidateManhwaModel(request.Manhwa);
 
         var createdRequest = await _requestRepository.CreateAsync(request);
         if (createdRequest == null)
