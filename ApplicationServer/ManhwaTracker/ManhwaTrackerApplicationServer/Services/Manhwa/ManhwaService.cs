@@ -35,4 +35,9 @@ public class ManhwaService : IManhwaService
     {
         return await _manhwaRepository.GetByTitleAsync(title);
     }
+
+    public Task<Manhwa> CreateAsync(Manhwa manhwa)
+    {
+        throw new NotImplementedException();
+    }
 }

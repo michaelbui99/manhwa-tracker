@@ -13,6 +13,7 @@ public class ManhwaTrackerDbContext : DbContext
     public DbSet<Genre> Genres { get; set; }
     public DbSet<Tag> Tags { get; set; }
     public DbSet<User> Users { get; set; }
+    public DbSet<ManhwaRequest> ManhwaRequests { get; set; }
 
      public ManhwaTrackerDbContext()
     {

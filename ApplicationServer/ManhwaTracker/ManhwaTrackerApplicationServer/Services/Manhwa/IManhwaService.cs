@@ -28,4 +28,6 @@ public interface IManhwaService
    /// <param name="title">title that will be used for generating the list of manhwas</param>
    /// <returns>All manhwa where Title contains the <c>title</c> param</returns>
    public Task<IEnumerable<Models.Manhwa.Manhwa>> GetByTitleAsync(string title);
+
+   public Task<Models.Manhwa.Manhwa> CreateAsync(Models.Manhwa.Manhwa manhwa);
 }
