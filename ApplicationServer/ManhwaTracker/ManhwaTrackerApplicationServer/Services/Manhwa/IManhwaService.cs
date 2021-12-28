@@ -28,4 +28,16 @@ public interface IManhwaService
    /// <param name="title">title that will be used for generating the list of manhwas</param>
    /// <returns>All manhwa where Title contains the <c>title</c> param</returns>
    public Task<IEnumerable<Models.Manhwa.Manhwa>> GetByTitleAsync(string title);
+
+   /// <summary>
+   /// Registers a new Manhwa in the system. 
+   /// </summary>
+   /// <param name="manhwa">Manhwa to be created</param>
+   /// <returns>the created Manhwa</returns>
+    /// <exception cref="ArgumentException"><c>manhwa</c> is null</exception>
+    /// <exception cref="ArgumentException"><c>Title</c> is null or empty string</exception>
+    /// <exception cref="ArgumentException"><c>ChapterCount</c> is negative, i.e. less than 0</exception>
+    /// <exception cref="ArgumentException">contains no genres</exception>
+    /// <exception cref="ArgumentException">contains no tags</exception>
+   public Task<Models.Manhwa.Manhwa> CreateAsync(Models.Manhwa.Manhwa manhwa);
 }

@@ -35,4 +35,11 @@ public class ManhwaRepository : IManhwaRepository
             .Include(manhwa => manhwa.Synonyms).Where(manhwa => manhwa.Title.ToLower().Contains(title.ToLower()))
             .ToListAsync();
     }
+
+    public async Task<Manhwa> CreateAsync(Manhwa manhwa)
+    {
+        var createdManhwa = (await _dbContext.Manhwas.AddAsync(manhwa)).Entity;
+        await _dbContext.SaveChangesAsync();
+        return createdManhwa;
+    }
 }

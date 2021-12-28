@@ -1,4 +1,5 @@
-﻿using ManhwaTrackerApplicationServer.Repositories.Manhwa;
+﻿using ManhwaTrackerApplicationServer.Models.Validation;
+using ManhwaTrackerApplicationServer.Repositories.Manhwa;
 
 namespace ManhwaTrackerApplicationServer.Services.Manhwa;
 
@@ -34,5 +35,20 @@ public class ManhwaService : IManhwaService
     public async Task<IEnumerable<Manhwa>> GetByTitleAsync(string title)
     {
         return await _manhwaRepository.GetByTitleAsync(title);
+    }
+
+    /// <inheritdoc cref="IManhwaService.CreateAsync"/>
+    public async Task<Manhwa> CreateAsync(Manhwa manhwa)
+    {
+        ManhwaModelValidator.ValidateManhwaModel(manhwa); 
+        
+        var createdManhwa = await _manhwaRepository.CreateAsync(manhwa);
+        
+        if (createdManhwa == null)
+        {
+            throw new ArgumentException("Manhwa could not be created at this moment.");
+        }
+        
+        return createdManhwa;
     }
 }
