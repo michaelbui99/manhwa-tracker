@@ -41,6 +41,11 @@ const ManhwaDetails: React.FC = () => {
         }
     `;
 
+    const getDateString = (date: Date): string => {
+        const splitDateString: string[] = date.toString().split("T");
+        return splitDateString[0];
+    };
+
     const fetchManhwa = async () => {
         try {
             const { data } = await client.query({
@@ -97,7 +102,7 @@ const ManhwaDetails: React.FC = () => {
                                   manhwa.status === Status.CANCELLED ||
                                   manhwa.status === Status.HIATUS ||
                                   manhwa.status === Status.FINISHED
-                                    ? manhwa.releaseDate
+                                    ? " " + getDateString(manhwa.releaseDate)
                                     : ""
                                 : ""}
                         </Text>
@@ -106,7 +111,7 @@ const ManhwaDetails: React.FC = () => {
                         {manhwa
                             ? manhwa.status === Status.FINISHED ||
                               manhwa.status === Status.CANCELLED
-                                ? manhwa.endDate
+                                ? getDateString(manhwa.endDate)
                                 : ""
                             : ""}
 
