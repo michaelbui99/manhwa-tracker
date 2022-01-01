@@ -50,6 +50,7 @@ public class UserService : IUserService
         }
 
         var passwordIsCorrect= BCrypt.Verify(password, existingUser.Password);
+        
         if (!passwordIsCorrect)
         {
             throw new ArgumentException("Password is incorrect");
