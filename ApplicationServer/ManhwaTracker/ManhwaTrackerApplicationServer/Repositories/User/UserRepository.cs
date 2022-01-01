@@ -16,32 +16,17 @@ public class UserRepository : IUserRepository
     
     public async Task<Models.User.User> CreateAsync(string email, string password)
     {
-        var hashedPassword = BCrypt.HashPassword(password);
         
         User newUser = new()
         {
             Email = email,
-            Password = hashedPassword
+            Password = password
         };
         
         var createdUser = (await _dbContext.Users.AddAsync(newUser)).Entity;
         await _dbContext.SaveChangesAsync();
         
         return createdUser;
-    }
-
-    public async Task<User> ValidateUserAsync(string email, string password)
-    {
-        var existingUser = await GetUserAsync(email);
-        
-        var passwordIsValid = BCrypt.Verify(password, existingUser.Password);
-
-        if (!passwordIsValid)
-        {
-            return null;
-        }
-
-        return existingUser;
     }
 
     public async Task<User> GetUserAsync(string email)

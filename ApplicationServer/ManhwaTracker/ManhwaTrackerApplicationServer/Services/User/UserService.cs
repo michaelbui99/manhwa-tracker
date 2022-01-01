@@ -3,6 +3,8 @@ using ManhwaTrackerApplicationServer.Repositories.User;
 
 namespace ManhwaTrackerApplicationServer.Services;
 
+using BCrypt.Net;
+
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
@@ -32,7 +34,9 @@ public class UserService : IUserService
             throw new ArgumentException("User already exists");
         }
 
-        var createdUser = await _userRepository.CreateAsync(email, password);
+        var hashedPassword = BCrypt.HashPassword(password);
+
+        var createdUser = await _userRepository.CreateAsync(email, hashedPassword);
         return createdUser;
     }
 
@@ -45,14 +49,12 @@ public class UserService : IUserService
             throw new ArgumentException("User not found");
         }
 
-        var validUser = await _userRepository.ValidateUserAsync(email, password);
-
-        if (validUser == null)
+        var passwordIsCorrect= BCrypt.Verify(password, existingUser.Password);
+        if (!passwordIsCorrect)
         {
             throw new ArgumentException("Password is incorrect");
         }
         //TODO: Generate Token
-
-        return validUser;
+        return existingUser;
     }
 }
