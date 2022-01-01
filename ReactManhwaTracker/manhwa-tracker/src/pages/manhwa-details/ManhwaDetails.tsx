@@ -3,7 +3,15 @@ import { useState, useEffect } from "react";
 import { gql, useApolloClient } from "@apollo/client";
 import { useParams } from "react-router-dom";
 import Manhwa from "../../models/manhwa/manhwa";
-import { Box, Heading, HStack, Image, Text } from "@chakra-ui/react";
+import {
+    Box,
+    Button,
+    Flex,
+    Heading,
+    HStack,
+    Image,
+    Text,
+} from "@chakra-ui/react";
 import GenreAttribute from "../../components/genre-attribute/GenreAttribute";
 import TagAttribute from "../../components/tag-attribute/TagAttribute";
 import { Status } from "../../models/manhwa/status";
@@ -138,11 +146,19 @@ const ManhwaDetails: React.FC = () => {
                         {/* All tags if any */}
                         {manhwa ? (
                             manhwa?.tags.length > 0 ? (
-                                <HStack marginTop="1rem">
-                                    {manhwa.tags.map((t) => (
-                                        <TagAttribute tag={t} />
-                                    ))}
-                                </HStack>
+                                <Flex
+                                    justifyContent="flex-start"
+                                    columnGap="2rem"
+                                >
+                                    <HStack marginTop="1rem">
+                                        {manhwa.tags.map((t) => (
+                                            <TagAttribute tag={t} />
+                                        ))}
+                                    </HStack>
+                                    <Button colorScheme="teal">
+                                        Add to list
+                                    </Button>
+                                </Flex>
                             ) : (
                                 ""
                             )

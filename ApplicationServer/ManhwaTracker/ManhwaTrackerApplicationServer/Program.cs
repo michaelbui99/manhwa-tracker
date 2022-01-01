@@ -6,6 +6,7 @@ using ManhwaTrackerApplicationServer.Repositories;
 using ManhwaTrackerApplicationServer.Repositories.Genre;
 using ManhwaTrackerApplicationServer.Repositories.Manhwa;
 using ManhwaTrackerApplicationServer.Repositories.Tag;
+using ManhwaTrackerApplicationServer.Repositories.User;
 using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
@@ -29,10 +30,13 @@ builder.Services.AddScoped<IGenreRepository, GenreRepository>();
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<ITagService, TagService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<Query>();
+builder.Services.AddScoped<Mutation>();
 
 // TODO: Add Mutation type when at least one mutation has been defined
-builder.Services.AddGraphQLServer().AddQueryType<Query>()
+builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>()
     .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
 builder.Services.AddEndpointsApiExplorer();
 
