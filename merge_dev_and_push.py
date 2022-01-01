@@ -1,6 +1,7 @@
 import subprocess
 
-merge_dev_branch_and_push = subprocess.Popen(
-    ['git', 'merge', 'development', '--no-ff', '&&', 'git', 'push'], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+merge_dev_branch_and_push = subprocess.run(
+    ['git', 'merge', 'development', '--no-ff', '&&', 'git', 'push'], shell=True, capture_output=True, text=True)
 
-stdout, stderr = merge_dev_branch_and_push.communicate()
+print(merge_dev_branch_and_push.stdout)
+print(merge_dev_branch_and_push.stderr)
