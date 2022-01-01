@@ -1,4 +1,6 @@
 ﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Models.User;
+using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
 using ManhwaTrackerApplicationServer.Services.Tag;
@@ -10,14 +12,16 @@ public class Query
     private readonly IManhwaService _manhwaService;
     private readonly IGenreService _genreService;
     private readonly ITagService _tagService;
+    private readonly IUserService _userService;
     private readonly NLog.Logger _logger = NLog.LogManager.GetCurrentClassLogger();
 
     public Query([Service] IManhwaService manhwaService, [Service] IGenreService genreService,
-        [Service] ITagService tagService)
+        [Service] ITagService tagService, [Service] IUserService userService)
     {
         _manhwaService = manhwaService;
         _genreService = genreService;
         _tagService = tagService;
+        _userService = userService;
     }
 
     /// <summary>
@@ -70,5 +74,10 @@ public class Query
     {
         _logger.Info("AllTags request received");
         return await _tagService.GetAllAsync();
+    }
+
+    public async Task<User> ValidateLogin(string email, string password)
+    {
+        return await _userService.ValidateUserAsync(email, password);
     }
 }

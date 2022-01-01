@@ -1,4 +1,6 @@
-﻿namespace ManhwaTrackerApplicationServer.Models.User;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ManhwaTrackerApplicationServer.Models.User;
 
 /// <summary>
 /// User of the system. Users creates lists and add manwhas to the lists.
@@ -8,7 +10,9 @@ public class User
     /// <summary>
     /// Id of the user
     /// </summary>
+    [Key]
     public int Id { get; set; }
+    
     
     /// <summary>
     /// Email of the user. Each email can only be used once. 
