@@ -35,6 +35,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
                 height={{ base: "300px" }}
                 borderRadius="10px"
                 position="relative"
+                backgroundColor="white"
             >
                 <Flex flexDir="column" cursor="pointer">
                     <Box
@@ -42,6 +43,8 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
                         transition="all 0.3s ease-in-out"
                         _hover={{ opacity: 0.7 }}
                         onClick={() => navigate(`/manhwa/${manhwa.id}`)}
+                        backgroundColor="white"
+                        borderRadius="10px"
                     >
                         <Heading
                             as="h3"
@@ -57,19 +60,30 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
 
                     {/* Genres. Displays 2 genres at max */}
                     {manhwa.genres.length >= 2 ? (
-                        <HStack>
+                        <HStack backgroundColor="white" padding="0 0.3rem">
                             <GenreAttribute genre={manhwa.genres[0]} />{" "}
                             <GenreAttribute genre={manhwa.genres[1]} />
                         </HStack>
                     ) : manhwa.genres.length === 1 ? (
-                        <HStack>
+                        <HStack backgroundColor="white">
                             <GenreAttribute genre={manhwa.genres[0]} />
                         </HStack>
                     ) : (
                         ""
                     )}
-                    <HStack>
-                        <Button variant="outline">Add to list</Button>
+                    <HStack
+                        backgroundColor="white"
+                        borderRadius="10px"
+                        padding="0 0.3rem"
+                        paddingBottom="1rem"
+                    >
+                        <Button
+                            variant="outline"
+                            backgroundColor="white"
+                            marginTop="0.5rem"
+                        >
+                            Add to list
+                        </Button>
                     </HStack>
                 </Flex>
 
@@ -90,6 +104,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
                             overflow="hidden"
                             textOverflow="ellipsis"
                             visibility={{ base: "hidden", md: "visible" }}
+                            backgroundColor="white"
                         >
                             <Text textOverflow="ellipsis">
                                 {manhwa.description}
