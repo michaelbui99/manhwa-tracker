@@ -5,6 +5,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import RequestManhwa from "./pages/request-manhwa/RequestManhwa";
 import "./App.css";
 import ManhwaDetails from "./pages/manhwa-details/ManhwaDetails";
+import SignUp from "./pages/signup/SignUp";
 function App() {
     return (
         <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
                     <Route path="/search" element={<Search />} />
                     <Route path="/requestmanhwa" element={<RequestManhwa />} />
                     <Route path="/manhwa/:id" element={<ManhwaDetails />} />
+                    <Route path="/signup" element={<SignUp />} />
                 </Routes>
             </div>
         </BrowserRouter>

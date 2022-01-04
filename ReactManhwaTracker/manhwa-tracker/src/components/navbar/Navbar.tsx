@@ -22,6 +22,7 @@ import {
 } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { HamburgerIcon, AddIcon } from "@chakra-ui/icons";
+import { NavButton } from "../nav-button/NavButton";
 
 export const Navbar: React.FC = () => {
     const navigate = useNavigate();
@@ -46,27 +47,21 @@ export const Navbar: React.FC = () => {
                 <Flex flexDir="row" justifyContent="space-between">
                     <Heading fontSize="20px">Manhwa Tracker</Heading>
                     <HStack>
-                        <Button
-                            colorScheme="teal"
-                            size="sm"
+                        <NavButton
                             onClick={() => navigate("/")}
-                        >
-                            Home
-                        </Button>
-                        <Button
-                            colorScheme="teal"
-                            size="sm"
+                            labelText="Home"
+                        />
+
+                        <NavButton
                             onClick={() => navigate("/search")}
-                        >
-                            Browse
-                        </Button>
-                        <Button
-                            colorScheme="teal"
-                            size="sm"
+                            labelText="Browse"
+                        />
+
+                        <NavButton
                             onClick={() => navigate("/requestmanhwa")}
-                        >
-                            Request Manhwa
-                        </Button>
+                            labelText="Request Manhwa"
+                        />
+
                         <IconButton
                             aria-label="Manage"
                             icon={<HamburgerIcon />}
