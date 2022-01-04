@@ -14,6 +14,7 @@ import {
     Button,
     Flex,
 } from "@chakra-ui/react";
+import DateFormInput from "../../components/date-form-input/DateFormInput";
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { gql, useApolloClient } from "@apollo/client";
@@ -39,7 +40,7 @@ const RequestManhwa: React.FC = () => {
     const [selectedSynonymLanguage, setSelectedSynonymLanugage] =
         useState<TitleLanguage>();
     const [synonymTitle, setSynonymTitle] = useState<null | string>();
-    const [releaseDate, setReleaseDate] = useState<Date>(new Date());
+    const [releaseDate, setReleaseDate] = useState<null | Date>(new Date());
     const [endDate, setEndDate] = useState<null | Date>(null);
     const [title, setTitle] = useState<null | string>();
     const [description, setDescription] = useState<null | string>();
@@ -197,34 +198,18 @@ const RequestManhwa: React.FC = () => {
                         </FormHelperText>
 
                         {/* Release date */}
-                        <FormLabel fontSize="1.3rem" marginTop="2rem">
-                            Release date
-                        </FormLabel>
-                        <Input
-                            type="date"
-                            onChange={(e: any) =>
-                                setReleaseDate(e.target.valueAsDate)
-                            }
+                        <DateFormInput
+                            labelText="Release date"
+                            helperText="Pick the date of when the first chapter of the Manhwa was released"
+                            setDate={setReleaseDate}
                         />
-                        <FormHelperText>
-                            Pick the date of when the first chapter of the
-                            Manhwa was released
-                        </FormHelperText>
 
                         {/* End date */}
-                        <FormLabel fontSize="1.3rem" marginTop="2rem">
-                            End date
-                        </FormLabel>
-                        <Input
-                            type="date"
-                            onChange={(e: any) =>
-                                setEndDate(e.target.valueAsDate)
-                            }
+                        <DateFormInput
+                            labelText="End date"
+                            helperText="Pick the date of when the last chapter of the Manhwa was released if any"
+                            setDate={setEndDate}
                         />
-                        <FormHelperText>
-                            Pick the date of when the last chapter of the Manhwa
-                            was released if any
-                        </FormHelperText>
 
                         {/* Genres */}
                         <FormLabel fontSize="1.3rem" marginTop="2rem">
