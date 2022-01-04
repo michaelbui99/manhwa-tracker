@@ -102,11 +102,6 @@ const Search: React.FC = () => {
         setSelectedGenres(selectedGenres.concat(g));
     };
 
-    const getDateString = (date: Date): string => {
-        const splitDateString: string[] = date.toString().split("T");
-        return splitDateString[0];
-    };
-
     return (
         <div className={styles.container}>
             <div className={styles.search}>
