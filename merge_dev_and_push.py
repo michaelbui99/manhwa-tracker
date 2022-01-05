@@ -7,9 +7,9 @@ current_branch = subprocess.run(
 print(current_branch.stdout)
 print(current_branch.stderr)
 
-if (current_branch.stdout == "development"):
+if (current_branch.stdout.strip() == "development"):
     checkout_main = subprocess.run(['git', 'checkout', 'main'], shell=True,
-                   capture_output=True, text=True)
+                                   capture_output=True, text=True)
 
 print(checkout_main.stdout)
 print(checkout_main.stderr)
