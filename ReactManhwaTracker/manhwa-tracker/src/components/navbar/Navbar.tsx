@@ -62,6 +62,11 @@ export const Navbar: React.FC = () => {
                             labelText="Request Manhwa"
                         />
 
+                        <NavButton
+                            onClick={() => navigate("/signup")}
+                            labelText="Sign up"
+                        />
+
                         <IconButton
                             aria-label="Manage"
                             icon={<HamburgerIcon />}

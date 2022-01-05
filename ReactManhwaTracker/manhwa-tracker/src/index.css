@@ -1,5 +1,6 @@
 :root {
     --main-bg-color: rgb(10, 22, 37);
+    --page-bg-color: rgba(116, 136, 153, 0.2);
 }
 *,
 *::after,
@@ -10,7 +11,7 @@
 }
 body {
     box-sizing: border-box;
-    background-color: rgb(237, 241, 245);
+    background-color: var(--page-bg-color) !important;
     font-family: "Roboto", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

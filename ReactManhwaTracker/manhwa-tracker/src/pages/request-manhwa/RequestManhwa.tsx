@@ -105,6 +105,7 @@ const RequestManhwa: React.FC = () => {
                     boxShadow="lg"
                     padding="1rem 2rem"
                     borderRadius="10px"
+                    backgroundColor="white"
                 >
                     {/* Title */}
                     <FormControl>

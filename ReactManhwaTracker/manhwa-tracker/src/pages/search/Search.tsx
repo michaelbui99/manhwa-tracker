@@ -115,6 +115,7 @@ const Search: React.FC = () => {
                             placeholder="Search for manhwa"
                             maxW="15rem"
                             onInput={handleSearchInputChange}
+                            backgroundColor="white"
                         />
                     </InputGroup>
                 </div>

@@ -77,7 +77,13 @@ const ManhwaDetails: React.FC = () => {
 
     return (
         <Box className="content">
-            <Box boxShadow="md" minHeight="30vh" padding="2rem 1rem">
+            <Box
+                boxShadow="md"
+                minHeight="30vh"
+                padding="2rem 1rem"
+                backgroundColor="white"
+                borderRadius="10px"
+            >
                 <HStack>
                     <Image
                         display={{ base: "none", md: "block" }}
