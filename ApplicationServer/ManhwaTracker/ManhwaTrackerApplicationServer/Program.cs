@@ -12,10 +12,15 @@ using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
 using ManhwaTrackerApplicationServer.Services.Tag;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
+
+//Logging
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
 
 // Add services to the container.
 builder.Services.AddControllers();
