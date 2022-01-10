@@ -11,11 +11,12 @@ const IconFormInput: React.FC<IconFormInputProps> = ({
     placeHolder,
     type,
     icon,
+    onChange,
 }) => {
     return (
         <InputGroup>
             <InputLeftElement pointerEvents="none" children={icon} />
-            <Input placeHolder={placeHolder} type={type} />
+            <Input placeHolder={placeHolder} type={type} onChange={onChange} />
         </InputGroup>
     );
 };
