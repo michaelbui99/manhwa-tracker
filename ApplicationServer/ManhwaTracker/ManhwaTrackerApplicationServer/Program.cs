@@ -48,7 +48,7 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
-builder.Services.AddGraphQLServer().AddAuthorization().AddQueryType<Query>().AddMutationType<Mutation>()
+builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>().AddAuthorization()
     .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
 
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
@@ -70,9 +70,9 @@ builder.Services.AddEndpointsApiExplorer();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-}
+
+app.UseAuthorization();
+app.UseAuthentication();
 
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000"));
 
@@ -80,12 +80,11 @@ app.UseRouting().UseEndpoints(endpoints =>
 {
     endpoints.MapGraphQL();
     endpoints.MapGraphQLPlayground();
+    endpoints.MapControllers();
 });
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
-app.UseAuthentication();
 
 
 app.UseGraphQLPlayground(new PlaygroundOptions()
