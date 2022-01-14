@@ -46,7 +46,8 @@ public class JwtAuthenticationManager : IJwtAuthenticationManager
         {
             Subject = new ClaimsIdentity(new Claim[]
             {
-                new Claim(ClaimTypes.Name, email)
+                new Claim(ClaimTypes.Name, email),
+                new Claim("Id", existingUser.Id.ToString())
             }),
             Expires = DateTime.UtcNow.AddMinutes(30),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey),

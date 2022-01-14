@@ -1,4 +1,5 @@
-﻿using HotChocolate.AspNetCore.Authorization;
+﻿using System.Text.Json;
+using HotChocolate.AspNetCore.Authorization;
 using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Models.User;
 using ManhwaTrackerApplicationServer.Services;
@@ -29,6 +30,7 @@ public class Query
     /// Fetches all the registered Manhwas in the system
     /// </summary>
     /// <returns>All registered Manhwas</returns>
+    [Authorize]
     public async Task<IEnumerable<Manhwa>> AllManhwas()
     {
         _logger.Info("AllManhwas request received");

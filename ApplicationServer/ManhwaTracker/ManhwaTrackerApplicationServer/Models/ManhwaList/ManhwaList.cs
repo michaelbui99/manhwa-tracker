@@ -5,6 +5,7 @@ public class ManhwaList
 {
     [Key]
     public int Id { get; set; }
+    public string Name { get; set; }
     public IEnumerable<ManhwaListEntry> ListEntries { get; set; }
     public User.User Owner { get; set; }
 }
