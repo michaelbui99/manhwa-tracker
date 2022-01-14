@@ -30,7 +30,6 @@ public class Query
     /// Fetches all the registered Manhwas in the system
     /// </summary>
     /// <returns>All registered Manhwas</returns>
-    [Authorize]
     public async Task<IEnumerable<Manhwa>> AllManhwas()
     {
         _logger.Info("AllManhwas request received");
