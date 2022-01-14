@@ -23,4 +23,6 @@ public class User
     /// Password of the user. Must be at least 8 characters long. 
     /// </summary>
     public string? Password { get; set; }
+
+    public string? Token { get; set; }
 }
