@@ -2,7 +2,6 @@ using DotNetEnv;
 using GraphQL.Server.Ui.Playground;
 using ManhwaTrackerApplicationServer.Controllers;
 using ManhwaTrackerApplicationServer.DataAccess;
-using ManhwaTrackerApplicationServer.Repositories;
 using ManhwaTrackerApplicationServer.Repositories.Genre;
 using ManhwaTrackerApplicationServer.Repositories.Manhwa;
 using ManhwaTrackerApplicationServer.Repositories.Tag;
@@ -17,10 +16,6 @@ using Microsoft.Extensions.Logging;
 DotNetEnv.Env.Load();
 
 var builder = WebApplication.CreateBuilder(args);
-
-//Logging
-builder.Logging.ClearProviders();
-builder.Logging.AddConsole();
 
 // Add services to the container.
 builder.Services.AddControllers();
@@ -41,8 +36,17 @@ builder.Services.AddScoped<Query>();
 builder.Services.AddScoped<Mutation>();
 
 // TODO: Add Mutation type when at least one mutation has been defined
-builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>()
-    .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
+if (!Env.GetBool("production"))
+{
+    builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>()
+        .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
+}
+else
+{
+    builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>()
+        .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = false);
+}
+
 builder.Services.AddEndpointsApiExplorer();
 
 var app = builder.Build();
@@ -50,8 +54,6 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    // app.UseSwagger();
-    // app.UseSwaggerUI();
 }
 
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000"));
