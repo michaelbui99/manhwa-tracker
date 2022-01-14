@@ -1,5 +1,6 @@
 ﻿using DotNetEnv;
 using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Models.ManhwaList;
 using ManhwaTrackerApplicationServer.Models.ManhwaRequest;
 using ManhwaTrackerApplicationServer.Models.User;
 using Microsoft.EntityFrameworkCore;
@@ -14,14 +15,17 @@ public class ManhwaTrackerDbContext : DbContext
     public DbSet<Tag> Tags { get; set; }
     public DbSet<User> Users { get; set; }
     public DbSet<ManhwaRequest> ManhwaRequests { get; set; }
+    
+    public DbSet<ManhwaList> ManhwaLists { get; set; }
 
-     public ManhwaTrackerDbContext()
+    public ManhwaTrackerDbContext()
     {
-         NpgsqlConnection.GlobalTypeMapper.MapEnum<Status>();
-         NpgsqlConnection.GlobalTypeMapper.MapEnum<TitleLanguage>();
-         NpgsqlConnection.GlobalTypeMapper.MapEnum<SourceMaterial>();
-         NpgsqlConnection.GlobalTypeMapper.MapEnum<RequestStatus>();
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<Status>();
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<TitleLanguage>();
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<SourceMaterial>();
+        NpgsqlConnection.GlobalTypeMapper.MapEnum<RequestStatus>();
     }
+
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
         // Fetches credentials from the .env file
@@ -37,10 +41,10 @@ public class ManhwaTrackerDbContext : DbContext
         modelBuilder.HasPostgresEnum<SourceMaterial>();
         modelBuilder.HasPostgresEnum<TitleLanguage>();
         modelBuilder.HasPostgresEnum<RequestStatus>();
-        
+
         // Setting up composite primary keys
         modelBuilder.Entity<Synonym>().HasKey(s => new {s.Title, s.TitleLanguage});
-        
+
         // Excluding properties
         modelBuilder.Entity<User>().Ignore(user => user.Token);
     }
