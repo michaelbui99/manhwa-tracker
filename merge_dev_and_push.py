@@ -39,3 +39,5 @@ print_subprocess_output(merge_dev_branch_and_push)
 # switch back to dev branch to continue work
 checkout_dev = subprocess.run(
     ['git', 'checkout', 'development'], shell=True, capture_output=True, text=True)
+
+print_subprocess_output(checkout_dev)
