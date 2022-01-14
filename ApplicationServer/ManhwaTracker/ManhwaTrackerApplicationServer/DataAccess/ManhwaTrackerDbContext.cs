@@ -40,5 +40,8 @@ public class ManhwaTrackerDbContext : DbContext
         
         // Setting up composite primary keys
         modelBuilder.Entity<Synonym>().HasKey(s => new {s.Title, s.TitleLanguage});
+        
+        // Excluding properties
+        modelBuilder.Entity<User>().Ignore(user => user.Token);
     }
 }

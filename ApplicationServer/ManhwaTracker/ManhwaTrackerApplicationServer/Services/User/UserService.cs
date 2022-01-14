@@ -1,4 +1,5 @@
-﻿using ManhwaTrackerApplicationServer.Models.User;
+﻿using ManhwaTrackerApplicationServer.Authentication.JwtAuthenticationManager;
+using ManhwaTrackerApplicationServer.Models.User;
 using ManhwaTrackerApplicationServer.Repositories.User;
 
 namespace ManhwaTrackerApplicationServer.Services;
@@ -8,10 +9,11 @@ using BCrypt.Net;
 public class UserService : IUserService
 {
     private readonly IUserRepository _userRepository;
-
-    public UserService(IUserRepository userRepository)
+    private readonly IJwtAuthenticationManager _jwtAuthenticationManager;
+    public UserService(IUserRepository userRepository, IJwtAuthenticationManager jwtAuthenticationManager)
     {
         _userRepository = userRepository;
+        _jwtAuthenticationManager = jwtAuthenticationManager;
     }
     
     public async Task<User> CreateAsync(string email, string password)
@@ -42,20 +44,7 @@ public class UserService : IUserService
 
     public async Task<User> ValidateUserAsync(string email, string password)
     {
-        var existingUser = await _userRepository.GetUserAsync(email);
-
-        if (existingUser == null)
-        {
-            throw new ArgumentException("User not found");
-        }
-
-        var passwordIsCorrect= BCrypt.Verify(password, existingUser.Password);
-        
-        if (!passwordIsCorrect)
-        {
-            throw new ArgumentException("Password is incorrect");
-        }
-        //TODO: Generate Token
-        return existingUser;
+        var validatedUser = await _jwtAuthenticationManager.AuthenticateAsync(email, password);
+        return validatedUser;
     }
 }
