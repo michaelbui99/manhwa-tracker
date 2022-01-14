@@ -1,4 +1,5 @@
-﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
+﻿using HotChocolate.AspNetCore.Authorization;
+using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Models.User;
 using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
