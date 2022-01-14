@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace ManhwaTrackerApplicationServer.Models.User;
 
@@ -22,6 +23,7 @@ public class User
     /// <summary>
     /// Password of the user. Must be at least 8 characters long. 
     /// </summary>
+    [JsonIgnore]
     public string? Password { get; set; }
 
     public string? Token { get; set; }
