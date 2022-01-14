@@ -24,7 +24,7 @@ current_branch = subprocess.run(
 print_subprocess_output(current_branch)
 
 # checkout main if on dev branch
-if (current_branch.stdout.strip() == "development"):
+if (current_branch.stdout.strip() != "main"):
     checkout_main = subprocess.run(['git', 'checkout', 'main'], shell=True,
                                    capture_output=True, text=True)
     print_subprocess_output(checkout_main)
