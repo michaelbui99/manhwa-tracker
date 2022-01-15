@@ -21,4 +21,9 @@ public class Mutation
         _logger.LogInformation("RegisterUser Mutation called");
         return await _userService.CreateAsync(email, password);
     }
+    
+    public async Task<User> ValidateLogin(string email, string password)
+    {
+        return await _userService.ValidateUserAsync(email, password);
+    }
 }
