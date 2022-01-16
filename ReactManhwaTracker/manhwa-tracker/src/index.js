@@ -5,9 +5,14 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import "./index.css";
 import App from "./App";
 
+const token = sessionStorage.getItem("token");
+
 const client = new ApolloClient({
     uri: "https://localhost:8080/graphql",
     cache: new InMemoryCache(),
+    headers: {
+        authorization: token ? token : "",
+    },
 });
 
 ReactDOM.render(

@@ -27,11 +27,30 @@ import { NavButton } from "../nav-button/NavButton";
 export const Navbar: React.FC = () => {
     const navigate = useNavigate();
     const btnRef = useRef();
+
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [opened, setOpened] = useState<boolean>(false);
+    const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+
     const handleHamburgerClick = () => {
         setOpened(!opened);
     };
+
+    React.useEffect(() => {
+        const token = sessionStorage.getItem("token");
+
+        if (token) {
+            setIsLoggedIn(true);
+        }
+        console.log(isLoggedIn);
+    }, []);
+
+    const logout = () => {
+        sessionStorage.removeItem("token");
+        setIsLoggedIn(false);
+        navigate("/");
+    };
+
     return (
         <>
             {/* Desktop navbar */}
@@ -62,10 +81,20 @@ export const Navbar: React.FC = () => {
                             labelText="Request Manhwa"
                         />
 
-                        <NavButton
-                            onClick={() => navigate("/signup")}
-                            labelText="Sign up"
-                        />
+                        {!isLoggedIn ? (
+                            <NavButton
+                                onClick={() => navigate("/login")}
+                                labelText="Login"
+                            />
+                        ) : (
+                            ""
+                        )}
+
+                        {isLoggedIn ? (
+                            <NavButton onClick={logout} labelText="Logout" />
+                        ) : (
+                            ""
+                        )}
 
                         <IconButton
                             aria-label="Manage"
