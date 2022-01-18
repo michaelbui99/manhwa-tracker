@@ -11,7 +11,7 @@ const client = new ApolloClient({
     uri: "https://localhost:8080/graphql",
     cache: new InMemoryCache(),
     headers: {
-        authorization: token ? token : "",
+        authorization: token ? `Bearer ${token}` : "",
     },
 });
 
