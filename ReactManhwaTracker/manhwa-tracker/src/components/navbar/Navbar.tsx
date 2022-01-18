@@ -24,13 +24,22 @@ import { Link, useNavigate } from "react-router-dom";
 import { HamburgerIcon, AddIcon } from "@chakra-ui/icons";
 import { NavButton } from "../nav-button/NavButton";
 
-export const Navbar: React.FC = () => {
+interface NavbarProps {
+    isLoggedIn: boolean;
+    setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
+    email: string;
+}
+
+export const Navbar: React.FC<NavbarProps> = ({
+    isLoggedIn,
+    setIsLoggedIn,
+    email,
+}) => {
     const navigate = useNavigate();
     const btnRef = useRef();
 
     const { isOpen, onOpen, onClose } = useDisclosure();
     const [opened, setOpened] = useState<boolean>(false);
-    const [isLoggedIn, setIsLoggedIn] = React.useState(false);
 
     const handleHamburgerClick = () => {
         setOpened(!opened);
@@ -96,35 +105,43 @@ export const Navbar: React.FC = () => {
                             ""
                         )}
 
-                        <IconButton
-                            aria-label="Manage"
-                            icon={<HamburgerIcon />}
-                            colorScheme="teal"
-                            onClick={onOpen}
-                        />
+                        {isLoggedIn ? (
+                            <IconButton
+                                aria-label="Manage"
+                                icon={<HamburgerIcon />}
+                                colorScheme="teal"
+                                onClick={onOpen}
+                            />
+                        ) : (
+                            ""
+                        )}
                     </HStack>
                 </Flex>
             </Box>
 
-            <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
-                <DrawerOverlay />
-                <DrawerContent>
-                    <DrawerCloseButton />
-                    <Center>
-                        <DrawerHeader borderBottomWidth="1px">
-                            {"<USERNAME>"}
-                        </DrawerHeader>
-                    </Center>
-                    <DrawerBody>
-                        <VStack>
-                            <Text fontSize="xl">Manage your lists</Text>
-                            <Button leftIcon={<AddIcon />}>
-                                Create new list
-                            </Button>
-                        </VStack>
-                    </DrawerBody>
-                </DrawerContent>
-            </Drawer>
+            {isLoggedIn ? (
+                <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
+                    <DrawerOverlay />
+                    <DrawerContent>
+                        <DrawerCloseButton />
+                        <Center>
+                            <DrawerHeader borderBottomWidth="1px">
+                                {isLoggedIn ? { email } : "Not logged in"}
+                            </DrawerHeader>
+                        </Center>
+                        <DrawerBody>
+                            <VStack>
+                                <Text fontSize="xl">Manage your lists</Text>
+                                <Button leftIcon={<AddIcon />}>
+                                    Create new list
+                                </Button>
+                            </VStack>
+                        </DrawerBody>
+                    </DrawerContent>
+                </Drawer>
+            ) : (
+                ""
+            )}
 
             {/* Mobile navbar */}
             <Box

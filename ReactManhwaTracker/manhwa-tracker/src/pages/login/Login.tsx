@@ -63,7 +63,7 @@ const Login: React.FC = () => {
 
             sessionStorage.setItem(
                 "token",
-                `Bearer ${response.data.validateLogin.token}`
+                `${response.data.validateLogin.token}`
             );
 
             navigate("/");

@@ -11,6 +11,7 @@ import Login from "./pages/login/Login";
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = React.useState(false);
+    const [email, setEmail] = React.useState("");
 
     React.useEffect(() => {
         const token = sessionStorage.getItem("token");
@@ -24,7 +25,11 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-                <Navbar></Navbar>
+                <Navbar
+                    isLoggedIn={isLoggedIn}
+                    setIsLoggedIn={setIsLoggedIn}
+                    email={email}
+                ></Navbar>
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/search" element={<Search />} />
