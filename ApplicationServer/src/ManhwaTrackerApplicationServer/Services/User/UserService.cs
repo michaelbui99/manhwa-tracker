@@ -23,7 +23,7 @@ public class UserService : IUserService
             throw new ArgumentException("Invalid email");
         }
 
-        if (password.Length < 8)
+        if (password.Length < 8 || string.IsNullOrEmpty(password)|| string.IsNullOrWhiteSpace(password))
         {
             throw new ArgumentException("Password must be at least 8 characters");
         }
