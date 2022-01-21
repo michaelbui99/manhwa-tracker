@@ -28,10 +28,10 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(builder => { builder.WithOrigins(Env.GetString("WEBAPP_IP")); });
 });
 
-builder.Services.AddAuthentication(x =>
+builder.Services.AddAuthentication(options =>
 {
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(x =>
 {
     if (!Env.GetBool("production"))
@@ -48,8 +48,23 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("MustBeUser", policy =>
+    {
+        policy.RequireClaim("Role", "User");
+    });
+    
+    options.AddPolicy("MustBeModerator", policy =>
+    {
+        policy.RequireClaim("Role", "Moderator");
+    });
+});
+
 builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>().AddAuthorization()
     .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
+
 
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
 builder.Services.AddTransient<ManhwaTrackerDbContext>();
