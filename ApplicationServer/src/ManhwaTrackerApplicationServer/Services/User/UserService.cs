@@ -42,6 +42,17 @@ public class UserService : IUserService
         return createdUser;
     }
 
+    public async Task<User> GetUserAsync(string email)
+    {
+        var existingUser = await _userRepository.GetUserAsync(email);
+        if (existingUser == null)
+        {
+            throw new KeyNotFoundException("User not found");
+        }
+
+        return existingUser;
+    }
+
     public async Task<User> ValidateUserAsync(string email, string password)
     {
         var validatedUser = await _jwtAuthenticationManager.AuthenticateAsync(email, password);
