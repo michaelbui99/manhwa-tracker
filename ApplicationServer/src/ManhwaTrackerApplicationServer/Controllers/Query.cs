@@ -1,10 +1,14 @@
-﻿using System.Text.Json;
+﻿using System.Collections;
+using System.Security.Claims;
+using System.Text.Json;
 using HotChocolate.AspNetCore.Authorization;
 using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Models.ManhwaList;
 using ManhwaTrackerApplicationServer.Models.User;
 using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
+using ManhwaTrackerApplicationServer.Services.ManhwaList;
 using ManhwaTrackerApplicationServer.Services.Tag;
 
 namespace ManhwaTrackerApplicationServer.Controllers;
@@ -14,14 +18,16 @@ public class Query
     private readonly IManhwaService _manhwaService;
     private readonly IGenreService _genreService;
     private readonly ITagService _tagService;
+    private readonly IManhwaListService _listService;
     private readonly NLog.Logger _logger = NLog.LogManager.GetCurrentClassLogger();
 
     public Query([Service] IManhwaService manhwaService, [Service] IGenreService genreService,
-        [Service] ITagService tagService)
+        [Service] ITagService tagService, [Service] IManhwaListService listService)
     {
         _manhwaService = manhwaService;
         _genreService = genreService;
         _tagService = tagService;
+        _listService = listService;
     }
 
     /// <summary>
@@ -74,6 +80,14 @@ public class Query
     {
         _logger.Info("AllTags request received");
         return await _tagService.GetAllAsync();
+    }
+
+    [Authorize(Policy = "MustBeUser")]
+    public async Task<IEnumerable<ManhwaList>> UserManhwaLists(ClaimsPrincipal claimsPrincipal)
+    {
+        var userEmail = claimsPrincipal.Identity.Name;
+        var lists = await _listService.GetAllByEmailAsync(userEmail);
+        return lists;
     }
 
 }
