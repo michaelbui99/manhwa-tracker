@@ -1,5 +1,6 @@
 import * as React from "react";
 import { gql, useApolloClient } from "@apollo/client";
+import { useNavigate } from "react-router-dom";
 import {
     Button,
     Flex,
@@ -13,10 +14,48 @@ import FormHeading from "../../components/form-heading/FormHeading";
 
 const CreateList: React.FC = () => {
     const client = useApolloClient();
+    const CREATE_LIST_MUTATION = gql`
+        mutation ($listName: String!, $listDescription: String!) {
+            createList(name: $listName, description: $listDescription) {
+                id
+                name
+                description
+            }
+        }
+    `;
+
+    const navigate = useNavigate();
 
     const [name, setName] = React.useState("");
     const [description, setDescription] = React.useState("");
     const [loading, setLoading] = React.useState(false);
+    const [errorMessage, setErrorMessage] = React.useState("");
+
+    const createNewList = async () => {
+        setErrorMessage("");
+
+        setLoading(true);
+
+        try {
+            var response = await client.mutate({
+                mutation: CREATE_LIST_MUTATION,
+                variables: {
+                    listName: name,
+                    listDescription: description,
+                },
+            });
+
+            setLoading(false);
+            if (response.errors != null && response.errors.length > 0) {
+                setErrorMessage(response.errors[0].toString());
+            } else {
+                navigate("/");
+            }
+        } catch (err) {
+            setLoading(false);
+            setErrorMessage("Something went wrong");
+        }
+    };
 
     return (
         <FormCard>
@@ -61,7 +100,7 @@ const CreateList: React.FC = () => {
                     justifyContent="space-between"
                     marginTop="2rem"
                 >
-                    <Button>Cancel</Button>
+                    <Button onClick={() => navigate("/")}>Cancel</Button>
                     <Button colorScheme="teal" isLoading={loading}>
                         Create
                     </Button>
