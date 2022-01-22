@@ -24,6 +24,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { HamburgerIcon, AddIcon } from "@chakra-ui/icons";
 import { NavButton } from "../nav-button/NavButton";
 
+//TODO: Find a way to get navbar to rerender, when user logs in
 interface NavbarProps {
     isLoggedIn: boolean;
     setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
@@ -45,14 +46,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         setOpened(!opened);
     };
 
-    React.useEffect(() => {
-        const token = sessionStorage.getItem("token");
-
-        if (token) {
-            setIsLoggedIn(true);
-        }
-        console.log(isLoggedIn);
-    }, []);
+    React.useEffect(() => {}, [isLoggedIn]);
 
     const logout = () => {
         sessionStorage.removeItem("token");
@@ -74,6 +68,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             >
                 <Flex flexDir="row" justifyContent="space-between">
                     <Heading fontSize="20px">Manhwa Tracker</Heading>
+                    <p>{email}</p>
+
+                    {/* DEBUGGING ONLY */}
+                    {isLoggedIn ? <p>Is Logged in</p> : <p>Not logged in</p>}
+
                     <HStack>
                         <NavButton
                             onClick={() => navigate("/")}
@@ -126,7 +125,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <DrawerCloseButton />
                         <Center>
                             <DrawerHeader borderBottomWidth="1px">
-                                {isLoggedIn ? { email } : "Not logged in"}
+                                {isLoggedIn ? "TEST" : "Not logged in"}
                             </DrawerHeader>
                         </Center>
                         <DrawerBody>
@@ -142,7 +141,6 @@ export const Navbar: React.FC<NavbarProps> = ({
             ) : (
                 ""
             )}
-
             {/* Mobile navbar */}
             <Box
                 padding="1rem 2rem"

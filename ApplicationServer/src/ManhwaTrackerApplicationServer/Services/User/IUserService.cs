@@ -27,4 +27,12 @@ public interface IUserService
    /// <exception cref="ArgumentException">if password is incorrect</exception>
    /// <returns>Validated user with new access token</returns>
    public Task<User> ValidateUserAsync(string email, string password);
+
+   /// <summary>
+   /// Fetches a user by email
+   /// </summary>
+   /// <param name="email">Email of the user</param>
+   /// <exception cref="KeyNotFoundException">if user does not exist</exception>
+   /// <returns>User with the given <c>email</c></returns>
+   public Task<User> GetUserAsync(string email);
 }

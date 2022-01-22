@@ -37,7 +37,7 @@ public class JwtAuthenticationManager : IJwtAuthenticationManager
 
         //TODO: Generate Token
         var tokenHandler = new JwtSecurityTokenHandler();
-        
+
         //Fetching secret from .env file
         var tokenKey = Encoding.ASCII.GetBytes(Env.GetString("JWT_SECRET"));
 
@@ -46,14 +46,15 @@ public class JwtAuthenticationManager : IJwtAuthenticationManager
         {
             Subject = new ClaimsIdentity(new Claim[]
             {
-                new Claim(ClaimTypes.Name, email),
-                new Claim("Id", existingUser.Id.ToString())
+                new(ClaimTypes.Name, email),
+                new("Id", existingUser.Id.ToString()),
+                new("Role", "User")
             }),
             Expires = DateTime.UtcNow.AddMinutes(30),
             SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(tokenKey),
                 SecurityAlgorithms.HmacSha256Signature)
         };
-        
+
         //Generating token
         var token = tokenHandler.CreateToken(tokenDescriptor);
 

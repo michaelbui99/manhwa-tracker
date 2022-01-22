@@ -16,6 +16,7 @@ import * as React from "react";
 import IconFormInput from "../../components/icon-form-input/IconFormInput";
 import FormCard from "../../components/form-card/FormCard";
 import { gql, useApolloClient } from "@apollo/client";
+import { useNavigate } from "react-router-dom";
 
 const SignUp = () => {
     const client = useApolloClient();
@@ -28,6 +29,7 @@ const SignUp = () => {
             }
         }
     `;
+    const navigate = useNavigate();
 
     const [email, setEmail] = React.useState<string>("");
     const [password, setPassword] = React.useState<string>("");
@@ -87,6 +89,7 @@ const SignUp = () => {
         }
 
         setLoading(false);
+        navigate("/");
     };
 
     return (

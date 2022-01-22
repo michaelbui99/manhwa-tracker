@@ -23,7 +23,7 @@ public class UserService : IUserService
             throw new ArgumentException("Invalid email");
         }
 
-        if (password.Length < 8)
+        if (password.Length < 8 || string.IsNullOrEmpty(password)|| string.IsNullOrWhiteSpace(password))
         {
             throw new ArgumentException("Password must be at least 8 characters");
         }
@@ -40,6 +40,17 @@ public class UserService : IUserService
 
         var createdUser = await _userRepository.CreateAsync(email, hashedPassword);
         return createdUser;
+    }
+
+    public async Task<User> GetUserAsync(string email)
+    {
+        var existingUser = await _userRepository.GetUserAsync(email);
+        if (existingUser == null)
+        {
+            throw new KeyNotFoundException("User not found");
+        }
+
+        return existingUser;
     }
 
     public async Task<User> ValidateUserAsync(string email, string password)

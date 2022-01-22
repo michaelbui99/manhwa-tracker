@@ -2,7 +2,8 @@
 using ManhwaTrackerApplicationServer.Models.ManhwaList;
 using Microsoft.EntityFrameworkCore;
 
-namespace ManhwaTrackerApplicationServer.Repositories.ManhwaListRepository;
+namespace ManhwaTrackerApplicationServer.Repositories.ManhwaList;
+using ManhwaTrackerApplicationServer.Models.ManhwaList;
 
 public class ManhwaListRepository : IManhwaListRepository
 {
@@ -13,14 +14,15 @@ public class ManhwaListRepository : IManhwaListRepository
         _dbContext = dbContext;
     }
 
-    public async Task<ManhwaList> CreateAsync(string userEmail, string listName)
+    public async Task<ManhwaList> CreateAsync(string userEmail, string listName, string listDescription)
     {
         var owner = await _dbContext.Users.FirstOrDefaultAsync(user => user.Email == userEmail);
         var newList = new ManhwaList()
         {
             ListEntries = new List<ManhwaListEntry>(),
             Name = listName,
-            Owner = owner
+            Owner = owner,
+            Description = listDescription
         };
 
         var createdList = (await _dbContext.ManhwaLists.AddAsync(newList)).Entity;

@@ -6,11 +6,13 @@ using ManhwaTrackerApplicationServer.Controllers;
 using ManhwaTrackerApplicationServer.DataAccess;
 using ManhwaTrackerApplicationServer.Repositories.Genre;
 using ManhwaTrackerApplicationServer.Repositories.Manhwa;
+using ManhwaTrackerApplicationServer.Repositories.ManhwaList;
 using ManhwaTrackerApplicationServer.Repositories.Tag;
 using ManhwaTrackerApplicationServer.Repositories.User;
 using ManhwaTrackerApplicationServer.Services;
 using ManhwaTrackerApplicationServer.Services.Genre;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
+using ManhwaTrackerApplicationServer.Services.ManhwaList;
 using ManhwaTrackerApplicationServer.Services.Tag;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -28,10 +30,10 @@ builder.Services.AddCors(options =>
     options.AddDefaultPolicy(builder => { builder.WithOrigins(Env.GetString("WEBAPP_IP")); });
 });
 
-builder.Services.AddAuthentication(x =>
+builder.Services.AddAuthentication(options =>
 {
-    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(x =>
 {
     if (!Env.GetBool("production"))
@@ -48,8 +50,23 @@ builder.Services.AddAuthentication(x =>
         ValidateAudience = false
     };
 });
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("MustBeUser", policy =>
+    {
+        policy.RequireClaim("Role", "User");
+    });
+    
+    options.AddPolicy("MustBeModerator", policy =>
+    {
+        policy.RequireClaim("Role", "Moderator");
+    });
+});
+
 builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>().AddAuthorization()
     .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
+
 
 builder.Services.AddScoped<IManhwaService, ManhwaService>();
 builder.Services.AddTransient<ManhwaTrackerDbContext>();
@@ -60,6 +77,8 @@ builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<ITagService, TagService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<IManhwaListRepository, ManhwaListRepository>();
+builder.Services.AddScoped<IManhwaListService, ManhwaListService>();
 builder.Services.AddScoped<IJwtAuthenticationManager, JwtAuthenticationManager>();
 builder.Services.AddScoped<Query>();
 builder.Services.AddScoped<Mutation>();
