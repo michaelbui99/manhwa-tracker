@@ -44,9 +44,10 @@ public class ManhwaListService : IManhwaListService
         throw new NotImplementedException();
     }
 
-    public Task<IEnumerable<Models.ManhwaList.ManhwaList>> GetAllByEmailAsync(string userEmail)
+    public async Task<IEnumerable<Models.ManhwaList.ManhwaList>> GetAllByEmailAsync(string userEmail)
     {
-        throw new NotImplementedException();
+        var allLists = await _listRepository.GetAllByEmailAsync(userEmail);
+        return allLists;
     }
 
     public Task DeleteAsync(int listId)
