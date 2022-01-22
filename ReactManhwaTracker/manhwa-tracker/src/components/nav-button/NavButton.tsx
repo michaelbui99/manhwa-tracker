@@ -8,7 +8,13 @@ interface NavButtonProps {
 
 export const NavButton: React.FC<NavButtonProps> = ({ onClick, labelText }) => {
     return (
-        <Button colorScheme="teal" size="sm" onClick={onClick}>
+        <Button
+            colorScheme="teal"
+            size="sm"
+            onClick={onClick}
+            variant="ghost"
+            color="white"
+        >
             {labelText}
         </Button>
     );
