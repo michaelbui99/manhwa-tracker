@@ -13,6 +13,7 @@ import {
     ListItem,
     Button,
     Flex,
+    Heading,
 } from "@chakra-ui/react";
 import DateFormInput from "../../components/date-form-input/DateFormInput";
 import * as React from "react";
@@ -24,6 +25,7 @@ import { Genre } from "../../models/manhwa/genre";
 import { Tag } from "../../models/manhwa/tag";
 import { Synonym } from "../../models/manhwa/synonym";
 import { TitleLanguage } from "../../models/manhwa/title-language";
+import FormHeading from "../../components/form-heading/FormHeading";
 
 // TODO: Refactor the form inputs into seperate components for better readability
 // TODO: Refactor into multi stage/step form to reduce how much the user have to scroll
@@ -107,6 +109,7 @@ const RequestManhwa: React.FC = () => {
                     borderRadius="10px"
                     backgroundColor="white"
                 >
+                    <FormHeading text="Request Manhwa" />
                     {/* Title */}
                     <FormControl>
                         <FormLabel htmlFor="title" fontSize="1.3rem">

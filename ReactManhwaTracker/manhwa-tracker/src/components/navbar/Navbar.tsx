@@ -67,7 +67,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 zIndex="2"
             >
                 <Flex flexDir="row" justifyContent="space-between">
-                    <Heading fontSize="20px">Manhwa Tracker</Heading>
+                    <Heading
+                        fontSize="20px"
+                        onClick={() => navigate("/")}
+                        cursor="pointer"
+                    >
+                        Manhwa Tracker
+                    </Heading>
                     <p>{email}</p>
 
                     {/* DEBUGGING ONLY */}
@@ -131,7 +137,10 @@ export const Navbar: React.FC<NavbarProps> = ({
                         <DrawerBody>
                             <VStack>
                                 <Text fontSize="xl">Manage your lists</Text>
-                                <Button leftIcon={<AddIcon />}>
+                                <Button
+                                    leftIcon={<AddIcon />}
+                                    onClick={() => navigate("createlist")}
+                                >
                                     Create new list
                                 </Button>
                             </VStack>
