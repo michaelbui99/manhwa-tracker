@@ -1,6 +1,7 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
 import { ChakraProvider } from "@chakra-ui/react";
+import { AnimatePresence } from "framer-motion";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import "./index.css";
 import App from "./App";
@@ -19,7 +20,9 @@ ReactDOM.render(
     <React.StrictMode>
         <ApolloProvider client={client}>
             <ChakraProvider>
-                <App />
+                <AnimatePresence exitBeforeEnter intial={true}>
+                    <App />
+                </AnimatePresence>
             </ChakraProvider>
         </ApolloProvider>
     </React.StrictMode>,
