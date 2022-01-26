@@ -34,6 +34,7 @@ class ManhwaDAO:
             try:
                 cursor = connection.cursor()
                 cursor.execute('SELECT * FROM "public"."Genres"')
+
                 genres = cursor.fetchall()
                 return genres
             except(Exception, psycopg2.DatabaseError) as error:
@@ -44,9 +45,9 @@ class ManhwaDAO:
             try:
                 cursor = connection.cursor()
                 cursor.execute('SELECT * FROM "public"."Manhwas"')
+
                 manhwas = cursor.fetchall()
                 return manhwas
-
             except(Exception, psycopg2.DatabaseError) as error:
                 print(error)
 
@@ -56,8 +57,8 @@ class ManhwaDAO:
                 cursor = connection.cursor()
                 cursor.execute(
                     'SELECT * FROM "public"."Manhwas" where "Id"= %s;', (str(id)))
+
                 manhwa = cursor.fetchone()
                 return manhwa
-
             except(Exception, psycopg2.DatabaseError) as error:
                 print(error)
