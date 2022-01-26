@@ -2,8 +2,11 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
 # Restore dependencies
+RUN dotnet tool install --global dotnet-ef
 COPY *.csproj ./
 RUN dotnet restore
+
+RUN dotnet ef database update
 
 # Build binary
 COPY . ./
