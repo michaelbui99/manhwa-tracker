@@ -41,6 +41,7 @@ class ManhwaDAO:
                 print(error)
 
     def get_manhwas(self):
+        """Queries all Manhwas"""
         with (self.create_connection()) as connection:
             try:
                 cursor = connection.cursor()
@@ -52,6 +53,7 @@ class ManhwaDAO:
                 print(error)
 
     def get_manhwa_by_id(self, id):
+        """Queries a single Manhwa by id"""
         with (self.create_connection()) as connection:
             try:
                 cursor = connection.cursor()
