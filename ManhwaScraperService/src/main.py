@@ -1,16 +1,25 @@
+import json
+from flask import Flask
+from flask_restful import Resource, Api, reqparse
 from manhwa_dao import ManhwaDAO
 from manhwa_scraper import ManhwaScraper
 
-# currently just used for testing while developing
-dao = "test"
-scraper = ManhwaScraper(manhwa_dao=dao)
+app = Flask(__name__)
+api = Api(app)
 
-scraper.add_scrape_task(
-    "https://toonily.net/manga/immortal-swordsman-in-the-reverse-world/")
+parser = reqparse.RequestParser()
+parser.add_argument("scrapeTask")
 
-scraper.add_scrape_task("https://toonily.net/manga/martial-peak/")
 
-results = scraper.run_all_scraping_tasks()
+class ScrapeTaskSingle(Resource):
+    def post(self):
+        args = parser.parse_args()
+        scraper = ManhwaScraper()
+        result = scraper.scrape_page(args["scrapeTask"])
+        return json.dumps(result.__dict__), 200
 
-for result in results:
-    print(result)
+
+api.add_resource(ScrapeTaskSingle, "/api/scrapetask")
+
+if __name__ == "__main__":
+    app.run(debug=True)

@@ -6,9 +6,8 @@ import requests
 
 
 class ManhwaScraper:
-    def __init__(self, manhwa_dao):
-        self.scraping_tasks = []
-        self.manhwa_dao = manhwa_dao
+    def __init__(self):
+        self.scrape_tasks = []
 
     def scrape_page(self, url):
         """Scrapes a toonily.net page for Title, Chapter Count, Genres and Description
@@ -48,15 +47,15 @@ class ManhwaScraper:
 
     def add_scrape_task(self, url):
         """Adds a new Scrape task to be executed"""
-        self.scraping_tasks.append(url)
+        self.scrape_tasks.append(url)
 
-    def run_all_scraping_tasks(self):
+    def run_all_scrape_tasks(self):
         """Executes all scraping tasks"""
         scrapeResults = []
 
-        for url in self.scraping_tasks:
+        for url in self.scrape_tasks:
             result = self.scrape_page(url)
             scrapeResults.append(result)
 
-        self.scraping_tasks.clear()
+        self.scrape_tasks.clear()
         return scrapeResults
