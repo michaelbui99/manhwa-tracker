@@ -6,11 +6,10 @@ import requests
 
 
 class ManhwaScraper:
-    def __init__(self, manhwa_dao):
-        self.scrapingTaskQueue = Queue()
-        self.manhwa_dao = manhwa_dao
+    def __init__(self):
+        self.scrape_tasks = []
 
-    def scrape_single(self, url):
+    def scrape_page(self, url):
         """Scrapes a toonily.net page for Title, Chapter Count, Genres and Description
 
            :param str url: toonily.net url of a specific Manhwa page 
@@ -42,7 +41,21 @@ class ManhwaScraper:
             if (genre.strip() != "," and genre[0].isupper()):
                 genres.append(genre)
 
-        print(genres)
         result = ScrapeResult(title=title, description=description,
                               chapter_count=latest_chapter, genres=genres)
         return result
+
+    def add_scrape_task(self, url):
+        """Adds a new Scrape task to be executed"""
+        self.scrape_tasks.append(url)
+
+    def run_all_scrape_tasks(self):
+        """Executes all scraping tasks"""
+        scrapeResults = []
+
+        for url in self.scrape_tasks:
+            result = self.scrape_page(url)
+            scrapeResults.append(result)
+
+        self.scrape_tasks.clear()
+        return scrapeResults

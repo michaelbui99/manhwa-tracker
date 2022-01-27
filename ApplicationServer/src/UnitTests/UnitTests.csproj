@@ -16,7 +16,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\src\ManhwaTrackerApplicationServer\ManhwaTrackerApplicationServer.csproj" />
+      <ProjectReference Include="..\ManhwaTrackerApplicationServer\ManhwaTrackerApplicationServer.csproj" />
     </ItemGroup>
 
 </Project>
