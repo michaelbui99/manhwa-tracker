@@ -5,6 +5,12 @@ from manhwa_scraper import ManhwaScraper
 dao = "test"
 scraper = ManhwaScraper(manhwa_dao=dao)
 
-scrape_result = scraper.scrape_single(
-    "https://toonily.net/manga/martial-peak/")
-print(scrape_result)
+scraper.add_scrape_task(
+    "https://toonily.net/manga/immortal-swordsman-in-the-reverse-world/")
+
+scraper.add_scrape_task("https://toonily.net/manga/martial-peak/")
+
+results = scraper.run_all_scraping_tasks()
+
+for result in results:
+    print(result)
