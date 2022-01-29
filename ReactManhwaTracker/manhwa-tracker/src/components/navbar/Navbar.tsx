@@ -63,7 +63,6 @@ export const Navbar: React.FC = ({}) => {
                     >
                         Manhwa Tracker
                     </Heading>
-                    <p>{user.email}</p>
 
                     <HStack>
                         <NavButton
