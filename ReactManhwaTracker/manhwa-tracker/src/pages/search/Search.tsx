@@ -6,6 +6,7 @@ import {
     InputGroup,
     InputLeftElement,
     Spinner,
+    useToast,
 } from "@chakra-ui/react";
 import { SearchIcon } from "@chakra-ui/icons";
 import SearchDirectory from "../../components/search-directory/SearchDirectory";
@@ -24,7 +25,10 @@ const Search: React.FC = () => {
     const [searchInput, setSearchInput] = useState<string>("");
     const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
     const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
+
     const client = useApolloClient();
+    const toast = useToast();
+
     const fetchData = async () => {
         const ALLMANHWAS = gql`
             {
@@ -47,13 +51,19 @@ const Search: React.FC = () => {
                 }
             }
         `;
+
         try {
             const request = client.query({ query: ALLMANHWAS });
             const response = await request;
             return response.data.allManhwas;
         } catch (err) {
-            console.log(err);
-            throw err;
+            toast({
+                title: "Network error",
+                description: "Unable to connect to server, try again later",
+                status: "error",
+                duration: 9000,
+                isClosable: true,
+            });
         }
     };
 
@@ -62,12 +72,13 @@ const Search: React.FC = () => {
         async function resolvedata() {
             try {
                 const data = await fetchData();
+                if (!data) {
+                    setManhwas([]);
+                }
                 setManhwas(data);
                 setManhwasToShow(manhwas);
                 setIsLoading(false);
-            } catch (err) {
-                setError(true);
-            }
+            } catch (err) {}
         }
         try {
             resolvedata();

@@ -14,6 +14,7 @@ import {
     Button,
     Flex,
     Heading,
+    useToast,
 } from "@chakra-ui/react";
 import DateFormInput from "../../components/date-form-input/DateFormInput";
 import * as React from "react";
@@ -51,6 +52,8 @@ const RequestManhwa: React.FC = () => {
         useState<SourceMaterial | null>();
     const [releaseStatus, setReleaseStatus] = useState<Status | null>();
 
+    const toast = useToast();
+
     const GENRES_AND_TAGS = gql`
         {
             allGenres {
@@ -67,21 +70,39 @@ const RequestManhwa: React.FC = () => {
     useEffect(() => {
         // on mount side effects
         async function fetchGenresAndTags() {
-            const { data } = await client.query({ query: GENRES_AND_TAGS });
-            const fetchedGenres = data.allGenres;
-            const fetchedTags = data.allTags;
-            return { genres: fetchedGenres, tags: fetchedTags };
+            try {
+                const { data } = await client.query({ query: GENRES_AND_TAGS });
+                const fetchedGenres = data.allGenres;
+                const fetchedTags = data.allTags;
+                return { genres: fetchedGenres, tags: fetchedTags };
+            } catch (err) {
+                toast({
+                    title: "Network error",
+                    description: "Unable to connect to server, try again later",
+                    status: "error",
+                    duration: 9000,
+                    isClosable: true,
+                });
+            }
         }
         async function resolveGenresAndTags() {
-            const data = await fetchGenresAndTags();
-            console.log(data);
-            const fetchedGenres = data.genres;
-            const fetchedTags = data.tags;
-            setGenres(fetchedGenres);
-            setTags(fetchedTags);
+            try {
+                const data: any = await fetchGenresAndTags();
+                console.log(data);
+                const fetchedGenres = data.genres;
+                const fetchedTags = data.tags;
+                setGenres(fetchedGenres);
+                setTags(fetchedTags);
+            } catch (err) {
+                console.log(err);
+            }
         }
 
-        resolveGenresAndTags();
+        try {
+            resolveGenresAndTags();
+        } catch (err) {
+            console.log(err);
+        }
     }, []);
 
     const addGenre = () => {
