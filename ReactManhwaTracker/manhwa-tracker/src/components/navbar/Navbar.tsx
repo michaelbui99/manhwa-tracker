@@ -65,13 +65,6 @@ export const Navbar: React.FC = ({}) => {
                     </Heading>
                     <p>{user.email}</p>
 
-                    {/* DEBUGGING ONLY */}
-                    {user.isLoggedIn ? (
-                        <p>Is Logged in</p>
-                    ) : (
-                        <p>Not logged in</p>
-                    )}
-
                     <HStack>
                         <NavButton
                             onClick={() => navigate("/")}
@@ -127,7 +120,7 @@ export const Navbar: React.FC = ({}) => {
                         <DrawerCloseButton />
                         <Center>
                             <DrawerHeader borderBottomWidth="1px">
-                                {user.isLoggedIn ? "TEST" : "Not logged in"}
+                                {user.isLoggedIn ? user.email : "Not logged in"}
                             </DrawerHeader>
                         </Center>
                         <DrawerBody>
