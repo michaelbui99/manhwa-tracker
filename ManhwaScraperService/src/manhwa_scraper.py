@@ -1,6 +1,5 @@
 from queue import Queue
 from bs4 import BeautifulSoup
-from manhwa_dao import ManhwaDAO
 from scrape_result import ScrapeResult
 import requests
 

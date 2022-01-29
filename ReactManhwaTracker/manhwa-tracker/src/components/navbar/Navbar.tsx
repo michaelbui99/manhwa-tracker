@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useState, useRef } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import {
     Box,
     Heading,
@@ -23,19 +24,15 @@ import {
 import { Link, useNavigate } from "react-router-dom";
 import { HamburgerIcon, AddIcon } from "@chakra-ui/icons";
 import { NavButton } from "../nav-button/NavButton";
+import { logout } from "../../reducers/user";
+import "../../reducers/user";
 
 //TODO: Find a way to get navbar to rerender, when user logs in
-interface NavbarProps {
-    isLoggedIn: boolean;
-    setIsLoggedIn: React.Dispatch<React.SetStateAction<boolean>>;
-    email: string;
-}
 
-export const Navbar: React.FC<NavbarProps> = ({
-    isLoggedIn,
-    setIsLoggedIn,
-    email,
-}) => {
+export const Navbar: React.FC = ({}) => {
+    const user = useSelector((state: any) => state.user.value);
+    const dispatch = useDispatch();
+
     const navigate = useNavigate();
     const btnRef = useRef();
 
@@ -44,14 +41,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
     const handleHamburgerClick = () => {
         setOpened(!opened);
-    };
-
-    React.useEffect(() => {}, [isLoggedIn]);
-
-    const logout = () => {
-        sessionStorage.removeItem("token");
-        setIsLoggedIn(false);
-        navigate("/");
     };
 
     return (
@@ -74,10 +63,6 @@ export const Navbar: React.FC<NavbarProps> = ({
                     >
                         Manhwa Tracker
                     </Heading>
-                    <p>{email}</p>
-
-                    {/* DEBUGGING ONLY */}
-                    {isLoggedIn ? <p>Is Logged in</p> : <p>Not logged in</p>}
 
                     <HStack>
                         <NavButton
@@ -95,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                             labelText="Request Manhwa"
                         />
 
-                        {!isLoggedIn ? (
+                        {!user.isLoggedIn ? (
                             <NavButton
                                 onClick={() => navigate("/login")}
                                 labelText="Login"
@@ -104,13 +89,16 @@ export const Navbar: React.FC<NavbarProps> = ({
                             ""
                         )}
 
-                        {isLoggedIn ? (
-                            <NavButton onClick={logout} labelText="Logout" />
+                        {user.isLoggedIn ? (
+                            <NavButton
+                                onClick={() => dispatch(logout())}
+                                labelText="Logout"
+                            />
                         ) : (
                             ""
                         )}
 
-                        {isLoggedIn ? (
+                        {user.isLoggedIn ? (
                             <IconButton
                                 aria-label="Manage"
                                 icon={<HamburgerIcon />}
@@ -124,14 +112,14 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </Flex>
             </Box>
 
-            {isLoggedIn ? (
+            {user.isLoggedIn ? (
                 <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
                     <DrawerOverlay />
                     <DrawerContent>
                         <DrawerCloseButton />
                         <Center>
                             <DrawerHeader borderBottomWidth="1px">
-                                {isLoggedIn ? "TEST" : "Not logged in"}
+                                {user.isLoggedIn ? user.email : "Not logged in"}
                             </DrawerHeader>
                         </Center>
                         <DrawerBody>
