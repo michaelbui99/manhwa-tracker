@@ -1,5 +1,6 @@
 import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Home from "./pages/home/Home";
 import Search from "./pages/search/Search";
 import { Navbar } from "./components/navbar/Navbar";
@@ -11,38 +12,24 @@ import Login from "./pages/login/Login";
 import CreateList from "./pages/create-list/CreateList";
 
 function App() {
-    const [isLoggedIn, setIsLoggedIn] = React.useState(false);
-    const [email, setEmail] = React.useState("");
-
-    React.useEffect(() => {
-        const token = sessionStorage.getItem("token");
-
-        if (token) {
-            setIsLoggedIn(true);
-        }
-        console.log(isLoggedIn);
-    }, []);
+    const user = useSelector((state) => state.user.value);
 
     return (
         <BrowserRouter>
             <div className="App">
-                <Navbar
-                    isLoggedIn={isLoggedIn}
-                    setIsLoggedIn={setIsLoggedIn}
-                    email={email}
-                ></Navbar>
+                <Navbar />
                 <Routes>
                     <Route index element={<Home />} />
                     <Route path="/search" element={<Search />} />
                     <Route path="/requestmanhwa" element={<RequestManhwa />} />
                     <Route path="/manhwa/:id" element={<ManhwaDetails />} />
                     <Route path="/createlist" element={<CreateList />} />
-                    {!isLoggedIn ? (
+                    {!user.isLoggedIn ? (
                         <Route path="/signup" element={<SignUp />} />
                     ) : (
                         ""
                     )}
-                    {!isLoggedIn ? (
+                    {!user.isLoggedIn ? (
                         <Route path="/login" element={<Login />} />
                     ) : (
                         ""

@@ -14,10 +14,13 @@ import FormCard from "../../components/form-card/FormCard";
 import IconFormInput from "../../components/icon-form-input/IconFormInput";
 import { gql, useApolloClient } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../reducers/user";
 
 const Login: React.FC = () => {
     const client = useApolloClient();
     const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
@@ -65,6 +68,8 @@ const Login: React.FC = () => {
                 "token",
                 `${response.data.validateLogin.token}`
             );
+
+            dispatch(login({ email: email, isLoggedIn: true }));
 
             navigate("/");
         } catch (error) {
