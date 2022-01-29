@@ -4,7 +4,7 @@ Project is mainly used for learning new technologies including Docker, React wit
 
 ## Screen shots
 
-![Home page](https://postimg.cc/d79vhqg6)
-![Browse page](https://postimg.cc/Z9m4Y9s0)
-![Login page](https://postimg.cc/njcx7yJJ)
-![Request Manhwa page](https://postimg.cc/R6sBTgSn)
+![Home page](https://i.postimg.cc/KY6YsjN6/manhwatracker-home.png)
+![Browse page](https://i.postimg.cc/FKdRZ3jb/manhwatracker-browse.png)
+![Login page](https://i.postimg.cc/zBTfmN2V/manhwatracker-login.png)
+![Request Manhwa page](https://i.postimg.cc/MHxpqLgt/manhwatracker-request.png)
