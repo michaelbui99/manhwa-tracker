@@ -6,6 +6,7 @@ import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 import { configureStore } from "@reduxjs/toolkit";
 import { Provider } from "react-redux";
 import userReducer from "./reducers/user";
+import manhwaListsReducer from "./reducers/manhwa-lists";
 import "./index.css";
 import App from "./App";
 
@@ -20,7 +21,10 @@ const client = new ApolloClient({
 });
 
 const store = configureStore({
-    reducer: { user: userReducer },
+    reducer: {
+        user: userReducer,
+        manhwaLists: manhwaListsReducer,
+    },
 });
 
 ReactDOM.render(

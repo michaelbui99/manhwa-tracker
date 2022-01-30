@@ -16,6 +16,7 @@ import { gql, useApolloClient } from "@apollo/client";
 import { useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { login } from "../../reducers/user";
+import { setLists } from "../../reducers/manhwa-lists";
 
 const Login: React.FC = () => {
     const client = useApolloClient();
@@ -27,12 +28,49 @@ const Login: React.FC = () => {
     const [errorMessage, setErrorMessage] = React.useState("");
     const [loading, setLoading] = React.useState(false);
 
-    const LOGIN_QUERY = gql`
+    const LOGIN_MUTATION = gql`
         mutation ($userEmail: String!, $userPassword: String!) {
             validateLogin(email: $userEmail, password: $userPassword) {
                 id
                 email
                 token
+            }
+        }
+    `;
+
+    const USERMANHWALISTS_QUERY = gql`
+        query {
+            userManhwaLists {
+                id
+                name
+                description
+                listEntries {
+                    id
+                    manhwa {
+                        id
+                        title
+                        description
+                        format
+                        status
+                        sourceMaterial
+                        releaseDate
+                        endDate
+                        chapterCount
+                        coverImage
+                        tags {
+                            id
+                            name
+                        }
+                        genres {
+                            id
+                            name
+                        }
+                        synonyms {
+                            title
+                            titleLanguage
+                        }
+                    }
+                }
             }
         }
     `;
@@ -60,7 +98,7 @@ const Login: React.FC = () => {
 
         try {
             const response = await client.mutate({
-                mutation: LOGIN_QUERY,
+                mutation: LOGIN_MUTATION,
                 variables: { userEmail: email, userPassword: password },
             });
 
@@ -69,7 +107,16 @@ const Login: React.FC = () => {
                 `${response.data.validateLogin.token}`
             );
 
+            const userManhwaListsQueryResponse = await client.query({
+                query: USERMANHWALISTS_QUERY,
+            });
+
+            const userManhwaLists =
+                userManhwaListsQueryResponse.data.userManhwaLists;
+
             dispatch(login({ email: email, isLoggedIn: true }));
+
+            dispatch(setLists(userManhwaLists));
 
             navigate("/");
         } catch (error) {
