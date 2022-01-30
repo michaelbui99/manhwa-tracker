@@ -1,6 +1,6 @@
 # Manhwa Tracker
 
-Project is mainly used for learning new technologies including Docker, React with Redux, Web scraping with Python and Typescript.
+Project is mainly used for learning new technologies and languages including Docker, React with Redux, Web scraping with Python and Typescript.
 
 ## Screen shots
 
