@@ -102,6 +102,7 @@ const Login: React.FC = () => {
                 variables: { userEmail: email, userPassword: password },
             });
 
+            console.log("Setting token");
             sessionStorage.setItem(
                 "token",
                 `${response.data.validateLogin.token}`

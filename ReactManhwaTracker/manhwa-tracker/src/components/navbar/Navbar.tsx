@@ -26,11 +26,13 @@ import { HamburgerIcon, AddIcon } from "@chakra-ui/icons";
 import { NavButton } from "../nav-button/NavButton";
 import { logout } from "../../reducers/user";
 import "../../reducers/user";
+import { ManhwaListDrawerItem } from "../manhwa-list-drawer-item/ManhwaListDrawerItem";
 
 //TODO: Find a way to get navbar to rerender, when user logs in
 
 export const Navbar: React.FC = ({}) => {
     const user = useSelector((state: any) => state.user.value);
+    const lists: any[] = useSelector((state: any) => state.manhwaLists.value);
     const dispatch = useDispatch();
 
     const navigate = useNavigate();
@@ -112,6 +114,7 @@ export const Navbar: React.FC = ({}) => {
                 </Flex>
             </Box>
 
+            {/* Drawer for managing lists */}
             {user.isLoggedIn ? (
                 <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
                     <DrawerOverlay />
@@ -125,6 +128,13 @@ export const Navbar: React.FC = ({}) => {
                         <DrawerBody>
                             <VStack>
                                 <Text fontSize="xl">Manage your lists</Text>
+                                {lists.length > 0
+                                    ? lists.map((list) => (
+                                          <ManhwaListDrawerItem
+                                              manhwaList={list}
+                                          />
+                                      ))
+                                    : "No lists have been created"}
                                 <Button
                                     leftIcon={<AddIcon />}
                                     onClick={() => navigate("createlist")}
@@ -138,6 +148,7 @@ export const Navbar: React.FC = ({}) => {
             ) : (
                 ""
             )}
+
             {/* Mobile navbar */}
             <Box
                 padding="1rem 2rem"
