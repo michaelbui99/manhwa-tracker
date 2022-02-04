@@ -11,6 +11,8 @@ import {
 } from "@chakra-ui/react";
 import FormCard from "../../components/form-card/FormCard";
 import FormHeading from "../../components/form-heading/FormHeading";
+import { useDispatch, useSelector } from "react-redux";
+import { setLists } from "../../reducers/manhwa-lists";
 
 const CreateList: React.FC = () => {
     const client = useApolloClient();
@@ -101,7 +103,11 @@ const CreateList: React.FC = () => {
                     marginTop="2rem"
                 >
                     <Button onClick={() => navigate("/")}>Cancel</Button>
-                    <Button colorScheme="teal" isLoading={loading}>
+                    <Button
+                        colorScheme="teal"
+                        isLoading={loading}
+                        onClick={createNewList}
+                    >
                         Create
                     </Button>
                 </Flex>

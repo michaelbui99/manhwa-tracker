@@ -8,4 +8,6 @@ public interface IManhwaListRepository
     public Task AddListEntryAsync(int listId, ManhwaListEntry listEntry);
     public Task<IEnumerable<Models.ManhwaList.ManhwaList>> GetAllByEmailAsync(string userEmail);
     public Task DeleteAsync(int listId);
+
+    public Task<Models.ManhwaList.ManhwaList> GetByIdAsync(int id);
 }
