@@ -39,9 +39,16 @@ public class ManhwaListService : IManhwaListService
         }
     }
 
-    public Task AddListEntryAsync(int listId, ManhwaListEntry listEntry)
+    public async Task AddListEntryAsync(int listId, ManhwaListEntry listEntry)
     {
-        throw new NotImplementedException();
+        var existingList = await _listRepository.GetByIdAsync(listId);
+
+        if (existingList == null)
+        {
+            throw new KeyNotFoundException("List does not exist");
+        }
+
+        await _listRepository.AddListEntryAsync(listId, listEntry);
     }
 
     public async Task<IEnumerable<Models.ManhwaList.ManhwaList>> GetAllByEmailAsync(string userEmail)

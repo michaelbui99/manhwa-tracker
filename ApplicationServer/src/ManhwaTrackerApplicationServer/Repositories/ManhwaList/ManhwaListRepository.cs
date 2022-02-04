@@ -32,9 +32,11 @@ public class ManhwaListRepository : IManhwaListRepository
         return createdList;
     }
 
-    public Task AddListEntryAsync(int listId, ManhwaListEntry listEntry)
+    public async Task AddListEntryAsync(int listId, ManhwaListEntry listEntry)
     {
-        throw new NotImplementedException();
+        var existingList = await _dbContext.ManhwaLists.FirstOrDefaultAsync(list => list.Id == listId);
+        existingList.ListEntries.ToList().Add(listEntry);
+        await _dbContext.SaveChangesAsync();
     }
 
     public async Task<IEnumerable<ManhwaList>> GetAllByEmailAsync(string userEmail)
@@ -47,5 +49,11 @@ public class ManhwaListRepository : IManhwaListRepository
     public Task DeleteAsync(int listId)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<ManhwaList> GetByIdAsync(int id)
+    {
+        var existingList = await _dbContext.ManhwaLists.FirstOrDefaultAsync(list => list.Id == id);
+        return existingList;
     }
 }

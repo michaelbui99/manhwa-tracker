@@ -33,6 +33,12 @@ public class Mutation
         var newList = await _manhwaListService.CreateAsync(userEmail, name, description);
         return newList;
     }
+
+    [Authorize(Policy = "MustBeUser")]
+    public async Task AddListEntry(int listId, ManhwaListEntry listEntry)
+    {
+        await _manhwaListService.AddListEntryAsync(listId, listEntry);
+    }
     
     public async Task<User> ValidateLogin(string email, string password)
     {
