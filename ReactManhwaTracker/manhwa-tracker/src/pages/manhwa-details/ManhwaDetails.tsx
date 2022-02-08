@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useState, useEffect } from "react";
 import { gql, useApolloClient } from "@apollo/client";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import Manhwa from "../../models/manhwa/manhwa";
 import {
     Box,
@@ -17,9 +17,11 @@ import TagAttribute from "../../components/tag-attribute/TagAttribute";
 import { Status } from "../../models/manhwa/status";
 
 const ManhwaDetails: React.FC = () => {
-    const [manhwa, setManhwa] = useState<Manhwa | null>();
     const client = useApolloClient();
     const { id } = useParams();
+    const navigate = useNavigate();
+
+    const [manhwa, setManhwa] = useState<Manhwa | null>();
     const MANHWA_QUERY = gql`
         query ($manhwaId: Int!) {
             manhwaById(id: $manhwaId) {
@@ -161,7 +163,12 @@ const ManhwaDetails: React.FC = () => {
                                             <TagAttribute tag={t} />
                                         ))}
                                     </HStack>
-                                    <Button colorScheme="teal">
+                                    <Button
+                                        colorScheme="teal"
+                                        onClick={() =>
+                                            navigate("/addlistentry")
+                                        }
+                                    >
                                         Add to list
                                     </Button>
                                 </Flex>

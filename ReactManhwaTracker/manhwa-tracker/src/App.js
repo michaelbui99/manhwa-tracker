@@ -10,6 +10,7 @@ import ManhwaDetails from "./pages/manhwa-details/ManhwaDetails";
 import SignUp from "./pages/signup/SignUp";
 import Login from "./pages/login/Login";
 import CreateList from "./pages/create-list/CreateList";
+import AddListEntry from "./pages/add-list-entry/AddListEntry";
 
 function App() {
     const user = useSelector((state) => state.user.value);
@@ -24,6 +25,7 @@ function App() {
                     <Route path="/requestmanhwa" element={<RequestManhwa />} />
                     <Route path="/manhwa/:id" element={<ManhwaDetails />} />
                     <Route path="/createlist" element={<CreateList />} />
+                    <Route path="/addlistentry" element={<AddListEntry />} />
                     {!user.isLoggedIn ? (
                         <Route path="/signup" element={<SignUp />} />
                     ) : (

@@ -27,6 +27,7 @@ import { NavButton } from "../nav-button/NavButton";
 import { logout } from "../../reducers/user";
 import "../../reducers/user";
 import { ManhwaListDrawerItem } from "../manhwa-list-drawer-item/ManhwaListDrawerItem";
+import { ManhwaList } from "../../models/manhwa-list/manhwa-list";
 
 //TODO: Find a way to get navbar to rerender, when user logs in
 
@@ -129,9 +130,10 @@ export const Navbar: React.FC = ({}) => {
                             <VStack>
                                 <Text fontSize="xl">Manage your lists</Text>
                                 {lists.length > 0
-                                    ? lists.map((list) => (
+                                    ? lists.map((list: ManhwaList) => (
                                           <ManhwaListDrawerItem
                                               manhwaList={list}
+                                              key={list.id}
                                           />
                                       ))
                                     : "No lists have been created"}
