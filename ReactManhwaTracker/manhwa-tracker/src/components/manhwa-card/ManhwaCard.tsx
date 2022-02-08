@@ -81,6 +81,7 @@ export const ManhwaCard: React.FC<{ manhwa: Manhwa }> = ({ manhwa }) => {
                             variant="outline"
                             backgroundColor="white"
                             marginTop="0.5rem"
+                            onClick={() => navigate("/addlistentry")}
                         >
                             Add to list
                         </Button>

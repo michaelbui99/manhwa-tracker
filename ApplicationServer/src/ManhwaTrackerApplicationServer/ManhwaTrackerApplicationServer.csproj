@@ -29,6 +29,8 @@
 
     <ItemGroup>
       <Folder Include="Authentication" />
+      <Folder Include="Models\Domain" />
+      <Folder Include="Models\ThirdParty" />
     </ItemGroup>
 
 </Project>
