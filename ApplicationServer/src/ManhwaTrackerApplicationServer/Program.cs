@@ -57,7 +57,7 @@ builder.Services.AddAuthorization(options =>
     {
         policy.RequireClaim("Role", "User");
     });
-    
+
     options.AddPolicy("MustBeModerator", policy =>
     {
         policy.RequireClaim("Role", "Moderator");
