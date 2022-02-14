@@ -1,4 +1,6 @@
-﻿using ManhwaTrackerApplicationServer.Dtos.UserDtos;
+﻿using ManhwaTrackerApplicationServer.Dtos.ManhwaDtos;
+using ManhwaTrackerApplicationServer.Dtos.UserDtos;
+using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Models.User;
 
 namespace ManhwaTrackerApplicationServer.Dtos
@@ -33,6 +35,87 @@ namespace ManhwaTrackerApplicationServer.Dtos
             {
                 Email = user.Email,
                 Token = user.Token
+            };
+        }
+
+
+        /// <summary>
+        /// Converts a <c>Genre</c> into an <c>ReadGenreDto</c> instance
+        /// </summary>
+        /// <param name="genre">Genre to be converted into DTO</param>
+        /// <returns>a ReadGenreDto instance</returns>
+        public static ReadGenreDto ToDto(this Genre genre)
+        {
+            return new ReadGenreDto()
+            {
+                Id = genre.Id,
+                Name = genre.Name
+            };
+        }
+
+        /// <summary>
+        /// Converts a <c>Tag</c> into an <c>ReadTagDto</c> instance
+        /// </summary>
+        /// <param name="tag">Tag to be converted into DTO</param>
+        /// <returns>a ReadTagDto instance</returns>
+        public static ReadTagDto ToDto(this Tag tag)
+        {
+            return new ReadTagDto()
+            {
+                Id = tag.Id,
+                Name = tag.Name
+            };
+        }
+
+        /// <summary>
+        /// Converts a <c>Synonym</c> into an <c>ReadSynonymDto</c> instance
+        /// </summary>
+        /// <param name="synonym">Synonym to be converted into DTO</param>
+        /// <returns>a ReadSynonymDto instance</returns>
+        public static ReadSynonymDto ToDto(this Synonym synonym)
+        {
+            return new ReadSynonymDto()
+            {
+                Title = synonym.Title,
+                TitleLanguage = synonym.TitleLanguage
+            };
+        }
+
+        public static IEnumerable<ReadGenreDto> MapEnumerableToDtos(this IEnumerable<Genre> genres)
+        {
+            var genresAsDtos = genres.Select(genre => genre.ToDto()).ToList();
+            return genresAsDtos;
+        }
+
+        public static IEnumerable<ReadTagDto> MapEnumerableToDtos(this IEnumerable<Tag> tags)
+        {
+            var tagsAsDtos = tags.Select(tag => tag.ToDto()).ToList();
+            return tagsAsDtos;
+        }
+
+        public static IEnumerable<ReadSynonymDto> MapEnumerableToDtos(this IEnumerable<Synonym> synonyms)
+        {
+            var synonymsAsDtos = synonyms.Select(synonym => synonym.ToDto()).ToList();
+            return synonymsAsDtos;
+        }
+
+        public static ReadManhwaDto ToDto(this Manhwa manhwa)
+        {
+            return new ReadManhwaDto()
+            {
+                Id = manhwa.Id,
+                ChapterCount = manhwa.ChapterCount,
+                CoverImage = manhwa.CoverImage,
+                Description = manhwa.Description,
+                EndDate = manhwa.EndDate,
+                Format = manhwa.Format,
+                Genres = manhwa.Genres.MapEnumerableToDtos(),
+                ReleaseDate = manhwa.ReleaseDate,
+                SourceMaterial = manhwa.SourceMaterial,
+                Status = manhwa.Status,
+                Synonyms = manhwa.Synonyms.MapEnumerableToDtos(),
+                Tags = manhwa.Tags.MapEnumerableToDtos(),
+                Title = manhwa.Title
             };
         }
     }
