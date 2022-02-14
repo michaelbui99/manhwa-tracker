@@ -1,4 +1,5 @@
-﻿using ManhwaTrackerApplicationServer.Models.Manhwa;
+﻿using ManhwaTrackerApplicationServer.Dtos;
+using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
@@ -35,9 +36,9 @@ namespace ManhwaTrackerApplicationServer.Controllers
                 {
                     manhwasToReturn = await _manhwaService.GetByTitleAsync(title);
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    _logger.LogError("Failed to fetch manhwas");
+                    _logger.LogError($"Failed to fetch manhwas: {e.Message}");
                     return StatusCode(500);
                 }
             }
@@ -45,16 +46,17 @@ namespace ManhwaTrackerApplicationServer.Controllers
             {
                 try
                 {
-                    _logger.LogError("Failed to fetch manhwas");
+                    manhwasToReturn = await _manhwaService.GetAllAsync();
                 }
-                catch (Exception)
+                catch (Exception e)
                 {
-                    _logger.LogError("Failed to fetch manhwas");
+                    _logger.LogError($"Failed to fetch manhwas: {e.Message}");
                     return StatusCode(500);
                 }
             }
 
-            return Ok(manhwasToReturn);
+            var manhwasToReturnAsDtos = manhwasToReturn.Select(manhwa => manhwa.ToDto());
+            return Ok(manhwasToReturnAsDtos);
         }
     }
 }
