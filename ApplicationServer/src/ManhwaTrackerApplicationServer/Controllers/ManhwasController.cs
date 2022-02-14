@@ -25,15 +25,33 @@ namespace ManhwaTrackerApplicationServer.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Manhwa>>> GetAllManhwas([FromQuery] string? title)
         {
-            IEnumerable<Manhwa> manhwasToReturn;
+            _logger.LogInformation("GET request received for /manhwas");
+
+            IEnumerable<Manhwa> manhwasToReturn = new List<Manhwa>(); ;
 
             if (!string.IsNullOrEmpty(title))
             {
-                manhwasToReturn = await _manhwaService.GetByTitleAsync(title);
+                try
+                {
+                    manhwasToReturn = await _manhwaService.GetByTitleAsync(title);
+                }
+                catch (Exception)
+                {
+                    _logger.LogError("Failed to fetch manhwas");
+                    return StatusCode(500);
+                }
             }
             else
             {
-                manhwasToReturn = await _manhwaService.GetAllAsync();
+                try
+                {
+                    _logger.LogError("Failed to fetch manhwas");
+                }
+                catch (Exception)
+                {
+                    _logger.LogError("Failed to fetch manhwas");
+                    return StatusCode(500);
+                }
             }
 
             return Ok(manhwasToReturn);
