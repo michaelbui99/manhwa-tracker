@@ -34,10 +34,6 @@ namespace ManhwaTrackerApplicationServer.Controllers
             else
             {
                 manhwasToReturn = await _manhwaService.GetAllAsync();
-                foreach (var manhwa in manhwasToReturn)
-                {
-                    Console.WriteLine(JsonSerializer.Serialize(manhwa));
-                }
             }
 
             return Ok(manhwasToReturn);
