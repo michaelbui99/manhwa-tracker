@@ -61,4 +61,17 @@ public class ManhwaListService : IManhwaListService
     {
         throw new NotImplementedException();
     }
+
+    public async Task<IEnumerable<Models.ManhwaList.ManhwaList>> GetAllByUserIdAsync(int userId)
+    {
+        var existingUser = await _userService.GetUserByIdAsync(userId);
+        
+        if (existingUser == null)
+        {
+            throw new KeyNotFoundException($"User with id: {userId} does not exist");
+        }
+
+        var allLists = await _listRepository.GetAllByUserIdAsync(userId);
+        return allLists;
+    }
 }

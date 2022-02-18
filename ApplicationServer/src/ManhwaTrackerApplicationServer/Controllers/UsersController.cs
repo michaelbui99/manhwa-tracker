@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ManhwaTrackerApplicationServer.Controllers
 {
-    [Authorize(Policy = "MustBeUser", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     [ApiController]
     [Route("api/v1/[controller]")]
     public class UsersController : ControllerBase
@@ -24,14 +23,15 @@ namespace ManhwaTrackerApplicationServer.Controllers
             _userService = userService;
         }
 
-        // POST /users/   
+        [Authorize(Policy = "MustBeUser", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        // POST /users/{userId}/manhwaLists
         [HttpPost("{userId:int}/manhwalists")]
         public async Task<ActionResult<ReadManhwaListDto>> CreateManhwaList([FromRoute] int userId, CreateManhwaListDto createManhwaListDto)
         {
             try
             {
                 var existingUser = await _userService.GetUserByIdAsync(userId);
-                
+
                 if (existingUser.Email != User.Identity.Name)
                 {
                     return Unauthorized();
@@ -53,6 +53,27 @@ namespace ManhwaTrackerApplicationServer.Controllers
             catch (Exception)
             {
                 // All other exceptions are treated as internal server error
+                return StatusCode(500);
+            }
+        }
+
+        [HttpGet("{userId:int}/manhwalists")]
+        public async Task<ActionResult<IEnumerable<ReadManhwaListDto>>> GetUsersManhwaLists([FromRoute] int userId)
+        {
+            try
+            {
+                var lists = await _manhwaListService.GetAllByUserIdAsync(userId);
+
+                var listsAsDto = lists.Select(list => list.ToDto()).ToList();
+
+                return listsAsDto;
+            }
+            catch (KeyNotFoundException e)
+            {
+                return BadRequest(e.Message);
+            }
+            catch (Exception)
+            {
                 return StatusCode(500);
             }
         }
