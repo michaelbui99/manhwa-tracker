@@ -1,6 +1,8 @@
 ﻿using ManhwaTrackerApplicationServer.Dtos.ManhwaDtos;
+using ManhwaTrackerApplicationServer.Dtos.ManhwaListDtos;
 using ManhwaTrackerApplicationServer.Dtos.UserDtos;
 using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Models.ManhwaList;
 using ManhwaTrackerApplicationServer.Models.User;
 
 namespace ManhwaTrackerApplicationServer.Dtos
@@ -116,6 +118,29 @@ namespace ManhwaTrackerApplicationServer.Dtos
                 Synonyms = manhwa.Synonyms.MapEnumerableToDtos(),
                 Tags = manhwa.Tags.MapEnumerableToDtos(),
                 Title = manhwa.Title
+            };
+        }
+        
+        public static ReadListEntryDto ToDto(this ManhwaListEntry listEntry)
+        {
+            return new ReadListEntryDto()
+            {
+                Id = listEntry.Id,
+                LatestReadChapter = listEntry.LatestReadChapter,
+                Manhwa = listEntry.Manhwa.ToDto()
+            };
+        }
+
+        public static ReadManhwaListDto ToDto(this ManhwaList manhwaList)
+        {
+            var listEntriesAsDto = manhwaList.ListEntries.Select(listEntry => listEntry.ToDto()).ToList();
+
+            return new ReadManhwaListDto()
+            {
+                Id = manhwaList.Id,
+                Description = manhwaList.Description,
+                ListEntries = listEntriesAsDto,
+
             };
         }
     }

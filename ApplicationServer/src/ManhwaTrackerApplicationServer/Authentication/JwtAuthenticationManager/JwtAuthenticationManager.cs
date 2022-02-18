@@ -61,4 +61,6 @@ public class JwtAuthenticationManager : IJwtAuthenticationManager
         existingUser.Token = tokenHandler.WriteToken(token);
         return existingUser;
     }
+
+
 }
