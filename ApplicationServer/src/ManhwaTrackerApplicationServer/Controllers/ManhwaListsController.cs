@@ -9,7 +9,7 @@ namespace ManhwaTrackerApplicationServer.Controllers
 {
     [ApiController]
     [Authorize(Policy = "MustBeUser", AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-    [Route("/api/[controller]")]
+    [Route("/api/v1/[controller]")]
     public class ManhwaListsController : ControllerBase
     {
         private readonly ILogger _logger;

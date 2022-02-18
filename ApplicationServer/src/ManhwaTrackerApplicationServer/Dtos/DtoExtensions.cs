@@ -35,6 +35,7 @@ namespace ManhwaTrackerApplicationServer.Dtos
         {
             return new ReadUserDto()
             {
+                Id = user.Id,
                 Email = user.Email,
                 Token = user.Token
             };
@@ -120,7 +121,7 @@ namespace ManhwaTrackerApplicationServer.Dtos
                 Title = manhwa.Title
             };
         }
-        
+
         public static ReadListEntryDto ToDto(this ManhwaListEntry listEntry)
         {
             return new ReadListEntryDto()
@@ -138,10 +139,12 @@ namespace ManhwaTrackerApplicationServer.Dtos
             return new ReadManhwaListDto()
             {
                 Id = manhwaList.Id,
+                Name = manhwaList.Name,
                 Description = manhwaList.Description,
                 ListEntries = listEntriesAsDto,
 
             };
         }
+
     }
 }

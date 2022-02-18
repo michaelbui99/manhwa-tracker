@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ManhwaTrackerApplicationServer.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/v1/[controller]")]
     public class LoginController : ControllerBase
     {
         private readonly ILogger _logger;

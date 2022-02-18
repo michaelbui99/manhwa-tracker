@@ -39,7 +39,7 @@ public class UserServiceTests
         };
 
         User nullUser = null;
-        _userRepositoryMock.Setup<User>(x => x.GetUserAsync(user.Email).Result).Returns(nullUser);
+        _userRepositoryMock.Setup<User>(x => x.GetUserByEmailAsync(user.Email).Result).Returns(nullUser);
 
         // Act & Assert
         Assert.ThrowsAsync<ArgumentException>(async () => await _userService.CreateAsync(user.Email, user.Password));
@@ -59,7 +59,7 @@ public class UserServiceTests
             Id = 1
         };
 
-        _userRepositoryMock.Setup<User>(x => x.GetUserAsync(usedEmail).Result).Returns(existingUser);
+        _userRepositoryMock.Setup<User>(x => x.GetUserByEmailAsync(usedEmail).Result).Returns(existingUser);
 
         // Act & Assert
         Assert.ThrowsAsync<ArgumentException>(async () => await _userService.CreateAsync(usedEmail, "testtest123"));
@@ -74,7 +74,7 @@ public class UserServiceTests
         const string validPassword = "test123123";
 
         User nullUser = null;
-        _userRepositoryMock.Setup<User>(x => x.GetUserAsync(validNotUsedEmail).Result).Returns(nullUser);
+        _userRepositoryMock.Setup<User>(x => x.GetUserByEmailAsync(validNotUsedEmail).Result).Returns(nullUser);
         _userRepositoryMock.Setup<User>(x => x.CreateAsync(validNotUsedEmail, validPassword).Result).Returns(new User()
             {
                 Email = validNotUsedEmail,
@@ -106,9 +106,9 @@ public class UserServiceTests
         const string unusedEmail = "NoUserWithThisEmail@gmail.com";
         User nullUser = null;
 
-        _userRepositoryMock.Setup<User>(x => x.GetUserAsync(unusedEmail).Result).Returns(nullUser);
+        _userRepositoryMock.Setup<User>(x => x.GetUserByEmailAsync(unusedEmail).Result).Returns(nullUser);
         
         // Act & Assert
-        Assert.ThrowsAsync<KeyNotFoundException>(async () => await _userService.GetUserAsync(unusedEmail));
+        Assert.ThrowsAsync<KeyNotFoundException>(async () => await _userService.GetUserByEmailAsync(unusedEmail));
     }
 }

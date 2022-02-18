@@ -20,7 +20,7 @@ public class ManhwaListService : IManhwaListService
     {
         try
         {
-            var user = await _userService.GetUserAsync(userEmail);
+            var user = await _userService.GetUserByEmailAsync(userEmail);
         }
         catch (KeyNotFoundException e)
         {

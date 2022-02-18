@@ -34,7 +34,15 @@
         /// <param name="email">Email of the user</param>
         /// <exception cref="KeyNotFoundException">if user does not exist</exception>
         /// <returns>User with the given <c>email</c></returns>
-        public Task<User> GetUserAsync(string email);
+        public Task<User> GetUserByEmailAsync(string email);
+
+        /// <summary>
+        /// Fetches a user by email
+        /// </summary>
+        /// <param name="id">Id of the user</param>
+        /// <exception cref="KeyNotFoundException">if user does not exist</exception>
+        /// <returns>User with the given id</returns>
+        public Task<User> GetUserByIdAsync(int id);
     }
 
 }
