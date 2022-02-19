@@ -2,12 +2,11 @@ import { ManhwaService } from "./manhwa-service";
 import { API_ADDRESS } from "../../config/config";
 import manhwa from "../../models/manhwa/manhwa";
 import Manhwa from "../../models/manhwa/manhwa";
+import { BaseService } from "../base-service";
 
-export class ManhwaServiceImpl implements ManhwaService {
-    baseUri: string;
-
+export class ManhwaServiceImpl extends BaseService implements ManhwaService {
     constructor() {
-        this.baseUri = API_ADDRESS;
+        super();
     }
 
     async getManhwasByTitle(title: string): Promise<Manhwa[]> {
