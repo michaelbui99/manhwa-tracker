@@ -14,7 +14,8 @@ import styles from "./Search.module.scss";
 import { Tag } from "../../models/manhwa/tag";
 import Manhwa from "../../models/manhwa/manhwa";
 import { Genre } from "../../models/manhwa/genre";
-import { gql, useApolloClient } from "@apollo/client";
+import { ManhwaServiceImpl } from "../../data/manhwa/manhwa-service-impl";
+
 const Search: React.FC = () => {
     const [manhwas, setManhwas] = useState<Manhwa[]>([]);
     const [manhwasToShow, setManhwasToShow] = useState<Manhwa[]>([]);
@@ -26,55 +27,23 @@ const Search: React.FC = () => {
     const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
     const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
 
-    const client = useApolloClient();
+    const manhwaService = new ManhwaServiceImpl();
     const toast = useToast();
 
-    const fetchData = async () => {
-        const ALLMANHWAS = gql`
-            {
-                allManhwas {
-                    chapterCount
-                    coverImage
-                    description
-                    endDate
-                    format
-                    genres {
-                        id
-                        name
-                    }
-                    id
-                    releaseDate
-                    sourceMaterial
-                    status
-                    title
-                    __typename
-                }
-            }
-        `;
-
-        try {
-            const request = client.query({ query: ALLMANHWAS });
-            const response = await request;
-            return response.data.allManhwas;
-        } catch (err) {
-            toast({
-                title: "Network error",
-                description: "Unable to connect to server, try again later",
-                status: "error",
-                duration: 9000,
-                isClosable: true,
-            });
-        }
+    const fetchData = () => {
+        return manhwaService.getAllManhwas();
     };
 
     useEffect(() => {
         // On mount side effects
         async function resolvedata() {
             try {
-                const data = await fetchData();
+                const data = await manhwaService.getAllManhwas();
+
                 if (!data) {
                     setManhwas([]);
                 }
+
                 setManhwas(data);
                 setManhwasToShow(manhwas);
                 setIsLoading(false);

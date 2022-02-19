@@ -21,7 +21,7 @@ public class JwtAuthenticationManager : IJwtAuthenticationManager
 
     public async Task<User> AuthenticateAsync(string email, string password)
     {
-        var existingUser = await _userRepository.GetUserAsync(email);
+        var existingUser = await _userRepository.GetUserByEmailAsync(email);
 
         if (existingUser == null)
         {
@@ -61,4 +61,6 @@ public class JwtAuthenticationManager : IJwtAuthenticationManager
         existingUser.Token = tokenHandler.WriteToken(token);
         return existingUser;
     }
+
+
 }

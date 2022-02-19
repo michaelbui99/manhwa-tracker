@@ -20,7 +20,7 @@ public class ManhwaListService : IManhwaListService
     {
         try
         {
-            var user = await _userService.GetUserAsync(userEmail);
+            var user = await _userService.GetUserByEmailAsync(userEmail);
         }
         catch (KeyNotFoundException e)
         {
@@ -60,5 +60,18 @@ public class ManhwaListService : IManhwaListService
     public Task DeleteAsync(int listId)
     {
         throw new NotImplementedException();
+    }
+
+    public async Task<IEnumerable<Models.ManhwaList.ManhwaList>> GetAllByUserIdAsync(int userId)
+    {
+        var existingUser = await _userService.GetUserByIdAsync(userId);
+        
+        if (existingUser == null)
+        {
+            throw new KeyNotFoundException($"User with id: {userId} does not exist");
+        }
+
+        var allLists = await _listRepository.GetAllByUserIdAsync(userId);
+        return allLists;
     }
 }

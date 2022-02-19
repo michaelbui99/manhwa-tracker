@@ -29,8 +29,13 @@ public class UserRepository : IUserRepository
         return createdUser;
     }
 
-    public async Task<User> GetUserAsync(string email)
+    public async Task<User> GetUserByEmailAsync(string email)
     {
         return await _dbContext.Users.FirstOrDefaultAsync(user => user.Email.ToLower() == email.ToLower());
+    }
+
+    public async Task<User> GetUserByIdAsync(int id)
+    {
+        return await _dbContext.Users.FirstOrDefaultAsync(user => user.Id == id);
     }
 }

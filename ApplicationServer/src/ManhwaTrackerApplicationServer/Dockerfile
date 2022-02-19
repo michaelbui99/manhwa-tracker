@@ -2,12 +2,12 @@ FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build-env
 WORKDIR /app
 
 # Restore dependencies
-COPY *.csproj ./
+COPY *.csproj .
 RUN dotnet restore
 
 
 # Build binary
-COPY . ./
+COPY . /app
 RUN dotnet publish -c Release -o out
 
 # Build runtime image and provide entry point

@@ -57,21 +57,17 @@ builder.Services.AddAuthorization(options =>
     {
         policy.RequireClaim("Role", "User");
     });
-    
+
     options.AddPolicy("MustBeModerator", policy =>
     {
         policy.RequireClaim("Role", "Moderator");
     });
 });
 
-builder.Services.AddGraphQLServer().AddQueryType<Query>().AddMutationType<Mutation>().AddAuthorization()
-    .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = true);
-
-
-builder.Services.AddScoped<IManhwaService, ManhwaService>();
 builder.Services.AddTransient<ManhwaTrackerDbContext>();
 builder.Services.AddScoped<IManhwaRepository, ManhwaRepository>();
 builder.Services.AddScoped<IGenreRepository, GenreRepository>();
+builder.Services.AddScoped<IManhwaService, ManhwaService>();
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
 builder.Services.AddScoped<ITagService, TagService>();
@@ -80,37 +76,27 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IManhwaListRepository, ManhwaListRepository>();
 builder.Services.AddScoped<IManhwaListService, ManhwaListService>();
 builder.Services.AddScoped<IJwtAuthenticationManager, JwtAuthenticationManager>();
-builder.Services.AddScoped<Query>();
-builder.Services.AddScoped<Mutation>();
 
 
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
+if (app.Environment.IsDevelopment())
+{
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
 
 app.UseAuthorization();
 app.UseAuthentication();
 
 app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().WithOrigins("http://localhost:3000"));
 
-app.UseRouting().UseEndpoints(endpoints =>
-{
-    endpoints.MapGraphQL();
-    endpoints.MapGraphQLPlayground();
-    endpoints.MapControllers();
-});
-
 app.UseHttpsRedirection();
 
-
-
-app.UseGraphQLPlayground(new PlaygroundOptions()
-{
-    GraphQLEndPoint = "/graphql"
-}, "/graphql-ui");
-
-// app.MapControllers();
+app.MapControllers();
 
 app.Run();

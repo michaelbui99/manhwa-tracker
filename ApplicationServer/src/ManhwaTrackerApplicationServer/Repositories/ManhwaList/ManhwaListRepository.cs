@@ -34,7 +34,7 @@ public class ManhwaListRepository : IManhwaListRepository
 
     public async Task AddListEntryAsync(int listId, ManhwaListEntry listEntry)
     {
-        var existingList = await _dbContext.ManhwaLists.FirstOrDefaultAsync(list => list.Id == listId);
+        var existingList = await _dbContext.ManhwaLists.Include(list => list.ListEntries).FirstOrDefaultAsync(list => list.Id == listId);
         existingList.ListEntries.ToList().Add(listEntry);
         await _dbContext.SaveChangesAsync();
     }
@@ -55,5 +55,12 @@ public class ManhwaListRepository : IManhwaListRepository
     {
         var existingList = await _dbContext.ManhwaLists.FirstOrDefaultAsync(list => list.Id == id);
         return existingList;
+    }
+
+    public async Task<IEnumerable<ManhwaList>> GetAllByUserIdAsync(int userId)
+    {
+        var lists = _dbContext.ManhwaLists.Include(list => list.ListEntries)
+            .Where(list => list.Owner.Id == userId).AsEnumerable();
+        return lists;
     }
 }

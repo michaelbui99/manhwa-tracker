@@ -30,7 +30,7 @@ public class UserService : IUserService
         }
         //TODO:  Add check if email is formatted correctly, e.g. contains @ and does not end with .
 
-        var existingUser = await _userRepository.GetUserAsync(email);
+        var existingUser = await _userRepository.GetUserByEmailAsync(email);
         if (existingUser != null)
         {
             throw new ArgumentException("User already exists");
@@ -43,19 +43,39 @@ public class UserService : IUserService
         return createdUser;
     }
 
-    public async Task<User> GetUserAsync(string email)
+    public async Task<User> GetUserByEmailAsync(string email)
     {
         try
         {
-            var existingUser = await _userRepository.GetUserAsync(email);
-            if (existingUser == null)
-            {
-                throw new KeyNotFoundException("User not found");
-            }
+            var existingUser = await _userRepository.GetUserByEmailAsync(email);
+            GuardUserDoesNotExist(existingUser);
 
             return existingUser;
         }
         catch (NullReferenceException e)
+        {
+            throw new KeyNotFoundException("User not found");
+        }
+    }
+
+    public async Task<User> GetUserByIdAsync(int id)
+    {
+        try
+        {
+            var existingUser = await _userRepository.GetUserByIdAsync(id);
+            GuardUserDoesNotExist(existingUser);
+
+            return existingUser;
+        }
+        catch (NullReferenceException e)
+        {
+            throw new KeyNotFoundException("User not found");
+        }
+    }
+
+    private void GuardUserDoesNotExist(User user)
+    {
+        if (user == null)
         {
             throw new KeyNotFoundException("User not found");
         }
