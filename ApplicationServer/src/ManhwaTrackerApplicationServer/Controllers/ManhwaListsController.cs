@@ -63,7 +63,6 @@ namespace ManhwaTrackerApplicationServer.Controllers
             try
             {
                 var manhwa = await _manhwaService.GetByIdAsync(createListEntryDto.ManhwaId);
-                Console.WriteLine("Here");
 
                 var  listEntryToAdd = new ManhwaListEntry()
                 {
@@ -71,13 +70,10 @@ namespace ManhwaTrackerApplicationServer.Controllers
                     Manhwa = manhwa
                 };
 
-                Console.WriteLine("Here 2");
-
                 await _manhwaListService.AddListEntryAsync(listId, listEntryToAdd);
 
                 //TODO: Change this to CreatedAt when endpoint for fetching specific listentry has been added
 
-                Console.WriteLine("Here 3");
                 return Ok();
             }
             catch (KeyNotFoundException e)
