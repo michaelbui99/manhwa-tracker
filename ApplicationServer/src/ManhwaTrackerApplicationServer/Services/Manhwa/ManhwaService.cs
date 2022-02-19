@@ -28,27 +28,36 @@ public class ManhwaService : IManhwaService
     /// <inheritdoc cref="IManhwaService.GetByIdAsync"/>
     public async Task<Manhwa> GetByIdAsync(int id)
     {
-        return await _manhwaRepository.GetByIdAsync(id);
+        var existingManhwa = await _manhwaRepository.GetByIdAsync(id);
+
+        if (existingManhwa == null)
+        {
+            throw new KeyNotFoundException($"No manhwa with id: {id} exists");
+        }
+
+        return existingManhwa;
     }
 
     /// <inheritdoc cref="IManhwaService.GetByTitleAsync"/>
     public async Task<IEnumerable<Manhwa>> GetByTitleAsync(string title)
     {
-        return await _manhwaRepository.GetByTitleAsync(title);
+        var existingManhwa = await _manhwaRepository.GetByTitleAsync(title);
+
+        return existingManhwa;
     }
 
     /// <inheritdoc cref="IManhwaService.CreateAsync"/>
     public async Task<Manhwa> CreateAsync(Manhwa manhwa)
     {
-        ManhwaModelValidator.ValidateManhwaModel(manhwa); 
-        
+        ManhwaModelValidator.ValidateManhwaModel(manhwa);
+
         var createdManhwa = await _manhwaRepository.CreateAsync(manhwa);
-        
+
         if (createdManhwa == null)
         {
             throw new ArgumentException("Manhwa could not be created at this moment.");
         }
-        
+
         return createdManhwa;
     }
 }

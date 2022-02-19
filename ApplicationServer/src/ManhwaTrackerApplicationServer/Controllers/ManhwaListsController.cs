@@ -1,5 +1,8 @@
 ﻿using ManhwaTrackerApplicationServer.Dtos;
 using ManhwaTrackerApplicationServer.Dtos.ManhwaListDtos;
+using ManhwaTrackerApplicationServer.Models.Manhwa;
+using ManhwaTrackerApplicationServer.Models.ManhwaList;
+using ManhwaTrackerApplicationServer.Services.Manhwa;
 using ManhwaTrackerApplicationServer.Services.ManhwaList;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -14,12 +17,14 @@ namespace ManhwaTrackerApplicationServer.Controllers
     {
         private readonly ILogger _logger;
         private readonly IManhwaListService _manhwaListService;
+        private readonly IManhwaService _manhwaService;
 
 
-        public ManhwaListsController(ILogger<ManhwaListsController> logger, IManhwaListService manhwaListService)
+        public ManhwaListsController(ILogger<ManhwaListsController> logger, IManhwaListService manhwaListService, IManhwaService manhwaService)
         {
             _logger = logger;
             _manhwaListService = manhwaListService;
+            _manhwaService = manhwaService;
         }
 
 
@@ -48,6 +53,41 @@ namespace ManhwaTrackerApplicationServer.Controllers
             }
             catch (Exception)
             {
+                return StatusCode(500);
+            }
+        }
+
+        [HttpPost("{listId:int}/listentries")]
+        public async Task<ActionResult<ReadListEntryDto>> CreateListEntry([FromRoute] int listId, [FromBody] CreateListEntryDto createListEntryDto)
+        {
+            try
+            {
+                var manhwa = await _manhwaService.GetByIdAsync(createListEntryDto.ManhwaId);
+                Console.WriteLine("Here");
+
+                var  listEntryToAdd = new ManhwaListEntry()
+                {
+                    LatestReadChapter = createListEntryDto.LatestReadChapter,
+                    Manhwa = manhwa
+                };
+
+                Console.WriteLine("Here 2");
+
+                await _manhwaListService.AddListEntryAsync(listId, listEntryToAdd);
+
+                //TODO: Change this to CreatedAt when endpoint for fetching specific listentry has been added
+
+                Console.WriteLine("Here 3");
+                return Ok();
+            }
+            catch (KeyNotFoundException e)
+            {
+                _logger.LogError(e.ToString());
+                return BadRequest(e.Message);
+            }
+            catch (Exception e)
+            {
+                _logger.LogError(e.ToString());
                 return StatusCode(500);
             }
         }

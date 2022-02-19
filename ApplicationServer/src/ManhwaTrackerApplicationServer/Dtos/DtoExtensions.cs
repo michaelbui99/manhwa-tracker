@@ -145,6 +145,5 @@ namespace ManhwaTrackerApplicationServer.Dtos
 
             };
         }
-
     }
 }
