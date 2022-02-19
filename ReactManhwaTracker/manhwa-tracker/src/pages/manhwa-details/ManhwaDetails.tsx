@@ -15,41 +15,14 @@ import {
 import GenreAttribute from "../../components/genre-attribute/GenreAttribute";
 import TagAttribute from "../../components/tag-attribute/TagAttribute";
 import { Status } from "../../models/manhwa/status";
+import { ManhwaServiceImpl } from "../../data/manhwa/manhwa-service-impl";
 
 const ManhwaDetails: React.FC = () => {
-    const client = useApolloClient();
-    const { id } = useParams();
+    const manhwaService = new ManhwaServiceImpl();
     const navigate = useNavigate();
+    const { id } = useParams();
 
     const [manhwa, setManhwa] = useState<Manhwa | null>();
-    const MANHWA_QUERY = gql`
-        query ($manhwaId: Int!) {
-            manhwaById(id: $manhwaId) {
-                id
-                title
-                description
-                format
-                status
-                sourceMaterial
-                releaseDate
-                endDate
-                chapterCount
-                coverImage
-                tags {
-                    id
-                    name
-                }
-                genres {
-                    id
-                    name
-                }
-                synonyms {
-                    title
-                    titleLanguage
-                }
-            }
-        }
-    `;
 
     const getDateString = (date: Date): string => {
         const splitDateString: string[] = date.toString().split("T");
@@ -58,12 +31,14 @@ const ManhwaDetails: React.FC = () => {
 
     const fetchManhwa = async () => {
         try {
-            const { data } = await client.query({
-                query: MANHWA_QUERY,
-                variables: { manhwaId: parseInt(id as any) },
-            });
-            console.log(data.manhwaById);
-            return data.manhwaById;
+            if (!id) {
+                throw "No id specified";
+            }
+
+            const manhwa = await manhwaService.getManhwaById(parseInt(id));
+
+            console.log(manhwa);
+            return manhwa;
         } catch (err) {
             console.log(err);
         }
@@ -74,6 +49,7 @@ const ManhwaDetails: React.FC = () => {
             const data = await fetchManhwa();
             setManhwa(data);
         }
+
         resolveManhwa();
     }, []);
 

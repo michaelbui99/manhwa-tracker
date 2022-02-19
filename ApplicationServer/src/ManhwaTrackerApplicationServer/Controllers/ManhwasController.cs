@@ -1,4 +1,5 @@
 ﻿using ManhwaTrackerApplicationServer.Dtos;
+using ManhwaTrackerApplicationServer.Dtos.ManhwaDtos;
 using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Services.Manhwa;
 using Microsoft.AspNetCore.Mvc;
@@ -24,7 +25,7 @@ namespace ManhwaTrackerApplicationServer.Controllers
         /// </summary>
         /// <returns>List of all Manhwas</returns>
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Manhwa>>> GetAllManhwas([FromQuery] string? title)
+        public async Task<ActionResult<IEnumerable<ReadManhwaDto>>> GetAllManhwas([FromQuery] string? title)
         {
             _logger.LogInformation("GET request received for /manhwas");
 
@@ -57,6 +58,25 @@ namespace ManhwaTrackerApplicationServer.Controllers
 
             var manhwasToReturnAsDtos = manhwasToReturn.Select(manhwa => manhwa.ToDto());
             return Ok(manhwasToReturnAsDtos);
+        }
+
+
+        [HttpGet("{manhwaId:int}")]
+        public async Task<ActionResult<ReadManhwaDto>> GetManhwaById([FromRoute] int manhwaId)
+        {
+            try
+            {
+                var manhwa = await _manhwaService.GetByIdAsync(manhwaId);
+                return manhwa.ToDto();
+            }
+            catch (KeyNotFoundException e)
+            {
+                return NotFound(e.Message);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
         }
     }
 }
