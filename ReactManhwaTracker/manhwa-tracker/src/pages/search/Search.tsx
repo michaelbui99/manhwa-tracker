@@ -15,6 +15,7 @@ import { Tag } from "../../models/manhwa/tag";
 import Manhwa from "../../models/manhwa/manhwa";
 import { Genre } from "../../models/manhwa/genre";
 import { ManhwaServiceImpl } from "../../data/manhwa/manhwa-service-impl";
+import { ManhwaService } from "../../data/manhwa/manhwa-service";
 
 const Search: React.FC = () => {
     const [manhwas, setManhwas] = useState<Manhwa[]>([]);
@@ -27,7 +28,7 @@ const Search: React.FC = () => {
     const [selectedGenres, setSelectedGenres] = useState<Genre[]>([]);
     const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
 
-    const manhwaService = new ManhwaServiceImpl();
+    const manhwaService: ManhwaService = new ManhwaServiceImpl();
     const toast = useToast();
 
     const fetchData = () => {
