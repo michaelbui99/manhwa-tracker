@@ -11,6 +11,7 @@ import {
     VStack,
     Text,
 } from "@chakra-ui/react";
+import { UserServiceImpl } from "../../data/user/user-service-impl";
 
 const Home: React.FC = () => {
     const navigate = useNavigate();
