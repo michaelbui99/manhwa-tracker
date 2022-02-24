@@ -65,7 +65,13 @@ const Login: React.FC = () => {
             const userManhwaLists =
                 await manhwaListService.getUserManhwaLists();
 
-            dispatch(login({ email: email, isLoggedIn: true }));
+            dispatch(
+                login({
+                    id: loginResult.user.id,
+                    email: loginResult.user.email,
+                    isLoggedIn: true,
+                })
+            );
 
             dispatch(setLists(userManhwaLists));
 
