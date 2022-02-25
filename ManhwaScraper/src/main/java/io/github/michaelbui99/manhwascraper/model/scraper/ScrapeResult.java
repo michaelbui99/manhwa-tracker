@@ -1,7 +1,8 @@
-package io.github.michaelbui99.manhwascraper.model;
+package io.github.michaelbui99.manhwascraper.model.scraper;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ScrapeResult {
     private String title;
@@ -12,6 +13,8 @@ public class ScrapeResult {
     private ScrapeResult(ScrapeResultBuilder builder) {
         this.title = builder.getTitle();
         this.description = builder.getDescription();
+        this.chapterCount = builder.getChapterCount();
+        this.genres = Objects.requireNonNullElseGet(builder.genres, ArrayList::new);
     }
 
     public String getTitle() {
