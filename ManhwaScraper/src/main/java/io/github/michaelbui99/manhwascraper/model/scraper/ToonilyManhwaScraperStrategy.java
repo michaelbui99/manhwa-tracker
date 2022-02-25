@@ -10,26 +10,20 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ToonilyManhwaScraper implements ManhwaScraper {
-    private List<String> scrapeTasks;
+public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
 
-
-    public ToonilyManhwaScraper() {
-        scrapeTasks = new ArrayList<>();
+    public ToonilyManhwaScraperStrategy() {
     }
 
-    @Override
-    public void addScrapeTask(String url) {
-        if (!isToonilyUrl(url)) {
-            throw new IllegalArgumentException("Invalid url for this scraper instance");
-        }
-
-        this.scrapeTasks.add(url);
-    }
 
     @Override
     public ScrapeResult scrapeSingle(String url) throws IOException {
         try {
+            if (!isToonilyUrl(url)) {
+                throw new IllegalArgumentException("Scrape instance is only able to scrape Toonily.net pages. Cannot " +
+                        "scrape url: " + url);
+            }
+
             Document document = Jsoup.connect(url).get();
 
             String title = scrapeTitle(document);
@@ -48,18 +42,6 @@ public class ToonilyManhwaScraper implements ManhwaScraper {
         }
     }
 
-    @Override
-    public List<ScrapeResult> runAllScrapeTasks() throws IOException {
-        List<ScrapeResult> results = new ArrayList<>();
-
-        for (String scrapeTask : scrapeTasks) {
-            ScrapeResult result = scrapeSingle(scrapeTask);
-            results.add(result);
-        }
-
-        scrapeTasks.clear();
-        return results;
-    }
 
     private boolean isToonilyUrl(String url) {
         return url.toLowerCase().contains("https://toonily.net/manga/");
