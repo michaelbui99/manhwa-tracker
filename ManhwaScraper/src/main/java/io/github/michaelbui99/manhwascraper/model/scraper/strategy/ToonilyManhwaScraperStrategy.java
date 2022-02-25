@@ -1,6 +1,6 @@
-package io.github.michaelbui99.manhwascraper.model.scraper;
+package io.github.michaelbui99.manhwascraper.model.scraper.strategy;
 
-import io.github.michaelbui99.manhwascraper.model.ScrapeResult;
+import io.github.michaelbui99.manhwascraper.model.scraper.ScrapeResult;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
@@ -24,7 +24,7 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
                         "scrape url: " + url);
             }
 
-            Document document = Jsoup.connect(url).get();
+            Document document = fetchDocumentFromUrl(url);
 
             String title = scrapeTitle(document);
             String description = scrapeSummary(document);
@@ -47,6 +47,9 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
         return url.toLowerCase().contains("https://toonily.net/manga/");
     }
 
+    /**
+     * Scrapes a toonily.net/manga page for title
+     */
     private String scrapeTitle(Document document) {
         Elements titleContainerChildren = document.getElementsByClass("post-title");
         Element titleContainer = titleContainerChildren.get(0);
@@ -65,6 +68,9 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
         return title;
     }
 
+    /**
+     * Scrapes a toonily.net/manga page for plot summary
+     */
     private String scrapeSummary(Document document) {
         String description = "";
 
@@ -79,6 +85,9 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
         return description;
     }
 
+    /**
+     * Scrapes a toonily.net/manga page for chapter count
+     */
     private int scrapeChapterCount(Document document) {
         Elements chapterTags = document.getElementsByClass("wp-manga-chapter");
 
@@ -92,6 +101,9 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
         return chapterCount;
     }
 
+    /**
+     * Scrapes a toonily.net/manga page for genres
+     */
     private List<String> scrapeGenres(Document document) {
         Elements genreTags = document.select("div.genres-content > a");
 
@@ -101,6 +113,16 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
         }
 
         return genres;
+    }
+
+    /**
+     * Fetches Jsoup document from url.
+     *
+     * @param url url of the page from where information can be scraped
+     * @throws IOException if connection to page could not be established
+     */
+    private Document fetchDocumentFromUrl(String url) throws IOException {
+        return Jsoup.connect(url).get();
     }
 
 }

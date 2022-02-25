@@ -1,9 +1,8 @@
 package io.github.michaelbui99.manhwascraper.model.scraper;
 
-import io.github.michaelbui99.manhwascraper.model.ScrapeResult;
+import io.github.michaelbui99.manhwascraper.model.scraper.strategy.ManhwaScrapeStrategy;
 
 import java.io.IOException;
-import java.util.List;
 
 public interface ManhwaScraper {
     /**
@@ -15,5 +14,11 @@ public interface ManhwaScraper {
      */
     ScrapeResult scrapeSingle(String url) throws IOException, IllegalStateException;
 
-
+    /**
+     * Sets the scraper instance's scrape strategy
+     *
+     * @param strategy the desire scrape strategy
+     * @throws IllegalStateException if strategy is null
+     * */
+    void setScrapeStrategy(ManhwaScrapeStrategy strategy) throws IllegalArgumentException;
 }

@@ -1,6 +1,6 @@
-package io.github.michaelbui99.manhwascraper.model.scraper;
+package io.github.michaelbui99.manhwascraper.model.scraper.strategy;
 
-import io.github.michaelbui99.manhwascraper.model.ScrapeResult;
+import io.github.michaelbui99.manhwascraper.model.scraper.ScrapeResult;
 
 import java.io.IOException;
 
@@ -13,5 +13,4 @@ public interface ManhwaScrapeStrategy {
      * @throws IOException if connection to page could not be established
      */
     ScrapeResult scrapeSingle(String url) throws IOException;
-
 }
