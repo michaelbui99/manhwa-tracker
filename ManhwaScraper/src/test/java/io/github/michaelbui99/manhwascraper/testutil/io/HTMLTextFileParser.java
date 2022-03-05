@@ -5,7 +5,7 @@ import org.jsoup.nodes.Document;
 
 import java.io.*;
 
-public class HTMLTextParser {
+public class HTMLTextFileParser {
 
     public static Document parse(File file) throws IOException {
         try (FileReader fr = new FileReader(file); BufferedReader br = new BufferedReader(fr)) {

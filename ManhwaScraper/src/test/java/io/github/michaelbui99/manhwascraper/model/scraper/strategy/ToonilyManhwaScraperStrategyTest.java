@@ -3,7 +3,7 @@ package io.github.michaelbui99.manhwascraper.model.scraper.strategy;
 import io.github.michaelbui99.manhwascraper.model.scraper.ManhwaScraper;
 import io.github.michaelbui99.manhwascraper.model.scraper.ManhwaScraperImpl;
 import io.github.michaelbui99.manhwascraper.model.scraper.ScrapeResult;
-import io.github.michaelbui99.manhwascraper.testutil.io.HTMLTextParser;
+import io.github.michaelbui99.manhwascraper.testutil.io.HTMLTextFileParser;
 import org.jsoup.Connection;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -36,7 +36,7 @@ public class ToonilyManhwaScraperStrategyTest {
                 "wascraper\\testutil\\io\\";
         String savedHtmlTextFileName = "toonily_sololeveling_html.txt";
         File file = new File(currentFolderPathFromProjectRoot + savedHtmlTextFileName);
-        PowerMockito.stub(method(Connection.class, "get")).toReturn(HTMLTextParser.parse(file));
+        PowerMockito.stub(method(Connection.class, "get")).toReturn(HTMLTextFileParser.parse(file));
 
         final String EXPECTED_TITLE = "Solo Leveling";
         final String EXPECTED_DESCRIPTION = "10 years ago, after “the Gate” that connected the real world with the monster world" +
