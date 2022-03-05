@@ -1,0 +1,2905 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="pingback" href="https://toonily.net/xmlrpc.php">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<title>Read Solo Leveling Manga S2 [All Chapters] Online - Toonily.net</title>
+<meta name="description" content="10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to" />
+<link rel="canonical" href="https://toonily.net/manga/solo-leveling-2/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Read Solo Leveling Manga S2 [All Chapters] Online - Toonily.net" />
+<meta property="og:description" content="10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to" />
+<meta property="og:url" content="https://toonily.net/manga/solo-leveling-2/" />
+<meta property="og:site_name" content="Toonily.net" />
+<meta property="article:modified_time" content="2021-12-29T15:11:50+00:00" />
+<meta property="og:image" content="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg" />
+<meta property="og:image:width" content="222" />
+<meta property="og:image:height" content="310" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:label1" content="Est. reading time" />
+<meta name="twitter:data1" content="1 minute" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://toonily.net/#organization","name":"TOONILY.NET","url":"https://toonily.net/","sameAs":[],"logo":{"@type":"ImageObject","@id":"https://toonily.net/#logo","inLanguage":"en-US","url":"https://toonily.net/wp-content/uploads/2017/10/android-chrome-512x512-1.png","contentUrl":"https://toonily.net/wp-content/uploads/2017/10/android-chrome-512x512-1.png","width":512,"height":512,"caption":"TOONILY.NET"},"image":{"@id":"https://toonily.net/#logo"}},{"@type":"WebSite","@id":"https://toonily.net/#website","url":"https://toonily.net/","name":"Toonily.net","description":"Read manga online in English, you can also read Manhua, Manhwa in English for free. Tons of Isekai manga, manhua and Manhwa are available on Toonily.net","publisher":{"@id":"https://toonily.net/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://toonily.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"},{"@type":"ImageObject","@id":"https://toonily.net/manga/solo-leveling-2/#primaryimage","inLanguage":"en-US","url":"https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg","contentUrl":"https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg","width":222,"height":310},{"@type":"WebPage","@id":"https://toonily.net/manga/solo-leveling-2/#webpage","url":"https://toonily.net/manga/solo-leveling-2/","name":"Read Solo Leveling Manga S2 [All Chapters] Online - Toonily.net","isPartOf":{"@id":"https://toonily.net/#website"},"primaryImageOfPage":{"@id":"https://toonily.net/manga/solo-leveling-2/#primaryimage"},"datePublished":"2020-06-11T13:50:46+00:00","dateModified":"2021-12-29T15:11:50+00:00","description":"10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to","breadcrumb":{"@id":"https://toonily.net/manga/solo-leveling-2/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://toonily.net/manga/solo-leveling-2/"]}]},{"@type":"BreadcrumbList","@id":"https://toonily.net/manga/solo-leveling-2/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://toonily.net/"},{"@type":"ListItem","position":2,"name":"Manga","item":"https://toonily.net/manga/"},{"@type":"ListItem","position":3,"name":"Solo Leveling"}]}]}</script>
+
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="Toonily.net &raquo; Feed" href="https://toonily.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Toonily.net &raquo; Comments Feed" href="https://toonily.net/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Toonily.net &raquo; Solo Leveling Comments Feed" href="https://toonily.net/manga/solo-leveling-2/feed/" />
+
+<script src="//www.googletagmanager.com/gtag/js?id=UA-157577701-1" data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
+<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
+				var mi_version = '8.4.0';
+				var mi_track_user = true;
+				var mi_no_track_reason = '';
+
+								var disableStrs = [
+															'ga-disable-UA-157577701-1',
+									];
+
+				/* Function to detect opted out users */
+				function __gtagTrackerIsOptedOut() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						if ( document.cookie.indexOf( disableStrs[ index ] + '=true' ) > -1 ) {
+							return true;
+						}
+					}
+
+					return false;
+				}
+
+				/* Disable tracking if the opt-out cookie exists. */
+				if ( __gtagTrackerIsOptedOut() ) {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				/* Opt-out function */
+				function __gtagTrackerOptout() {
+					for ( var index = 0; index < disableStrs.length; index++ ) {
+						document.cookie = disableStrs[ index ] + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+						window[ disableStrs[ index ] ] = true;
+					}
+				}
+
+				if ( 'undefined' === typeof gaOptout ) {
+					function gaOptout() {
+						__gtagTrackerOptout();
+					}
+				}
+								window.dataLayer = window.dataLayer || [];
+
+				window.MonsterInsightsDualTracker = {
+					helpers: {},
+					trackers: {},
+				};
+				if ( mi_track_user ) {
+					function __gtagDataLayer() {
+						dataLayer.push( arguments );
+					}
+
+					function __gtagTracker( type, name, parameters ) {
+						if (!parameters) {
+							parameters = {};
+						}
+
+						if (parameters.send_to) {
+							__gtagDataLayer.apply( null, arguments );
+							return;
+						}
+
+						if ( type === 'event' ) {
+
+															parameters.send_to = monsterinsights_frontend.ua;
+								__gtagDataLayer( type, name, parameters );
+													} else {
+							__gtagDataLayer.apply( null, arguments );
+						}
+					}
+					__gtagTracker( 'js', new Date() );
+					__gtagTracker( 'set', {
+						'developer_id.dZGIzZG' : true,
+											} );
+															__gtagTracker( 'config', 'UA-157577701-1', {"forceSSL":"true","link_attribution":"true"} );
+										window.gtag = __gtagTracker;											(function () {
+							/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+							/* ga and __gaTracker compatibility shim. */
+							var noopfn = function () {
+								return null;
+							};
+							var newtracker = function () {
+								return new Tracker();
+							};
+							var Tracker = function () {
+								return null;
+							};
+							var p = Tracker.prototype;
+							p.get = noopfn;
+							p.set = noopfn;
+							p.send = function (){
+								var args = Array.prototype.slice.call(arguments);
+								args.unshift( 'send' );
+								__gaTracker.apply(null, args);
+							};
+							var __gaTracker = function () {
+								var len = arguments.length;
+								if ( len === 0 ) {
+									return;
+								}
+								var f = arguments[len - 1];
+								if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+									if ( 'send' === arguments[0] ) {
+										var hitConverted, hitObject = false, action;
+										if ( 'event' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[3] ) {
+												hitObject = {
+													'eventAction': arguments[3],
+													'eventCategory': arguments[2],
+													'eventLabel': arguments[4],
+													'value': arguments[5] ? arguments[5] : 1,
+												}
+											}
+										}
+										if ( 'pageview' === arguments[1] ) {
+											if ( 'undefined' !== typeof arguments[2] ) {
+												hitObject = {
+													'eventAction': 'page_view',
+													'page_path' : arguments[2],
+												}
+											}
+										}
+										if ( typeof arguments[2] === 'object' ) {
+											hitObject = arguments[2];
+										}
+										if ( typeof arguments[5] === 'object' ) {
+											Object.assign( hitObject, arguments[5] );
+										}
+										if ( 'undefined' !== typeof arguments[1].hitType ) {
+											hitObject = arguments[1];
+											if ( 'pageview' === hitObject.hitType ) {
+												hitObject.eventAction = 'page_view';
+											}
+										}
+										if ( hitObject ) {
+											action = 'timing' === arguments[1].hitType ? 'timing_complete' : hitObject.eventAction;
+											hitConverted = mapArgs( hitObject );
+											__gtagTracker( 'event', action, hitConverted );
+										}
+									}
+									return;
+								}
+
+								function mapArgs( args ) {
+									var arg, hit = {};
+									var gaMap = {
+										'eventCategory': 'event_category',
+										'eventAction': 'event_action',
+										'eventLabel': 'event_label',
+										'eventValue': 'event_value',
+										'nonInteraction': 'non_interaction',
+										'timingCategory': 'event_category',
+										'timingVar': 'name',
+										'timingValue': 'value',
+										'timingLabel': 'event_label',
+										'page' : 'page_path',
+										'location' : 'page_location',
+										'title' : 'page_title',
+									};
+									for ( arg in args ) {
+																				if ( ! ( ! args.hasOwnProperty(arg) || ! gaMap.hasOwnProperty(arg) ) ) {
+											hit[gaMap[arg]] = args[arg];
+										} else {
+											hit[arg] = args[arg];
+										}
+									}
+									return hit;
+								}
+
+								try {
+									f.hitCallback();
+								} catch ( ex ) {
+								}
+							};
+							__gaTracker.create = newtracker;
+							__gaTracker.getByName = newtracker;
+							__gaTracker.getAll = function () {
+								return [];
+							};
+							__gaTracker.remove = noopfn;
+							__gaTracker.loaded = true;
+							window['__gaTracker'] = __gaTracker;
+						})();
+									} else {
+										console.log( "" );
+					( function () {
+							function __gtagTracker() {
+								return null;
+							}
+							window['__gtagTracker'] = __gtagTracker;
+							window['gtag'] = __gtagTracker;
+					} )();
+									}
+			</script>
+
+<script type="301ea602da68574562841fa4-text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/toonily.net\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.7.5"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://toonily.net/wp-includes/css/dist/block-library/style.min.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css' href='https://toonily.net/wp-includes/css/dist/block-library/theme.min.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ct-shortcode-css' href='https://toonily.net/wp-content/plugins/madara-shortcodes/shortcodes/css/shortcodes.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='fontawesome-css' href='https://toonily.net/wp-content/themes/madara/app/lib/fontawesome/web-fonts-with-css/css/all.min.css?ver=5.2.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://toonily.net/wp-content/themes/madara/css/bootstrap.min.css?ver=4.3.1' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-css' href='https://toonily.net/wp-content/themes/madara/js/slick/slick.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='slick-theme-css' href='https://toonily.net/wp-content/themes/madara/js/slick/slick-theme.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='madara-css-child-css' href='https://toonily.net/wp-content/themes/madara/style.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='ionicons-css' href='https://toonily.net/wp-content/themes/madara/css/fonts/ionicons/css/ionicons.min.css?ver=4.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='loaders-css' href='https://toonily.net/wp-content/themes/madara/css/loaders.min.css?ver=5.7.5' type='text/css' media='all' />
+<link rel='stylesheet' id='madara-css-css' href='https://toonily.net/wp-content/themes/madara-child/style.css?ver=5.7.5' type='text/css' media='all' />
+<style id='madara-css-inline-css' type='text/css'>
+.c-blog__heading.style-2 i {
+						  background: -webkit-linear-gradient(left, #0a0000 40%,#0a0000);
+						  background: -o-linear-gradient(right, #0a0000 40%,#0a0000);
+						  background: -moz-linear-gradient(right, #0a0000 40%,#0a0000);
+						  background: linear-gradient(to right, #0a0000 40%,#0a0000);
+					 ;}.c-blog__heading.style-2 i:after, .settings-page .nav-tabs-wrap ul.nav-tabs li.active:after { border-left-color: #0a0000 ; }.site-header .main-navigation.style-1, .widget-heading, .widget.background:after, .c-blog__heading.style-2 i, .tab-wrap .c-nav-tabs ul.c-tabs-content li.active a:after, .tab-wrap .c-nav-tabs ul.c-tabs-content li:hover a:after, .tab-wrap .c-nav-tabs ul.c-tabs-content li a:after, .related-heading.font-nav, .c-blog__heading.style-3, .settings-page .nav-tabs-wrap ul.nav-tabs li.active a, .off-canvas {
+						  background: -webkit-linear-gradient(left, #0a0000 40%,#0a0000);
+						  background: -o-linear-gradient(right, #0a0000 40%,#0a0000);
+						  background: -moz-linear-gradient(right, #0a0000 40%,#0a0000);
+						  background: linear-gradient(to right, #0a0000 40%,#0a0000);
+					 ;}.widget-heading:after, .related-heading.font-nav:after, .genres_wrap .c-blog__heading.style-3.active:after { border-top-color: #0a0000 ;}body.modal-open .modal .modal-content a:hover, .tab-wrap .c-nav-tabs ul.c-tabs-content li.active a, .tab-wrap .c-nav-tabs ul.c-tabs-content li:hover a, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item .summary-content:not(.release-year) a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item .summary-content.release-year a:hover, .c-blog-post .entry-header .entry-meta .post-on:before, .manga-slider .slider__container .slick-dots li.slick-active button:before, .manga-slider .slider__container .slick-dots li button:hover:before, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .count-comment .action_icon a i, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .add-bookmark .action_icon a i, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .count-comment .action_detail a i, body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .add-bookmark .action_detail a i, body.manga-page .profile-manga .post-title a, body.manga-page .content-readmore:hover, body.text-ui-light.manga-page .content-readmore:hover, .genres_wrap .genres__collapse .genres ul li a:hover, .genres_wrap .genres__collapse .genres ul li a:hover:before, .c-blog-post .entry-header .entry-meta .post-on .posted-on a:hover, body.search .c-search-header__wrapper #search-advanced .search-advanced-form .form-group.checkbox-group .checkbox label:hover, .site-header .main-navigation .search-navigation .menu-search .open-search-main-menu, .c-btn.c-btn_style-2, body.search .c-search-header__wrapper .search-content .btn-search-adv, body.reading-manga .entry-header .entry-header_wrap .action-icon ul li a, body.reading-manga .c-select-bottom .entry-header_wrap .action-icon ul li a, .widget.c-released .released-item-wrap ul.list-released li a:hover, body.manga-page .profile-manga .post-title h1, .genres_wrap .genres__collapse #genres ul li:hover a, .genres_wrap .genres__collapse #genres ul li:hover a:before, input[type=checkbox]:checked + label:before, input[type=radio]:checked + label:before, .genres_wrap a.btn-genres, .c-breadcrumb .breadcrumb li a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item.mg_genres .summary-content, body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .vol a:hover, #hover-infor .item_thumb .post-title a, body.manga-page .version-chap:before, body.manga-page .content-readmore:hover, body.manga-page .chapter-readmore:hover, .icon-load-info, .c-blog-post .entry-header .entry-meta .post-on .c-blog__date .post-category a:hover, .woocommerce ul.products li.product .price, .woocommerce div.entry-summary p.price, .woocommerce div.entry-summary form.cart .variations .label, .woocommerce div.entry-summary form.cart .quantity-text, .widget_product_categories .product-categories li a:hover, .woocommerce ul.products li.product h2:hover, .woocommerce .c-woo-breadcrumb a:hover, .site-header .c-sub-header-nav .c-sub-nav_wrap .c-modal_item .c-user_item .c-user_menu a:hover, .site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list li:hover > a, .settings-page .action i.ion-ios-close:hover:before, .settings-page .list-chapter .chapter-item a:hover, .settings-page .tabs-content-wrap .tab-group-item .tab-item .history-content .item-infor .chapter span a, .settings-page .nav-tabs-wrap ul.nav-tabs li:not(.active):hover a, .main-color,
+.site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list li.menu-item-has-children.active > a,.woocommerce .woocommerce-ordering:after,.text-ui-light .widget.c-popular .popular-item-wrap .popular-content .chapter-item .chapter a:hover, body.text-ui-light .settings-page .list-chapter .chapter-item .chapter a:hover,body.search.text-ui-light .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-meta .latest-chap .chapter a:hover			{ color: #0a0000 ;}.c-blog__heading.style-2 i:after{border-right-color:#0a0000 !important}body.page.text-ui-light .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .chapter a:hover, .text-ui-light .widget.c-popular .popular-item-wrap .popular-content .chapter-item .chapter a:hover,#hover-infor .item_thumb .post-title a{color: #FFFFFF}.navigation-ajax .load-ajax:not(.show-loading):hover, .listing-chapters_wrap .has-child .wp-manga-chapter:before, .c-wg-button-wrap .btn:hover, body.manga-page .page-content-listing.single-page .listing-chapters_wrap ul.main.version-chap .wp-manga-chapter:before, .site-header .search-main-menu form input[type=submit], .form-submit input[type=submit], #comments.comments-area #respond.comment-respond .comment-form .form-submit #submit, .c-btn.c-btn_style-1, .settings-page input[type="submit"], .settings-page .remove-all #delete-bookmark-manga, body.manga-page .page-content-listing.single-page .listing-chapters_wrap > ul.main.version-chap li .wp-manga-chapter:before, .woocommerce ul.products li.product .button, .woocommerce span.onsale, .woocommerce .widget_price_filter .price_slider_amount .button:not(:hover), .woocommerce .woocommerce-pagination .page-numbers li span.current, .woocommerce .woocommerce-pagination .page-numbers li .prev:hover, .woocommerce .woocommerce-pagination .page-numbers li .next:hover, .woocommerce div.entry-summary form.cart .single_add_to_cart_button { background: #0a0000 ;}.navigation-ajax .load-ajax:not(.show-loading):hover, .popular-slider .slider__container .slider__item .slider__content .slider__content_item .chapter-item .chapter a:hover, body.search .c-search-header__wrapper .search-content .btn-search-adv.collapsed, .c-btn.c-btn_style-2, body.search .c-search-header__wrapper .search-content .btn-search-adv, .genres_wrap a.btn-genres, .wpcf7-validation-errors, .text-ui-light.woocommerce-page input[type="text"]:focus, .text-ui-light.woocommerce-page input[type="email"]:focus, .text-ui-light.woocommerce-page input[type="search"]:focus, .text-ui-light.woocommerce-page input[type="url"]:focus, .text-ui-light.woocommerce-page input[type="password"]:focus, .text-ui-light.woocommerce-page input[type="tel"]:focus, .text-ui-light.woocommerce-page .input-text:focus, .text-ui-light.woocommerce-page input[type="text"]:active, .text-ui-light.woocommerce-page input[type="email"]:active, .text-ui-light.woocommerce-page input[type="search"]:active, .text-ui-light.woocommerce-page input[type="url"]:active, .text-ui-light.woocommerce-page input[type="password"]:active, .text-ui-light.woocommerce-page input[type="tel"]:active, .text-ui-light.woocommerce-page .input-text:active, .text-ui-light.woocommerce-page input[type="text"]:hover, .text-ui-light.woocommerce-page input[type="email"]:hover, .text-ui-light.woocommerce-page input[type="search"]:hover, .text-ui-light.woocommerce-page input[type="url"]:hover, .text-ui-light.woocommerce-page input[type="password"]:hover, .text-ui-light.woocommerce-page input[type="tel"]:hover, .text-ui-light.woocommerce-page .input-text:hover, .text-ui-light.woocommerce-page select.orderby:hover  { border-color: #0a0000 ;}.site-header .c-sub-header-nav .c-sub-nav_wrap .sub-nav_content .sub-nav_list > li.menu-item-has-children > ul.sub-menu, .site-header .c-sub-header-nav .c-sub-nav_wrap .c-modal_item .c-user_item .c-user_menu { border-bottom-color: #0a0000 ;}.widget.widget_tag_cloud .tag-cloud-link:hover, body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .chapter:hover, .popular-slider .slider__container .slider__item .slider__content .slider__content_item .chapter-item .chapter a:hover, .widget.c-popular .popular-item-wrap .popular-content .chapter-item .chapter:hover, .site-footer .top-footer .wrap_social_account ul.social_account__item li a, .site-content .main-col .item-tags ul li a:hover, .popular-slider .slider__container .slick-arrow:hover, .widget.background.widget_tag_cloud .tag-cloud-link:hover, .wp-pagenavi a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-meta .latest-chap .chapter:hover, .go-to-top:hover, .widget.c-popular .widget-view-more, body.search .c-search-header__wrapper .search-content .search-form .search-submit, body.reading-manga .entry-header .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .entry-header .entry-header_wrap .action-icon ul li:hover a, body.reading-manga .c-select-bottom .entry-header_wrap .action-icon ul li:hover a, .widget.c-released .released-search form [type="submit"], body.manga-page .profile-manga .tab-summary .loader-inner > div, .wpcf7-submit, .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt, .woocommerce .woocommerce-cart-form .cart button.button, .woocommerce .cart input.button:not(:hover), #adult_modal .modal-footer .btn.btn-primary:not(:hover), body.reading-manga .entry-header .select-pagination .nav-links > * a, body.reading-manga .c-select-bottom .select-pagination .nav-links > * a, .settings-page .list-chapter .chapter-item .chapter:hover, body.modal-open .modal .modal-content .modal-body .login .submit .wp-submit:not(:hover), .settings-page .tabs-content-wrap .my_account_orders a.button.view, .main-bg { background-color: #0a0000 ;}:root{ --madara-main-color: #0a0000}body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-meta .latest-chap .chapter:hover a, .wp-pagenavi a:hover{color:#FFF !important}a:not(.btn-link):hover, .c-breadcrumb .breadcrumb li a:hover, .tab-wrap .c-nav-tabs ul.c-tabs-content li.active a, .tab-wrap .c-nav-tabs ul.c-tabs-content li:hover a, .c-blog-post .entry-header .entry-meta .post-on .posted-on a:hover, .c-blog-post .entry-header .entry-meta .post-on .c-blog__date .post-category a:hover, body.manga-page .content-readmore:hover, body.text-ui-light.manga-page .content-readmore:hover, body.manga-page .chapter-readmore:hover, body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .vol a:hover, .site-header .main-navigation.style-1 .search-navigation .search-navigation__wrap .link-adv-search a:hover, .woocommerce ul.products li.product h2:hover, .woocommerce .c-woo-breadcrumb a:hover, .genres_wrap .genres__collapse .genres ul li a:hover, .genres_wrap .genres__collapse .genres ul li a:hover:before ,.widget.c-released .released-item-wrap ul.list-released li a:hover,body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item .summary-content:not(.release-year) a:hover, body.search.search-results .search-wrap .tab-content-wrap .c-tabs-item .c-tabs-item__content .tab-summary .post-content .post-content_item .summary-content.release-year a:hover{ color: #fc3a3a;}.tab-wrap .c-nav-tabs ul.c-tabs-content li.active a:after, .tab-wrap .c-nav-tabs ul.c-tabs-content li:hover a:after, { background: #fc3a3a;}body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .manga-title-badges.hot { background-color: #dd3333 ;}body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .manga-title-badges.new { background-color: #5cd341 ;}.manga-title-badges.custom { background-color: #4bd8f4 ;}.meta-item.rating .rating_current, .meta-item.rating .rating_current_half, body.manga-page .profile-manga .tab-summary .post-rating i.ion-ios-star, body.manga-page .profile-manga .tab-summary .post-rating i.ion-ios-star.rating_current, body.manga-page .profile-manga .tab-summary .post-rating i.ion-ios-star-half, body.manga-page .profile-manga .tab-summary .post-rating .user-rating i.ion-ios-star, body.manga-page .profile-manga .tab-summary .post-rating .post-total-rating i.ion-ios-star, body.manga-page .profile-manga .tab-summary .post-rating .post-total-rating i.ion-ios-star.rating_current, body.manga-page .profile-manga .tab-summary .post-rating .user-rating i.ion-ios-star, body.manga-page .profile-manga .tab-summary .post-rating .user-rating i.ion-ios-star.rating_current, .woocommerce .star-rating, .woocommerce .star-rating::before,
+body.manga-page .profile-manga .tab-summary .post-rating .post-total-rating i.ion-ios-star-half { color: #dd3333 ;}.widget.c-popular .widget-view-more, #comments.comments-area #respond.comment-respond .comment-form .form-submit #submit, .site-header .search-main-menu form input[type=submit], body.search .c-search-header__wrapper .search-content .search-form .search-submit, .c-btn.c-btn_style-1, .settings-page input[type="submit"], .settings-page .remove-all #delete-bookmark-manga, body.reading-manga .entry-header .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .entry-header .select-pagination .nav-links .nav-previous a:not(:hover), body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-previous a:not(:hover), .widget.c-released .released-search form [type="submit"], .wpcf7-submit, .woocommerce ul.products li.product .button, .woocommerce span.onsale,  .woocommerce .woocommerce-pagination .page-numbers li span.current, .woocommerce .woocommerce-pagination .page-numbers li .prev:hover, .woocommerce .woocommerce-pagination .page-numbers li .next:hover, .woocommerce div.entry-summary form.cart .single_add_to_cart_button, .woocommerce button.button.alt, .woocommerce a.button.alt, .woocommerce .woocommerce-cart-form .cart button.button, .woocommerce .cart input.button:not(:hover) { background-color : #dd3333 ;}.woocommerce .widget_shopping_cart .buttons a:not(:hover), .woocommerce.widget_shopping_cart .buttons a:not(:hover), .woocommerce .widget_price_filter .price_slider_amount .button:not(:hover), .woocommerce div.product form.cart .button, .woocommerce .cart-collaterals .checkout-button.button.alt { background : #dd3333 ;}.c-btn.c-btn_style-2, body.search .c-search-header__wrapper .search-content .btn-search-adv.collapsed, body.search .c-search-header__wrapper .search-content .btn-search-adv, .genres_wrap a.btn-genres { border-color : #dd3333 ;}.c-btn.c-btn_style-2, body.search .c-search-header__wrapper .search-content .btn-search-adv, .genres_wrap a.btn-genres { color : #dd3333 ;}.widget.c-popular .widget-view-more, #comments.comments-area #respond.comment-respond .comment-form .form-submit #submit, .site-header .search-main-menu form input[type=submit], body.search .c-search-header__wrapper .search-content .search-form .search-submit, .c-btn.c-btn_style-1, .settings-page input[type="submit"], .settings-page .remove-all #delete-bookmark-manga, body.reading-manga .entry-header .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-next a:not(:hover), body.reading-manga .entry-header .select-pagination .nav-links .nav-previous a:not(:hover), body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-previous a:not(:hover), .widget.c-released .released-search form [type="submit"], .wpcf7-submit, .woocommerce ul.products li.product .button, .woocommerce .woocommerce-pagination .page-numbers li span.current, .woocommerce .widget_shopping_cart .buttons a:not(:hover), .woocommerce.widget_shopping_cart .buttons a:not(:hover), .widget_price_filter .price_slider_amount button, .woocommerce div.product form.cart .button, .woocommerce .cart-collaterals .checkout-button.button.alt, .woocommerce button.button.alt, .woocommerce a.button.alt, .woocommerce .woocommerce-cart-form .cart button.button, .woocommerce .woocommerce-cart-form .cart button.button, .woocommerce .cart input.button:not(:hover),#init-links .c-btn.c-btn_style-1 { color : #0a0a0a ;}.widget.c-popular .widget-view-more:hover, #comments.comments-area #respond.comment-respond .comment-form .form-submit #submit:hover, .site-header .search-main-menu form input[type=submit]:hover, body.search .c-search-header__wrapper .search-content .search-form .search-submit:hover, .c-btn.c-btn_style-1:hover, .c-btn.c-btn_style-2:hover, body.search .c-search-header__wrapper .search-content .btn-search-adv:hover, .settings-page input[type="submit"]:hover, .settings-page .remove-all #delete-bookmark-manga:hover, body.reading-manga .entry-header .select-pagination .nav-links .nav-next a:hover, body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-next a:hover, .widget.c-released .released-search form [type="submit"]:hover, .genres_wrap a.btn-genres:hover, .wpcf7-submit:hover, .navigation-ajax .load-ajax:not(.show-loading):hover, .go-to-top:hover, body.text-ui-light .popular-slider .slider__container .slick-arrow:hover, .woocommerce ul.products li.product .button:hover, .widget_shopping_cart .woocommerce-mini-cart__buttons a:hover, .woocommerce .widget_price_filter .price_slider_amount .button:hover, .woocommerce div.product form.cart .button:hover, .woocommerce .cart-collaterals .checkout-button.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce a.button.alt:hover, .woocommerce .woocommerce-cart-form .cart button.button:hover, .woocommerce .cart input.button:hover { background-color : #000000 ;}.c-btn.c-btn_style-2:hover, body.search .c-search-header__wrapper .search-content .btn-search-adv:hover, body.search .c-search-header__wrapper .search-content .btn-search-adv.collapsed:hover, .genres_wrap a.btn-genres:hover { border-color : #000000 ;}.widget.c-popular .widget-view-more:hover, #comments.comments-area #respond.comment-respond .comment-form .form-submit #submit:hover, .site-header .search-main-menu form input[type=submit]:hover, body.search .c-search-header__wrapper .search-content .search-form .search-submit:hover, .c-btn.c-btn_style-1:hover, .c-btn.c-btn_style-2:hover, body.search .c-search-header__wrapper .search-content .btn-search-adv:hover, .settings-page input[type="submit"]:hover, .settings-page .remove-all #delete-bookmark-manga:hover, body.reading-manga .entry-header .select-pagination .nav-links .nav-next a:hover, body.reading-manga .c-select-bottom .select-pagination .nav-links .nav-next a:hover, .widget.c-released .released-search form [type="submit"]:hover, .genres_wrap a.btn-genres:hover, .wpcf7-submit:hover, .woocommerce ul.products li.product .button:hover, .woocommerce .woocommerce-pagination .page-numbers li span.current:hover, .woocommerce .widget_shopping_cart .buttons a:hover, .woocommerce.widget_shopping_cart .buttons a:hover, .widget_price_filter .price_slider_amount button:hover, .woocommerce div.product form.cart .button:hover, .woocommerce .cart-collaterals .checkout-button.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce a.button.alt:hover, .woocommerce .woocommerce-cart-form .cart button.button:hover, .woocommerce .cart input.button:hover, #init-links .c-btn.c-btn_style-1:hover { color : #dd3333 ;}#pageloader .loader-inner.ball-pulse > div, #pageloader .loader-inner.ball-pulse-sync > div, #pageloader .loader-inner.ball-beat > div, #pageloader .loader-inner.ball-grid-pulse > div, #pageloader .loader-inner.ball-grid-beat > div, #pageloader .loader-inner.ball-pulse-rise>div, #pageloader .loader-inner.ball-rotate>div, #pageloader .loader-inner.ball-rotate>div:after, #pageloader .loader-inner.ball-rotate>div:before, #pageloader .loader-inner.cube-transition>div, #pageloader .loader-inner.ball-zig-zag>div, #pageloader .loader-inner.ball-zig-zag-deflect>div, #pageloader .loader-inner.line-scale-party>div, #pageloader .loader-inner.line-scale-pulse-out-rapid>div, #pageloader .loader-inner.line-scale-pulse-out>div, #pageloader .loader-inner.line-scale>div, #pageloader .loader-inner.line-spin-fade-loader>div, #pageloader .loader-inner.ball-scale>div, #pageloader .loader-inner.ball-scale-multiple>div, #pageloader .loader-inner.ball-spin-fade-loader>div, #pageloader .loader-inner.square-spin>div {background-color: #ffffff}#pageloader .loader-inner.ball-clip-rotate > div {border: 2px solid #ffffff; border-bottom-color: transparent;}#pageloader .loader-inner.ball-scale-ripple>div, #pageloader .loader-inner.ball-scale-ripple-multiple>div {border: 2px solid #ffffff;}#pageloader .loader-inner.ball-clip-rotate-pulse>div:first-child {background: #ffffff;}#pageloader .loader-inner.ball-clip-rotate-pulse>div:last-child {border-color: #ffffff transparent;}#pageloader .loader-inner.ball-clip-rotate-multiple>div {border: 2px solid #ffffff; border-bottom-color: transparent; border-top-color: transparent;}#pageloader .loader-inner.triangle-skew-spin>div { border-left: 20px solid transparent; border-right: 20px solid transparent; border-bottom: 20px solid #ffffff;}#pageloader .loader-inner.ball-triangle-path>div {border: 1px solid #ffffff;}#pageloader .loader-inner.semi-circle-spin>div {background-image: linear-gradient(transparent 0,transparent 70%, #ffffff 30%, #ffffff 100%);}
+			#pageloader.spinners{
+				position:fixed;
+				top:0;
+				left:0;
+				width:100%;
+				height:100%;
+				z-index:99999;
+				background:#ef4546
+			}
+
+			p.madara-unyson{
+				color: #FF0000;
+			}
+
+			.table.table-hover.list-bookmark tr:last-child td{
+				text-align: center;
+			}
+		#adminmenu .wp-submenu li.current { display: none !important;}.show_tgmpa_version{ float: right; padding: 0em 1.5em 0.5em 0; }.tgmpa > h2{ font-size: 23px; font-weight: 400; line-height: 29px; margin: 0; padding: 9px 15px 4px 0;}.update-php{ width: 100%; height: 98%; min-height: 850px; padding-top: 1px; }.c-blog-post .entry-content .entry-content_wrap .read-container img.alignleft { margin: 10px 30px 10px 0 !important; } .c-blog-post .entry-content .entry-content_wrap .read-container img.alignright { margin: 10px 0px 10px 30px !important; } .read-container i.fas.fa-spinner.fa-spin{ font-size: 31px; color: #888; }.c-blog-post .entry-content .entry-content_wrap .read-container img{ cursor : pointer; }.choose-avatar .loading-overlay {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba(255, 255, 255, 0.72);
+			z-index: 1;
+			display: none;
+		}
+
+		.choose-avatar .loading-overlay i.fas.fa-spinner {
+			font-size: 40px;
+			color: #ec3348;
+		}
+
+		.choose-avatar .loading-overlay .loading-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+		}
+
+		.choose-avatar.uploading .loading-overlay {
+			display: block;
+		}.site-header .c-sub-header-nav .entry-header {
+			display: none;
+			margin-bottom: 15px;
+		}
+
+		.site-header .c-sub-header-nav.sticky .entry-header {
+			display: block;
+		}
+
+		.site-header .c-sub-header-nav.hide-sticky-menu.sticky .c-sub-nav_wrap{
+			display:none;
+		}
+		.site-header .c-sub-header-nav.hide-sticky-menu .entry-header{
+			margin-top:15px;
+		}
+		body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item span.vol.font-meta{display:none}body.modal-open .modal .modal-dialog{background-image:none;background-color:#000000; background-image:url(https://toonily.net/wp-content/uploads/2017/10/toonily.jpg); }@media (max-width: 480px) {.c-blog-post .entry-content .entry-content_wrap .reading-content{margin-left:-15px;margin-right:-15px}}.archive .footer-ads, .blog .footer-ads, .single-post .footer-ads {
+    display: none;
+}
+
+.single-post .item-content a{color: #ca383a;}
+</style>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/jquery/jquery.min.js?ver=3.5.1' id='jquery-core-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='monsterinsights-frontend-script-js-extra'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[]","home_url":"https:\/\/toonily.net","hash_tracking":"false","ua":"UA-157577701-1","v4_id":""};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.4.0' id='monsterinsights-frontend-script-js'></script>
+<link rel="https://api.w.org/" href="https://toonily.net/wp-json/" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://toonily.net/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://toonily.net/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 5.7.5" />
+<link rel='shortlink' href='https://toonily.net/?p=1899' />
+<link rel="alternate" type="application/json+oembed" href="https://toonily.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftoonily.net%2Fmanga%2Fsolo-leveling-2%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://toonily.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Ftoonily.net%2Fmanga%2Fsolo-leveling-2%2F&#038;format=xml" />
+<script data-ad-client="ca-pub-5283327797580836" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="301ea602da68574562841fa4-text/javascript"></script><link rel="icon" href="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-270x270.png" />
+<style type="text/css" id="wp-custom-css">
+
+
+
+body.text-ui-light.manga-page .profile-manga .tab-summary .summary_image,body.text-ui-light.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content{background-color:rgba(0, 0, 0, 0.3);}
+
+
+
+
+
+body.text-ui-light .summary-content{color:#fff;}
+
+
+
+
+
+	body.text-ui-light.manga-page .content-readmore,body.text-ui-light.manga-page .chapter-readmore{color:#cccccc;background-color:black;border-radius:0px 0px 60px 60px;border-bottom:2px solid #816bab;}
+
+
+
+
+
+.site-header .main-navigation .search-navigation .menu-search .open-search-main-menu{font-size:21px;width:35px;height:35px;display:inline-block;background-color:#fff;-webkit-transition:background-color 150s ease;-moz-transition:background-color 150s ease;-o-transition:background-color 150s ease;transition:background-color 150s ease;-webkit-transition:color 150ms ease-out;-moz-transition:color 150ms ease-out;-o-transition:color 150ms ease-out;transition:color 150ms ease-out;text-align:center;border-radius:15px 0px 0px 15px;line-height:36px;color:#eb3349;}
+
+
+
+
+.site-header .main-navigation.style-1 .search-navigation .search-navigation__wrap .link-adv-search{text-align:left;padding-left:3px;}
+.site-header .main-navigation.style-1 .search-navigation .search-navigation__wrap  .link-adv-search a{color:#000;font-weight:600;background-color:white;display:inline-block;border-radius:0px 15px 15px 0px;height:35px;width:80px;text-align:center;line-height:36px;}
+ }
+
+
+
+
+ body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .count-comment .action_icon a i,body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .add-bookmark .action_icon a i,body.manga-page .content-readmore:hover,body.text-ui-light.manga-page .content-readmore:hover,.site-header .main-navigation .search-navigation .menu-search .open-search-main-menu,body.manga-page .profile-manga .post-title h1,.c-breadcrumb .breadcrumb li a:hover,body.manga-page .version-chap:before,body.manga-page .chapter-readmore:hover{color:#040404;}
+
+
+
+
+
+
+.c-blog__heading.style-2 i:after{border-left-color:#370648;}
+
+
+
+
+.site-header .main-navigation.style-1,.c-blog__heading.style-2 i,.off-canvas{background:-webkit-linear-gradient(left, #040404 40%,#370648);background:-o-linear-gradient(right, #040404 40%,#370648);background:-moz-linear-gradient(right, #040404 40%,#370648);background:linear-gradient(to right, #040404 40%,#370648);}
+
+
+
+.site-header .c-sub-header-nav{background-color:#040404;}
+
+
+
+
+body.manga-page .profile-manga .post-title h1{color:#816bab;}
+
+
+body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .count-comment .action_icon a i,body.manga-page .profile-manga .tab-summary .summary_content_wrap .summary_content .post-status .manga-action .add-bookmark .action_icon a i{color:#816bab;}
+
+
+
+
+
+body.manga-page .page-content-listing.single-page .listing-chapters_wrap > ul.main.version-chap li{ border-left: 5px solid BLACK ;border-radius:5px ; border-color :RED ; border-RIGHT:5px solid RED ; border:1px solid RED ;}
+
+
+
+
+
+
+.site-header .main-navigation.style-1 .search-navigation .search-navigation__wrap .link-adv-search a:hover{background:black;color:white!important;}
+
+
+
+
+
+span.manga-title-badges.hot{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);border-radius:àpx;padding:10px 10px 10px 2px;text-transform:uppercase;line-height:5px;font-size:10px;}
+
+
+
+
+
+span.manga-title-badges.18+{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);border-radius:àpx;padding:10px 10px 10px 2px;text-transform:uppercase;line-height:5px;font-size:10px;}
+
+
+span.manga-title-badges.new{-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);-o-transform:rotate(0deg);border-radius:àpx;padding:10px 10px 10px 2px;text-transform:uppercase;line-height:5px;font-size:10px;}
+
+
+
+
+@media all{
+.badge-pos-2 .item-thumb a .manga-title-badges{position:static;left:0;top:0;width:100%;}
+.manga-title-badges{color:#fff;background-color:#c4595f;border-radius:0px 0px 0px 0px;}
+.chapter-item .chapter{border-radius:0!important;}
+.manga-title-badges.custom{background:-webkit-linear-gradient(left, #040404 40%,#370648);}
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .chapter:hover{transition:transform 0.3s;transform:translatex(0.4em);}
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-summary .list-chapter .chapter-item .chapter{transition:transform 1s;transform:translatex(0em);}
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-thumb{-webkit-transition:transform 0.5s, filter 0.5s;-moz-transition:transform 0.5s, filter 0.5s;-o-transition:transform 0.5s, filter 0.5s;transition:transform 1.5s, filter 0.5s;box-shadow:0px 5px &0px #000;border-radius:10px;}
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-thumb:hover{-webkit-transform:scale(1);-moz-transform:scale(.2);-ms-transform:scale(.2);-o-transform:scale(.2);transition:transform 0.5s, filter 0.1s;border-radius:10px;}
+::-webkit-scrollbar{width:30px;height:30px;background:linear-gradient(90deg,#201c29,#201c29 1px,#100e17 0,#100e17);}
+::-webkit-scrollbar-track{box-shadow:none;}
+::-webkit-scrollbar-thumb{border-radius:30px;border:none;background:linear-gradient(to bottom, #370648, #040404);box-shadow:inset 2px 2px 2px hsla(0,0%,100%,.25), inset -2px -2px 2px rgba(0,0,0,.25);}
+::-webkit-scrollbar-thumb:hover{border:none;border-radius:none;}
+}
+
+
+
+
+a#navigation-ajax{border-radius:50px 0px;border-bottom:12px solid #816bab;}
+
+
+
+
+
+@media all{
+div.c-sub-header-nav.with-border.sticky{
+    opacity: 0.7 ;
+
+border-color:#3498db;border-width:2px;border-style:solid;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;padding-bottom:64px!important;min-height:2px;height:2px;
+
+}
+}
+
+
+
+
+
+
+@media all{
+#chapter-heading{background:-webkit-linear-gradient(left, #040404 60%,#816bab80);padding:8px;border:2px solid #816bab80;border-radius:5px;display:-webkit-inline-box;}
+body.reading-manga .entry-header{padding:20px;border-radius:5px;border:2px solid #816bab80;background-color:black;}
+  .row.c-row.related-manga{background-color:black;padding:20px;border:2px solid #816bab80;border-radius:5px;width:100%;margin:10px;}
+
+
+
+
+
+
+@media all{ H3 {text-align:center;}
+ }
+
+
+
+
+
+body.page .c-page-content .c-page .c-page__content .page-content-listing .page-listing-item .page-item-detail .item-thumb{-webkit-transition:transform 0.5s, filter 0.5s;-moz-transition:transform 0.5s, filter 0.5s;-o-transition:transform 0.5s, filter 0.5s;transition:transform 1.5s, filter 0.5s;box-shadow:0px 5px 10px #000;border-radius:10px;}
+
+
+
+
+
+
+
+.profile-manga .post-title h1{font-size:28px!important;text-align:center;background-color:#fdfd}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+td{ background-color : #fff ; border-radius:15px 12px; border-color : #fff ;border-style:solid; }
+
+
+
+
+
+
+
+
+div.history-content { background-color : #fff ; border-radius:15px 12px; border-color : #fff ;border-style:solid; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	.post-content .post-content_item:nth-child(3) h5:before{font-family:"Font Awesome 5 Free";content:"\f5c0";padding:3px;color:white;}
+
+.post-content .post-content_item:nth-child(4) h5:before{font-family:"Font Awesome 5 Free";content:"\f162";padding:3px;color:white;}
+ .post-content .post-content_item:nth-child(6) h5:before{font-family:"Font Awesome 5 Free";content:"\f183";padding:3px;color:wait;}
+.post-content .post-content_item:nth-child(7) h5:before{font-family:"Font Awesome 5 Free";content:"\f1fc";padding:3px;color:white;}
+.post-content .post-content_item:nth-child(8) h5:before{font-family:"Font Awesome 5 Free";content:"\f031";padding:3px;color:dense;}
+
+
+
+
+
+
+a.btn-active-modal 	{ border-radius:0!important; background-color : white; }
+
+
+
+
+
+
+
+	.main-col .font-heading h1{margin-bottom:-3px!important;font-size:30px;color:#eb3349;}
+
+
+
+		.main-col .font-heading a{margin-bottom:-3px!important;font-size:30px;color:#eb3349;}
+
+
+
+
+
+
+
+.body-wrap .content-area{background-image:url(https://toonily.net/wp-content/uploads/2017/10/toonily.jpg);}
+
+
+
+.body-wrap .col-sm-12{background-image:url(https://toonily.net/wp-content/uploads/2017/10/toonily.jpg;}
+
+
+
+
+
+
+			</style>
+<script type="application/ld+json">
+						{
+							"@context": "http://schema.org",
+							"@type": "Article",
+							"mainEntityOfPage": {
+								"@type": "WebPage",
+								"@id": "https://google.com/article"
+							},
+							"headline": "Solo Leveling",
+							"image": {
+								"@type": "ImageObject",
+								"url": "https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg",
+								"height": 391,
+								"width": 696							},
+							"datePublished": "2020-06-11 13:50:46",
+							"dateModified": "2021-12-29 15:11:50",
+							"author": {
+								"@type": "Person",
+								"name": "TOMU2121@U"
+							},
+							"publisher": {
+								"@type": "Organization",
+								"name": "Toonily.net",
+								"logo": {
+									"@type": "ImageObject",
+									"url": "https://toonily.net/wp-content/uploads/2017/10/toonily-01.png"
+								}
+							},
+							"description": "10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt mons"
+						}
+					</script>
+<meta property="og:type" content="article" />
+<meta property="og:image" content="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg" />
+<meta property="og:site_name" content="Toonily.net" />
+<meta property="fb:app_id" content="" />
+<meta property="og:title" content="Solo Leveling" />
+<meta property="og:url" content="https://toonily.net/manga/solo-leveling-2/" />
+<meta property="og:description" content="10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt mons" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@Toonily.net" />
+<meta name="twitter:title" content="Solo Leveling" />
+<meta name="twitter:description" content="10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt mons" />
+<meta name="twitter:url" content="https://toonily.net/manga/solo-leveling-2/" />
+<meta name="twitter:image" content="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg" />
+<meta name="description" content="10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt mons" /><meta name="generator" content="Powered by Madara - A powerful multi-purpose theme by Madara" />
+<meta name="theme-color" content="#000000" />
+</head>
+<body class="wp-manga-template-default single single-wp-manga postid-1899 wp-embed-responsive wp-manga-page manga-page page header-style-1 sticky-enabled sticky-style-2 text-ui-light">
+<div class="wrap">
+<div class="body-wrap">
+<header class="site-header">
+<div class="c-header__top">
+<ul class="search-main-menu">
+<li>
+<form id="blog-post-search" action="https://toonily.net/" method="get">
+<input type="text" placeholder="Search..." name="s" value="">
+<input type="submit" value="Search">
+<div class="loader-inner line-scale">
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+</div>
+</form>
+</li>
+</ul>
+<div class="main-navigation style-1 ">
+<div class="container ">
+<div class="row">
+<div class="col-md-12">
+<div class="main-navigation_wrap">
+<div class="wrap_branding">
+<a class="logo" href="https://toonily.net/" title="Toonily.net">
+<img class="img-responsive" src="https://toonily.net/wp-content/uploads/2017/10/toonily-01.png" alt="Toonily.net" />
+</a>
+</div>
+<div class="main-menu">
+<ul class="nav navbar-nav main-navbar"><li id="menu-item-27" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-27"><a href="/">HOME</a></li>
+<li id="menu-item-110" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-110"><a href="https://toonily.net/manga/">MANGA</a></li>
+<li id="menu-item-1985" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1985"><a href="https://toonily.net/manga/?m_orderby=views"><i class="fas fa-eye"></i> Most Views</a></li>
+</ul> </div>
+<div class="search-navigation search-sidebar">
+<div id="manga-search-3" class="widget col-12 col-md-12   default no-icon  manga-widget widget-manga-search"><div class="widget__inner manga-widget widget-manga-search__inner c-widget-wrap"><div class="widget-content">
+<div class="search-navigation__wrap">
+<script type="301ea602da68574562841fa4-text/javascript">
+	jQuery(document).ready(function ($) {
+		if ($('.c-header__top .manga-search-form').length !== 0 && $('.c-header__top .manga-search-form.search-form').length !== 0) {
+
+			$('form#blog-post-search').append('<input type="hidden" name="post_type" value="wp-manga">');
+
+			$('form#blog-post-search').addClass("manga-search-form");
+
+			$('form#blog-post-search input[name="s"]').addClass("manga-search-field");
+
+			$('form.manga-search-form input.manga-search-field').each(function(){
+
+			var searchIcon = $(this).parent().children('.ion-ios-search-strong');
+
+			var append = $(this).parent();
+
+			$(this).autocomplete({
+				appendTo: append,
+				source: function( request, resp ) {
+					$.ajax({
+						url: manga.ajax_url,
+						type: 'POST',
+						dataType: 'json',
+						data: {
+							action: 'wp-manga-search-manga',
+							title: request.term,
+						},
+						success: function( data ) {
+							resp( $.map( data.data, function( item ) {
+								if ( true == data.success ) {
+									return {
+										label: item.title,
+										value: item.title,
+										url: item.url,
+										type: item.type
+									}
+								} else {
+									return {
+										label: item.message,
+										value: item.message,
+										type: item.type,
+										click: false
+									}
+								}
+							}))
+						}
+					});
+				},
+				select: function( e, ui ) {
+					if ( ui.item.url ) {
+						window.location.href = ui.item.url;
+					} else {
+						if ( ui.item.click ) {
+							return true;
+						} else {
+							return false;
+						}
+					}
+				},
+				open: function( e, ui ) {
+					var acData = $(this).data( 'uiAutocomplete' );
+					acData.menu.element.addClass('manga-autocomplete').find('li div').each(function(){
+						var $self = $(this),
+							keyword = $.trim( acData.term ).split(' ').join('|');
+						$self.html( $self.text().replace( new RegExp( "(" + keyword + ")", "gi" ), '<span class="manga-text-highlight">$1</span>' ) );
+					});
+				}
+			}).autocomplete( "instance" )._renderItem = function( ul, item ) {
+				  return $( "<li class='search-item'>" )
+					.append( "<div class='manga-type-" + item.type + "'>" + item.label + "</div>" )
+					.appendTo( ul );
+			};
+		});
+		}
+	});
+</script>
+<ul class="main-menu-search nav-menu">
+<li class="menu-search">
+<a href="javascript:;" class="open-search-main-menu"> <i class="icon ion-ios-search"></i>
+<i class="icon ion-android-close"></i> </a>
+<ul class="search-main-menu">
+<li>
+<form class="manga-search-form search-form" action="https://toonily.net/" method="get">
+<input class="manga-search-field" type="text" placeholder="Search..." name="s" value="">
+<input type="hidden" name="post_type" value="wp-manga"> <i class="icon ion-ios-search"></i>
+<div class="loader-inner ball-clip-rotate-multiple">
+<div></div>
+<div></div>
+</div>
+<input type="submit" value="Search">
+</form>
+</li>
+</ul>
+</li>
+</ul>
+<div class="link-adv-search">
+<a href="https://toonily.net/?s=&#038;post_type=wp-manga">Advanced</a>
+</div>
+</div>
+</div></div></div>
+</div>
+<div class="c-togle__menu">
+<button type="button" class="menu_icon__open">
+<span></span> <span></span> <span></span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mobile-menu menu-collapse off-canvas">
+<div class="close-nav">
+<button class="menu_icon__close">
+<span></span> <span></span>
+</button>
+</div>
+<div class="c-modal_item">
+
+<span class="c-modal_sign-in">
+<a href="#" data-toggle="modal" data-target="#form-login" class="btn-active-modal">Sign in</a>
+</span>
+<span class="c-modal_sign-up">
+<a href="javascript:void(0)" data-toggle="modal" data-target="#form-sign-up" class="btn-active-modal">Sign up</a>
+</span>
+</div>
+<nav class="off-menu">
+<ul id="menu-main-menu-1" class="nav navbar-nav main-navbar"><li id="nav-menu-item-27" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="/" class="menu-link  main-menu-link">HOME </a></li>
+<li id="nav-menu-item-110" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-post_type menu-item-object-page"><a href="https://toonily.net/manga/" class="menu-link  main-menu-link">MANGA </a></li>
+<li id="nav-menu-item-1985" class="main-menu-item menu-item-depth-0 menu-item menu-item-type-custom menu-item-object-custom"><a href="https://toonily.net/manga/?m_orderby=views" class="menu-link  main-menu-link"><i class="fas fa-eye"></i> Most Views </a></li>
+</ul> </nav>
+</div>
+<div class=" c-sub-header-nav with-border  ">
+<div class="container ">
+<div class="c-sub-nav_wrap">
+<div class="sub-nav_content">
+<ul class="sub-nav_list list-inline second-menu">
+<i class="mobile-icon icon ion-md-more"></i>
+</ul>
+</div>
+<div class="c-modal_item">
+
+<a href="javascript:void(0)" data-toggle="modal" data-target="#form-login" class="btn-active-modal">Sign in</a>
+<a href="javascript:void(0)" data-toggle="modal" data-target="#form-sign-up" class="btn-active-modal">Sign up</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="c-sidebar c-top-second-sidebar wp-manga" style="background-color:#000000; background-image:url(https://toonily.net/wp-content/uploads/2017/10/toonily.jpg); ">
+<div class="container c-container">
+<div class="row c-row">
+<div id="custom_html-31" class="widget_text widget col-12 col-md-12   default  no-icon heading-style-1 widget_custom_html"><div class="widget_text widget__inner widget_custom_html__inner c-widget-wrap"><div class="widget_text widget-content"><div class="textwidget custom-html-widget"><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="301ea602da68574562841fa4-text/javascript"></script>
+
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5283327797580836" data-ad-slot="2037663338" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script type="301ea602da68574562841fa4-text/javascript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div></div></div></div> </div>
+</div>
+</div>
+<div class="site-content">
+<div class="post-1899 wp-manga type-wp-manga status-publish has-post-thumbnail hentry">
+<div class="profile-manga" style="background-color:#000000; background-image:url(https://toonily.net/wp-content/uploads/2017/10/toonily.jpg); ">
+<div class="container">
+<div class="row">
+<div class="col-12 col-sm-12 col-md-12">
+<div class="c-breadcrumb-wrapper">
+<div class="c-breadcrumb">
+<ol class="breadcrumb">
+<li>
+<a href="https://toonily.net/">
+Home </a>
+</li>
+<li>
+<a href="https://toonily.net/manga/solo-leveling-2/">
+Solo Leveling </a>
+</li>
+ </ol>
+</div>
+</div>
+<div class="post-title">
+<h1>
+<span class="manga-title-badges hot">HOT</span>
+Solo Leveling </h1>
+</div>
+<div class="tab-summary ">
+<div class="summary_image">
+<a href="https://toonily.net/manga/solo-leveling-2/">
+<img width="193" height="278" src="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-193x278.jpg" srcset="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-193x278.jpg 193w, https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-125x180.jpg 125w" sizes="(max-width: 193px) 100vw, 193px" class="img-responsive" style="" alt="solo leveling S2" /> </a>
+</div>
+<div class="summary_content_wrap">
+<div class="summary_content">
+<div class="post-content">
+<div class="loader-inner ball-pulse">
+<div></div>
+<div></div>
+<div></div>
+</div>
+<div class="post-rating">
+<div class="post-total-rating"><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star ratings_stars rating_current"></i><i class="ion-ios-star-half ratings_stars rating_current_half"></i><span class="score font-meta total_votes">4.7</span></div><div class="user-rating"><i class="ion-ios-star-outline ratings_stars"></i><i class="ion-ios-star-outline ratings_stars"></i><i class="ion-ios-star-outline ratings_stars"></i><i class="ion-ios-star-outline ratings_stars"></i><i class="ion-ios-star-outline ratings_stars"></i><span class="score font-meta total_votes">Your Rating</span></div><input type="hidden" class="rating-post-id" value="1899"></div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>Rating</h5>
+</div>
+<div class="summary-content vote-details" vocab="https://schema.org/" typeof="AggregateRating">
+<span property="itemReviewed" typeof="Book"><span class="rate-title" property="name" title="Solo Leveling">Solo Leveling</span></span><span> <span> Average <span property="ratingValue" id="averagerate"> 4.7</span> / <span property="bestRating">5</span> </span> </span> out of <span property="ratingCount" id="countrate">10K</span> </div>
+</div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Rank </h5>
+</div>
+<div class="summary-content">
+6th, it has 136K monthly views	</div>
+</div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Alternative </h5>
+</div>
+<div class="summary-content">
+Updating	</div>
+</div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Author(s) </h5>
+</div>
+<div class="summary-content">
+<div class="author-content">
+Updating </div>
+</div>
+</div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Artist(s) </h5>
+</div>
+<div class="summary-content">
+<div class="artist-content">
+Updating </div>
+</div>
+</div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Genre(s) </h5>
+</div>
+<div class="summary-content">
+<div class="genres-content">
+Updating </div>
+</div>
+</div>
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Type </h5>
+</div>
+<div class="summary-content">
+Updating	</div>
+</div>
+<div id="init-links" class="nav-links">
+<a href="#" id="btn-read-last" class="c-btn c-btn_style-1">
+Read First</a>
+<a href="#" id="btn-read-first" class="c-btn c-btn_style-1">Read Last</a>
+</div>
+</div>
+<div class="post-status">
+<div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Release </h5>
+</div>
+<div class="summary-content">
+Updating	</div>
+</div><div class="post-content_item">
+<div class="summary-heading">
+<h5>
+Status </h5>
+</div>
+<div class="summary-content">
+OnGoing	</div>
+</div><div class="manga-action">
+<div class="count-comment">
+<div class="action_icon">
+<a href="#manga-discussion"><i class="icon ion-md-chatbubbles"></i></a>
+</div>
+<div class="action_detail">
+<span class="disqus-comment-count" data-disqus-url="https://toonily.net/manga/solo-leveling-2/">Comments</span>
+</div>
+</div>
+<div class="add-bookmark">
+<div class="action_icon"><script type="301ea602da68574562841fa4-text/javascript"> var requireLogin2BookMark = true; </script><a href="#" class="wp-manga-action-button" data-action="bookmark" data-post="1899" data-chapter="" data-page="1" title="Bookmark"><i class="icon ion-ios-bookmark"></i></a></div><div class="action_detail"><span>6.6K Users bookmarked This</span></div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="c-page-content style-1">
+<div class="content-area">
+<div class="container">
+<div class="row ">
+<div class="main-col  col-md-8 col-sm-8">
+
+<div class="main-col-inner">
+<div class="c-page">
+
+<div class="c-page__content">
+<div class="c-blog__heading style-2 font-heading">
+<h2 class="h4">
+<i class="icon ion-ios-star"></i>
+Summary </h2>
+</div>
+<div class="description-summary">
+<div class="summary__content show-more">
+<p>10 years ago, after “the Gate” that connected the real world with the monster world opened, some of the ordinary, everyday people received the power to hunt monsters within the Gate. They are known as &#8220;Hunters&#8221;. However, not all Hunters are powerful. My name is Sung Jin-Woo, an E-rank Hunter. I&#8217;m someone who has to risk his life in the lowliest of dungeons, the &#8220;World&#8217;s Weakest&#8221;. Having no skills whatsoever to display, I barely earned the required money by fighting in low-leveled dungeons… at least until I found a hidden dungeon with the hardest difficulty within the D-rank dungeons! In the end, as I was accepting death, I suddenly received a strange power, a quest log that only I could see, a secret to leveling up that only I know about! If I trained in accordance with my quests and hunted monsters, my level would rise. Changing from the weakest Hunter to the strongest S-rank Hunter!</p>
+</div>
+<div class="c-content-readmore">
+<span class="btn btn-link content-readmore">
+Show more </span>
+</div>
+</div>
+<div class="c-blog__heading style-2 font-heading">
+<h2 class="h4">
+<i class="icon ion-ios-star"></i>
+LATEST MANGA RELEASES	</h2>
+<a href="#" title="Change Order" class="btn-reverse-order"><i class="icon ion-md-swap"></i></a>
+</div>
+<div class="page-content-listing single-page">
+<div class="listing-chapters_wrap show-more">
+<ul class="main version-chap">
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-179/">
+Chapter 179 </a>
+<span class="chapter-release-date">
+<i>December 29, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-178/">
+Chapter 178 </a>
+<span class="chapter-release-date">
+<i>December 22, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-177/">
+Chapter 177 </a>
+<span class="chapter-release-date">
+<i>December 15, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-176/">
+Chapter 176 </a>
+<span class="chapter-release-date">
+<i>December 8, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-175/">
+Chapter 175 </a>
+<span class="chapter-release-date">
+<i>November 24, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-174/">
+Chapter 174 </a>
+<span class="chapter-release-date">
+<i>November 17, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-173/">
+Chapter 173 </a>
+<span class="chapter-release-date">
+<i>November 10, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-172/">
+Chapter 172 </a>
+<span class="chapter-release-date">
+<i>November 3, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-171/">
+Chapter 171 </a>
+<span class="chapter-release-date">
+<i>October 27, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-170/">
+Chapter 170 </a>
+<span class="chapter-release-date">
+<i>October 20, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-169/">
+Chapter 169 </a>
+<span class="chapter-release-date">
+<i>October 13, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-168/">
+Chapter 168 </a>
+<span class="chapter-release-date">
+<i>September 22, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-167/">
+Chapter 167 </a>
+<span class="chapter-release-date">
+<i>September 15, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-166/">
+Chapter 166 </a>
+<span class="chapter-release-date">
+<i>September 8, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-165/">
+Chapter 165 </a>
+<span class="chapter-release-date">
+<i>September 1, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-164/">
+Chapter 164 </a>
+<span class="chapter-release-date">
+<i>August 25, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-163/">
+Chapter 163 </a>
+<span class="chapter-release-date">
+<i>August 18, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-162/">
+Chapter 162 </a>
+<span class="chapter-release-date">
+<i>August 11, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-161/">
+Chapter 161 </a>
+<span class="chapter-release-date">
+<i>August 4, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-160/">
+Chapter 160 </a>
+<span class="chapter-release-date">
+<i>July 28, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-159/">
+Chapter 159 </a>
+<span class="chapter-release-date">
+<i>July 21, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-158/">
+Chapter 158 </a>
+<span class="chapter-release-date">
+<i>July 14, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-157/">
+Chapter 157 </a>
+<span class="chapter-release-date">
+<i>July 7, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-156/">
+Chapter 156 </a>
+<span class="chapter-release-date">
+<i>June 30, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-155/">
+Chapter 155 </a>
+<span class="chapter-release-date">
+<i>June 9, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-154/">
+Chapter 154 </a>
+<span class="chapter-release-date">
+<i>June 2, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-153/">
+Chapter 153 </a>
+<span class="chapter-release-date">
+<i>May 26, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-152/">
+Chapter 152 </a>
+<span class="chapter-release-date">
+<i>May 19, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-151/">
+Chapter 151 </a>
+<span class="chapter-release-date">
+<i>May 12, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-150/">
+Chapter 150 </a>
+<span class="chapter-release-date">
+<i>May 5, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-149/">
+Chapter 149 </a>
+<span class="chapter-release-date">
+<i>April 28, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-148/">
+Chapter 148 </a>
+<span class="chapter-release-date">
+<i>April 21, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-147/">
+Chapter 147 </a>
+<span class="chapter-release-date">
+<i>April 14, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-146/">
+Chapter 146 </a>
+<span class="chapter-release-date">
+<i>March 31, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-145/">
+Chapter 145 </a>
+<span class="chapter-release-date">
+<i>March 24, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-144/">
+Chapter 144 </a>
+<span class="chapter-release-date">
+<i>March 17, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-143/">
+Chapter 143 </a>
+<span class="chapter-release-date">
+<i>March 10, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-142/">
+Chapter 142 </a>
+<span class="chapter-release-date">
+<i>March 3, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-141/">
+Chapter 141 </a>
+<span class="chapter-release-date">
+<i>February 24, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-140/">
+Chapter 140 </a>
+<span class="chapter-release-date">
+<i>February 17, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-139/">
+Chapter 139 </a>
+<span class="chapter-release-date">
+<i>February 11, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-138/">
+Chapter 138 </a>
+<span class="chapter-release-date">
+<i>February 3, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-137/">
+Chapter 137 </a>
+<span class="chapter-release-date">
+<i>January 27, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-136/">
+Chapter 136 </a>
+<span class="chapter-release-date">
+<i>January 20, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-135/">
+Chapter 135 </a>
+<span class="chapter-release-date">
+<i>January 13, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-134/">
+Chapter 134 </a>
+<span class="chapter-release-date">
+<i>January 7, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-133/">
+Chapter 133 </a>
+<span class="chapter-release-date">
+<i>December 31, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-132/">
+Chapter 132 </a>
+<span class="chapter-release-date">
+<i>December 23, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-131/">
+Chapter 131 </a>
+<span class="chapter-release-date">
+<i>December 16, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-130/">
+Chapter 130 </a>
+<span class="chapter-release-date">
+<i>December 9, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-129/">
+Chapter 129 </a>
+<span class="chapter-release-date">
+<i>December 2, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-128/">
+Chapter 128 </a>
+<span class="chapter-release-date">
+<i>November 25, 2020</i> </span>
+
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-127/">
+Chapter 127 </a>
+<span class="chapter-release-date">
+<i>November 11, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-126/">
+Chapter 126 </a>
+<span class="chapter-release-date">
+<i>November 4, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-125/">
+Chapter 125 </a>
+<span class="chapter-release-date">
+<i>October 28, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-124/">
+Chapter 124 </a>
+<span class="chapter-release-date">
+<i>October 21, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-123/">
+Chapter 123 </a>
+<span class="chapter-release-date">
+<i>October 14, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-122/">
+Chapter 122 </a>
+<span class="chapter-release-date">
+<i>October 7, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-121/">
+Chapter 121 </a>
+<span class="chapter-release-date">
+<i>September 30, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-120/">
+Chapter 120 </a>
+<span class="chapter-release-date">
+<i>September 23, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-119/">
+Chapter 119 </a>
+<span class="chapter-release-date">
+<i>September 16, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-118/">
+Chapter 118 </a>
+<span class="chapter-release-date">
+<i>September 10, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-117/">
+Chapter 117 </a>
+<span class="chapter-release-date">
+<i>September 2, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-116/">
+Chapter 116 </a>
+<span class="chapter-release-date">
+<i>August 26, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-115/">
+Chapter 115 </a>
+<span class="chapter-release-date">
+<i>August 19, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-114/">
+Chapter 114 </a>
+<span class="chapter-release-date">
+<i>August 13, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-113/">
+Chapter 113 </a>
+<span class="chapter-release-date">
+<i>August 6, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-112/">
+Chapter 112 </a>
+<span class="chapter-release-date">
+<i>August 1, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-111/">
+Chapter 111 </a>
+<span class="chapter-release-date">
+<i>August 1, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-110/">
+Chapter 110 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-109/">
+Chapter 109 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-108/">
+Chapter 108 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-107/">
+Chapter 107 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-106/">
+Chapter 106 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-105/">
+Chapter 105 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-104/">
+Chapter 104 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-103/">
+Chapter 103 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-102/">
+Chapter 102  </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-101/">
+Chapter 101 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-100/">
+chapter 100 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-100_1/">
+Chapter 100 </a>
+<span class="chapter-release-date">
+<i>October 20, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-99_1/">
+Chapter 99 </a>
+<span class="chapter-release-date">
+<i>November 10, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-99/">
+chapter 99 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-98_1/">
+Chapter 98 </a>
+<span class="chapter-release-date">
+<i>November 17, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-98_2/">
+Chapter 98 </a>
+<span class="chapter-release-date">
+<i>November 17, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-98/">
+chapter 98 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-97-0/">
+chapter 97.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-97/">
+Chapter 97 </a>
+<span class="chapter-release-date">
+<i>December 29, 2021</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-96/">
+chapter 96 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-95-0/">
+chapter 95.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-94-0/">
+chapter 94.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-93-0/">
+chapter 93.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-92-0/">
+chapter 92.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-91/">
+chapter 91 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-90-2/">
+chapter 90.2 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-90-1/">
+chapter 90.1 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-89/">
+chapter 89 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-88-0/">
+chapter 88.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-87-0/">
+chapter 87.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-86-0/">
+chapter 86.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-85/">
+chapter 85 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-84-0/">
+chapter 84.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-83-0/">
+chapter 83.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-82-0/">
+chapter 82.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-81-0/">
+chapter 81.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-80-0/">
+chapter 80.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-79-0/">
+chapter 79.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-78-0/">
+chapter 78.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-77-0/">
+chapter 77.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-76/">
+chapter 76 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-75/">
+chapter 75 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-74/">
+chapter 74 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-73-0/">
+chapter 73.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-72-0/">
+chapter 72.0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-71/">
+chapter 71 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-70/">
+chapter 70 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+ <li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-69/">
+chapter 69 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-68/">
+chapter 68 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-67/">
+chapter 67 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-66/">
+chapter 66 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-65/">
+chapter 65 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-64/">
+chapter 64 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-63/">
+chapter 63 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-62/">
+chapter 62 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-61/">
+chapter 61 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-60/">
+chapter 60 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-59/">
+chapter 59 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-58/">
+chapter 58 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-57/">
+chapter 57 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-56/">
+chapter 56 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-55/">
+chapter 55 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-54/">
+chapter 54 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-53/">
+chapter 53 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-52/">
+chapter 52 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-51/">
+chapter 51 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-50/">
+chapter 50 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-49/">
+chapter 49 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-48/">
+chapter 48 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-47/">
+chapter 47 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-46/">
+chapter 46 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-45/">
+chapter 45 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-44/">
+chapter 44 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-43/">
+chapter 43 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-42/">
+chapter 42 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-41/">
+chapter 41 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-40/">
+chapter 40 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-39/">
+chapter 39 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-38/">
+chapter 38 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-37/">
+chapter 37 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-36/">
+chapter 36 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-35/">
+chapter 35 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-34/">
+chapter 34 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-33/">
+chapter 33 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-32/">
+chapter 32 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-31/">
+chapter 31 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-30/">
+chapter 30 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-29/">
+chapter 29 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-28/">
+chapter 28 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-27/">
+chapter 27 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-26/">
+chapter 26 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-25/">
+chapter 25 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-24/">
+chapter 24 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-23/">
+chapter 23 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-22/">
+chapter 22 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-21/">
+chapter 21 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-20/">
+chapter 20 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-19/">
+chapter 19 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-18/">
+chapter 18 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-17/">
+chapter 17 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-16/">
+chapter 16 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-15/">
+chapter 15 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-14/">
+chapter 14 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-13/">
+chapter 13 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-12/">
+chapter 12 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-11/">
+chapter 11 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-10/">
+chapter 10 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-9/">
+chapter 9 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-8/">
+chapter 8 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-7/">
+chapter 7 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-6/">
+chapter 6 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-5/">
+chapter 5 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-4/">
+chapter 4 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-3/">
+chapter 3 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-2/">
+chapter 2 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-1/">
+chapter 1 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+<li class="wp-manga-chapter  ">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-0/">
+chapter 0 </a>
+<span class="chapter-release-date">
+<i>July 12, 2020</i> </span>
+</li>
+</ul>
+<div class="c-chapter-readmore">
+<span class="btn btn-link chapter-readmore">
+Show more </span>
+</div>
+</div>
+</div> </div>
+
+</div>
+
+<div id="manga-discussion" class="c-blog__heading style-2 font-heading">
+<i class="ion-ios-star"></i>
+<h4> MANGA DISCUSSION </h4>
+</div>
+<div class="manga-discussion wrapper">
+<div id="disqus_thread"></div>
+</div>
+
+</div>
+</div>
+<div class="sidebar-col col-md-4 col-sm-4">
+<div id="main-sidebar" class="main-sidebar" role="complementary">
+<div class="row"><div id="manga-popular-slider-12" class="widget col-12 col-md-12   default  no-icon heading-style-1 manga-widget widget-manga-popular-slider"><div class="widget__inner manga-widget widget-manga-popular-slider__inner c-widget-wrap"><div class="widget-content">
+<div class="popular-slider style-3" data-autoplay="1" data-style="style-2" data-count="1">
+<div class="slider__container" role="toolbar">
+<div class="slider__item">
+<div class="item__wrap ">
+<div class="slider__thumb">
+<div class="slider__thumb_item c-image-hover">
+<a href="https://toonily.net/manga/superhuman-era/">
+<img width="125" height="180" src="https://toonily.net/wp-content/uploads/2022/02/25-1638290924-193x278-1-125x180.jpg" srcset="https://toonily.net/wp-content/uploads/2022/02/25-1638290924-193x278-1-125x180.jpg 125w, https://toonily.net/wp-content/uploads/2022/02/25-1638290924-193x278-1.jpg 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style="" alt="25-1638290924-193&#215;278" /> <div class="slider-overlay"></div>
+</a>
+</div>
+</div>
+<div class="slider__content">
+<div class="slider__content_item">
+<div class="post-title font-title">
+<h4>
+<a href="https://toonily.net/manga/superhuman-era/">Superhuman Era</a>
+</h4>
+</div>
+ <div class="post-on font-meta">
+<span>
+March 5, 2022 </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter ">
+<a href="https://toonily.net/manga/superhuman-era/chapter-98/">Chapter 98</a>
+</span>
+<span class="chapter ">
+<a href="https://toonily.net/manga/superhuman-era/chapter-97/">Chapter 97</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider__item">
+<div class="item__wrap ">
+<div class="slider__thumb">
+<div class="slider__thumb_item c-image-hover">
+<a href="https://toonily.net/manga/martial-peak/">
+<img width="125" height="180" src="https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-125x180.jpg" srcset="https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-125x180.jpg 125w, https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-193x278.jpg 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style="" alt="Martial Peak manhua" /> <div class="slider-overlay"></div>
+</a>
+</div>
+</div>
+<div class="slider__content">
+<div class="slider__content_item">
+<div class="post-title font-title">
+<h4>
+<a href="https://toonily.net/manga/martial-peak/">Martial Peak</a>
+</h4>
+</div>
+<div class="post-on font-meta">
+<span>
+March 5, 2022 </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter ">
+<a href="https://toonily.net/manga/martial-peak/chapter-2015/">Chapter 2015</a>
+</span>
+<span class="chapter ">
+<a href="https://toonily.net/manga/martial-peak/chapter-2014/">Chapter 2014</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider__item">
+<div class="item__wrap ">
+<div class="slider__thumb">
+<div class="slider__thumb_item c-image-hover">
+<a href="https://toonily.net/manga/magic-emperor/">
+<img width="125" height="180" src="https://toonily.net/wp-content/uploads/2020/07/012-124-125x180.jpg" srcset="https://toonily.net/wp-content/uploads/2020/07/012-124-125x180.jpg 125w, https://toonily.net/wp-content/uploads/2020/07/012-124-193x278.jpg 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style="" alt="Magic Emperor" /> <div class="slider-overlay"></div>
+</a>
+</div>
+</div>
+<div class="slider__content">
+<div class="slider__content_item">
+<div class="post-title font-title">
+<h4>
+<a href="https://toonily.net/manga/magic-emperor/">Magic Emperor</a>
+</h4>
+</div>
+<div class="post-on font-meta">
+<span>
+March 5, 2022 </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter ">
+<a href="https://toonily.net/manga/magic-emperor/chapter-268/">Chapter 268</a>
+</span>
+<span class="chapter ">
+<a href="https://toonily.net/manga/magic-emperor/chapter-267/">Chapter 267</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="slider__item">
+<div class="item__wrap ">
+<div class="slider__thumb">
+<div class="slider__thumb_item c-image-hover">
+<a href="https://toonily.net/manga/the-lords-coins-arent-decreasing/">
+<img width="125" height="180" src="https://toonily.net/wp-content/uploads/2021/05/The-Lords-Coins-Arent-Decreasing-125x180.png" srcset="https://toonily.net/wp-content/uploads/2021/05/The-Lords-Coins-Arent-Decreasing-125x180.png 125w, https://toonily.net/wp-content/uploads/2021/05/The-Lords-Coins-Arent-Decreasing-193x278.png 193w" sizes="(max-width: 125px) 100vw, 125px" class="img-responsive" style="" alt="The-Lords-Coins-Arent-Decreasing" /> <div class="slider-overlay"></div>
+</a>
+</div>
+</div>
+<div class="slider__content">
+<div class="slider__content_item">
+<div class="post-title font-title">
+<h4>
+<a href="https://toonily.net/manga/the-lords-coins-arent-decreasing/">The Lord’s Coins Aren’t Decreasing?!</a>
+</h4>
+</div>
+<div class="post-on font-meta">
+<span>
+March 5, 2022 </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter ">
+<a href="https://toonily.net/manga/the-lords-coins-arent-decreasing/chapter-52/">Chapter 52</a>
+</span>
+<span class="chapter ">
+<a href="https://toonily.net/manga/the-lords-coins-arent-decreasing/chapter-51/">Chapter 51</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div><div class="row"><div id="manga-recent-7" class="widget col-12 col-md-12   bordered  no-icon heading-style-1 c-popular manga-widget widget-manga-recent"><div class="widget__inner c-popular manga-widget widget-manga-recent__inner c-widget-wrap">
+<div class="c-widget-content style-1 ">
+<div class="widget-heading font-nav"><h5 class="heading">Top View Today</h5></div><div class="widget-content"> <div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="Martial Peak" href="https://toonily.net/manga/martial-peak/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-75x106.jpg" srcset="https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-75x106.jpg 75w, https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-212x300.jpg 212w, https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-724x1024.jpg 724w, https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-768x1087.jpg 768w, https://toonily.net/wp-content/uploads/2020/07/Martial-Peak-manhua-e1594959070998.jpg 222w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style="" alt="Martial Peak manhua" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="Martial Peak" href="https://toonily.net/manga/martial-peak/">Martial Peak</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/martial-peak/chapter-2015/" class="btn-link"> Chapter 2015 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/martial-peak/chapter-2015/" title="5 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="5 hours ago"></a></span> </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/martial-peak/chapter-2014/" class="btn-link"> Chapter 2014 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/martial-peak/chapter-2014/" title="14 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="14 hours ago"></a></span> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="The Beginning After The End" href="https://toonily.net/manga/the-beginning-after-the-end/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/07/The-Beginning-After-the-End-Manga-75x106.png" class="img-responsive" style="" alt="The Beginning After the End Manga" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="The Beginning After The End" href="https://toonily.net/manga/the-beginning-after-the-end/">The Beginning After The End</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/the-beginning-after-the-end/chapter-135/" class="btn-link"> Chapter 135 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/the-beginning-after-the-end/chapter-135/" title="17 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="17 hours ago"></a></span> </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/the-beginning-after-the-end/chapter-134/" class="btn-link"> Chapter 134 </a>
+</span>
+<span class="post-on font-meta">
+February 25, 2022 </span>
+</div>
+</div>
+</div>
+</div>
+<div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="Tales of Demons and Gods" href="https://toonily.net/manga/tales-of-demons-and-gods/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/07/Tales-of-Demons-and-Gods-75x106.jpg" srcset="https://toonily.net/wp-content/uploads/2020/07/Tales-of-Demons-and-Gods-75x106.jpg 75w, https://toonily.net/wp-content/uploads/2020/07/Tales-of-Demons-and-Gods-211x300.jpg 211w, https://toonily.net/wp-content/uploads/2020/07/Tales-of-Demons-and-Gods-e1594963303297.jpg 222w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style="" alt="Tales of Demons and Gods" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="Tales of Demons and Gods" href="https://toonily.net/manga/tales-of-demons-and-gods/">Tales of Demons and Gods</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/tales-of-demons-and-gods/chapter-368-5/" class="btn-link"> Chapter 368.5 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/tales-of-demons-and-gods/chapter-368-5/" title="17 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="17 hours ago"></a></span> </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/tales-of-demons-and-gods/chapter-368-1/" class="btn-link"> Chapter 368.1 </a>
+</span>
+<span class="post-on font-meta">
+March 2, 2022 </span>
+</div>
+</div>
+</div>
+</div>
+<div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="Apotheosis" href="https://toonily.net/manga/apotheosis/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/07/Apotheosis-MANGA-e1594511739955-75x106.jpg" class="img-responsive" style="" alt="Apotheosis MANGA" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="Apotheosis" href="https://toonily.net/manga/apotheosis/">Apotheosis</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/apotheosis/chapter-887/" class="btn-link"> Chapter 887 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/apotheosis/chapter-887/" title="17 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="17 hours ago"></a></span> </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/apotheosis/chapter-886/" class="btn-link"> Chapter 886 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/apotheosis/chapter-886/" title="3 days ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="3 days ago"></a></span> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="Magic Emperor" href="https://toonily.net/manga/magic-emperor/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/07/012-124-75x106.jpg" class="img-responsive" style="" alt="Magic Emperor" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="Magic Emperor" href="https://toonily.net/manga/magic-emperor/">Magic Emperor</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/magic-emperor/chapter-268/" class="btn-link"> Chapter 268 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/magic-emperor/chapter-268/" title="5 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="5 hours ago"></a></span> </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/magic-emperor/chapter-267/" class="btn-link"> Chapter 267 </a>
+</span>
+
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/magic-emperor/chapter-267/" title="8 hours ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="8 hours ago"></a></span> </span>
+</div>
+</div>
+</div>
+</div>
+<div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="Solo Leveling" href="https://toonily.net/manga/solo-leveling-2/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-75x106.jpg" srcset="https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-75x106.jpg 75w, https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-215x300.jpg 215w, https://toonily.net/wp-content/uploads/2020/06/solo-leveling-S2-e1591882745879.jpg 222w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style="" alt="solo leveling S2" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="Solo Leveling" href="https://toonily.net/manga/solo-leveling-2/">Solo Leveling</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-179/" class="btn-link"> Chapter 179 </a>
+</span>
+<span class="post-on font-meta">
+December 29, 2021 </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/solo-leveling-2/chapter-178/" class="btn-link"> Chapter 178 </a>
+</span>
+<span class="post-on font-meta">
+December 22, 2021 </span>
+</div>
+</div>
+</div>
+</div>
+<div class="popular-item-wrap">
+<div class="popular-img widget-thumbnail c-image-hover">
+<a title="Rebirth Of The Urban Immortal Cultivator" href="https://toonily.net/manga/rebirth-of-the-urban-immortal-cultivator/">
+<img width="75" height="106" src="https://toonily.net/wp-content/uploads/2020/06/Rebirth-Of-The-Urban-Immortal-Cultivator-75x106.jpg" srcset="https://toonily.net/wp-content/uploads/2020/06/Rebirth-Of-The-Urban-Immortal-Cultivator-75x106.jpg 75w, https://toonily.net/wp-content/uploads/2020/06/Rebirth-Of-The-Urban-Immortal-Cultivator-225x320.jpg 225w" sizes="(max-width: 75px) 100vw, 75px" class="img-responsive" style="" alt="Rebirth Of The Urban Immortal Cultivator" /> </a>
+</div>
+<div class="popular-content">
+<h5 class="widget-title">
+<a title="Rebirth Of The Urban Immortal Cultivator" href="https://toonily.net/manga/rebirth-of-the-urban-immortal-cultivator/">Rebirth Of The Urban Immortal Cultivator</a>
+</h5>
+<div class="list-chapter">
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/rebirth-of-the-urban-immortal-cultivator/chapter-724/" class="btn-link"> Chapter 724 </a>
+</span>
+<span class="post-on font-meta">
+<span class="c-new-tag"><a href="https://toonily.net/manga/rebirth-of-the-urban-immortal-cultivator/chapter-724/" title="3 days ago"><img src="https://toonily.net/wp-content/themes/madara/images/new.gif" alt="3 days ago"></a></span> </span>
+</div>
+<div class="chapter-item ">
+<span class="chapter font-meta">
+<a href="https://toonily.net/manga/rebirth-of-the-urban-immortal-cultivator/chapter-723/" class="btn-link"> Chapter 723 </a>
+</span>
+<span class="post-on font-meta">
+February 27, 2022 </span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></div></div></div> </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="site-footer">
+<div class="c-footer-sidebar">
+<div class="container">
+<div class="row c-row">
+<div id="tag_cloud-10" class="widget col-12 col-md-12   background    heading-style-1 widget_tag_cloud"><div class="widget__inner widget_tag_cloud__inner c-widget-wrap"><div class="widget-content"><div class="widget-heading font-nav"><h5 class="heading"><i class="ion-ios-star"></i>Manga Genres</h5></div><div class="tagcloud"><a href="https://toonily.net/manga-genre/action/" class="tag-cloud-link tag-link-390 tag-link-position-1" style="font-size: 22pt;" aria-label="Action (179 items)">Action</a>
+<a href="https://toonily.net/manga-genre/adventure/" class="tag-cloud-link tag-link-391 tag-link-position-2" style="font-size: 21.285714285714pt;" aria-label="Adventure (142 items)">Adventure</a>
+<a href="https://toonily.net/manga-genre/comedy/" class="tag-cloud-link tag-link-392 tag-link-position-3" style="font-size: 17.714285714286pt;" aria-label="Comedy (45 items)">Comedy</a>
+<a href="https://toonily.net/manga-genre/comic/" class="tag-cloud-link tag-link-393 tag-link-position-4" style="font-size: 8pt;" aria-label="Comic (1 item)">Comic</a>
+<a href="https://toonily.net/manga-genre/cooking/" class="tag-cloud-link tag-link-394 tag-link-position-5" style="font-size: 11.428571428571pt;" aria-label="Cooking (5 items)">Cooking</a>
+<a href="https://toonily.net/manga-genre/crime/" class="tag-cloud-link tag-link-618 tag-link-position-6" style="font-size: 10.142857142857pt;" aria-label="Crime (3 items)">Crime</a>
+<a href="https://toonily.net/manga-genre/cultivation/" class="tag-cloud-link tag-link-442 tag-link-position-7" style="font-size: 17.142857142857pt;" aria-label="Cultivation (37 items)">Cultivation</a>
+<a href="https://toonily.net/manga-genre/drama/" class="tag-cloud-link tag-link-395 tag-link-position-8" style="font-size: 17.285714285714pt;" aria-label="Drama (39 items)">Drama</a>
+<a href="https://toonily.net/manga-genre/ecchi/" class="tag-cloud-link tag-link-396 tag-link-position-9" style="font-size: 12.642857142857pt;" aria-label="Ecchi (8 items)">Ecchi</a>
+<a href="https://toonily.net/manga-genre/fantasy/" class="tag-cloud-link tag-link-397 tag-link-position-10" style="font-size: 21.571428571429pt;" aria-label="Fantasy (157 items)">Fantasy</a>
+<a href="https://toonily.net/manga-genre/game/" class="tag-cloud-link tag-link-849 tag-link-position-11" style="font-size: 8pt;" aria-label="Game (1 item)">Game</a>
+<a href="https://toonily.net/manga-genre/harem/" class="tag-cloud-link tag-link-398 tag-link-position-12" style="font-size: 15.928571428571pt;" aria-label="Harem (25 items)">Harem</a>
+<a href="https://toonily.net/manga-genre/historical/" class="tag-cloud-link tag-link-399 tag-link-position-13" style="font-size: 14.857142857143pt;" aria-label="Historical (17 items)">Historical</a>
+<a href="https://toonily.net/manga-genre/horror/" class="tag-cloud-link tag-link-400 tag-link-position-14" style="font-size: 11.928571428571pt;" aria-label="Horror (6 items)">Horror</a>
+<a href="https://toonily.net/manga-genre/isekai/" class="tag-cloud-link tag-link-421 tag-link-position-15" style="font-size: 18.285714285714pt;" aria-label="Isekai (54 items)">Isekai</a>
+<a href="https://toonily.net/manga-genre/josei/" class="tag-cloud-link tag-link-401 tag-link-position-16" style="font-size: 8pt;" aria-label="Josei (1 item)">Josei</a>
+<a href="https://toonily.net/manga-genre/magic/" class="tag-cloud-link tag-link-423 tag-link-position-17" style="font-size: 16.857142857143pt;" aria-label="Magic (34 items)">Magic</a>
+<a href="https://toonily.net/manga-genre/manga/" class="tag-cloud-link tag-link-402 tag-link-position-18" style="font-size: 10.142857142857pt;" aria-label="Manga (3 items)">Manga</a>
+<a href="https://toonily.net/manga-genre/manhua/" class="tag-cloud-link tag-link-403 tag-link-position-19" style="font-size: 19.5pt;" aria-label="Manhua (81 items)">Manhua</a>
+<a href="https://toonily.net/manga-genre/manhwa/" class="tag-cloud-link tag-link-404 tag-link-position-20" style="font-size: 18.857142857143pt;" aria-label="Manhwa (65 items)">Manhwa</a>
+<a href="https://toonily.net/manga-genre/martial-arts/" class="tag-cloud-link tag-link-405 tag-link-position-21" style="font-size: 20.428571428571pt;" aria-label="Martial Arts (109 items)">Martial Arts</a>
+<a href="https://toonily.net/manga-genre/medical/" class="tag-cloud-link tag-link-634 tag-link-position-22" style="font-size: 9.2857142857143pt;" aria-label="Medical (2 items)">Medical</a>
+<a href="https://toonily.net/manga-genre/mystery/" class="tag-cloud-link tag-link-408 tag-link-position-23" style="font-size: 15.857142857143pt;" aria-label="Mystery (24 items)">Mystery</a>
+<a href="https://toonily.net/manga-genre/post-apocalyptic/" class="tag-cloud-link tag-link-556 tag-link-position-24" style="font-size: 8pt;" aria-label="Post-Apocalyptic (1 item)">Post-Apocalyptic</a>
+<a href="https://toonily.net/manga-genre/psychological/" class="tag-cloud-link tag-link-619 tag-link-position-25" style="font-size: 11.928571428571pt;" aria-label="Psychological (6 items)">Psychological</a>
+<a href="https://toonily.net/manga-genre/reincarnation/" class="tag-cloud-link tag-link-420 tag-link-position-26" style="font-size: 18.071428571429pt;" aria-label="Reincarnation (50 items)">Reincarnation</a>
+<a href="https://toonily.net/manga-genre/romance/" class="tag-cloud-link tag-link-409 tag-link-position-27" style="font-size: 18.285714285714pt;" aria-label="Romance (54 items)">Romance</a>
+<a href="https://toonily.net/manga-genre/rpg/" class="tag-cloud-link tag-link-422 tag-link-position-28" style="font-size: 14.642857142857pt;" aria-label="RPG (16 items)">RPG</a>
+<a href="https://toonily.net/manga-genre/school-life/" class="tag-cloud-link tag-link-410 tag-link-position-29" style="font-size: 13pt;" aria-label="School Life (9 items)">School Life</a>
+<a href="https://toonily.net/manga-genre/sci-fi/" class="tag-cloud-link tag-link-411 tag-link-position-30" style="font-size: 14.428571428571pt;" aria-label="Sci-fi (15 items)">Sci-fi</a>
+<a href="https://toonily.net/manga-genre/seinen/" class="tag-cloud-link tag-link-412 tag-link-position-31" style="font-size: 9.2857142857143pt;" aria-label="Seinen (2 items)">Seinen</a>
+<a href="https://toonily.net/manga-genre/shoujo/" class="tag-cloud-link tag-link-413 tag-link-position-32" style="font-size: 10.857142857143pt;" aria-label="Shoujo (4 items)">Shoujo</a>
+<a href="https://toonily.net/manga-genre/shounen/" class="tag-cloud-link tag-link-414 tag-link-position-33" style="font-size: 16.785714285714pt;" aria-label="Shounen (33 items)">Shounen</a>
+<a href="https://toonily.net/manga-genre/slice-of-life/" class="tag-cloud-link tag-link-415 tag-link-position-34" style="font-size: 13.571428571429pt;" aria-label="Slice of Life (11 items)">Slice of Life</a>
+<a href="https://toonily.net/manga-genre/superhero/" class="tag-cloud-link tag-link-644 tag-link-position-35" style="font-size: 8pt;" aria-label="Superhero (1 item)">Superhero</a>
+<a href="https://toonily.net/manga-genre/supernatural/" class="tag-cloud-link tag-link-417 tag-link-position-36" style="font-size: 19.142857142857pt;" aria-label="Supernatural (72 items)">Supernatural</a>
+<a href="https://toonily.net/manga-genre/super-power/" class="tag-cloud-link tag-link-1246 tag-link-position-37" style="font-size: 8pt;" aria-label="Super Power (1 item)">Super Power</a>
+<a href="https://toonily.net/manga-genre/thriller/" class="tag-cloud-link tag-link-645 tag-link-position-38" style="font-size: 10.142857142857pt;" aria-label="Thriller (3 items)">Thriller</a>
+<a href="https://toonily.net/manga-genre/time-travel/" class="tag-cloud-link tag-link-689 tag-link-position-39" style="font-size: 10.857142857143pt;" aria-label="Time Travel (4 items)">Time Travel</a>
+<a href="https://toonily.net/manga-genre/tragedy/" class="tag-cloud-link tag-link-418 tag-link-position-40" style="font-size: 11.928571428571pt;" aria-label="Tragedy (6 items)">Tragedy</a>
+<a href="https://toonily.net/manga-genre/webtoon/" class="tag-cloud-link tag-link-419 tag-link-position-41" style="font-size: 16.285714285714pt;" aria-label="Webtoon (28 items)">Webtoon</a>
+<a href="https://toonily.net/manga-genre/webtoons/" class="tag-cloud-link tag-link-637 tag-link-position-42" style="font-size: 10.857142857143pt;" aria-label="Webtoons (4 items)">Webtoons</a>
+<a href="https://toonily.net/manga-genre/zombie/" class="tag-cloud-link tag-link-555 tag-link-position-43" style="font-size: 8pt;" aria-label="Zombie (1 item)">Zombie</a></div>
+</div></div></div> </div>
+</div>
+</div>
+<div class="bottom-footer">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="nav-footer"><ul class="list-inline font-nav"><li id="menu-item-76" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-76"><a href="/">HOME</a></li>
+<li id="menu-item-2412" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2412"><a href="https://toonily.net/legal-disclaimer/">LEGAL DISCLAIMER</a></li>
+<li id="menu-item-2413" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2413"><a href="https://toonily.net/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-2415" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2415"><a href="https://toonily.net/about-us/">ABOUT US</a></li>
+<li id="menu-item-2416" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2416"><a href="https://toonily.net/contact/">CONTACT US</a></li>
+</ul></div>
+<div class="copyright">
+<p>© 2020 Toonily.net All rights reserved</p> </div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<div class="ad c-ads custom-code wall-ads-control wall-ads-left"> </div><div class="ad c-ads custom-code wall-ads-control wall-ads-right"> </div>
+<div id="hover-infor"></div>
+</div> </div>
+
+<div class="wp-manga-section">
+<input type="hidden" name="bookmarking" value="0" />
+<div class="modal fade" id="form-login" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+<div id="login" class="login">
+<h3>
+<a href="https://toonily.net/" title="Toonily.net" tabindex="-1">Sign in</a>
+</h3>
+<p class="message login"></p>
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/wp-embed.min.js?ver=5.7.5' id='wp-embed-js'></script>
+<link rel="icon" href="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://toonily.net/wp-content/uploads/2020/06/cropped-android-chrome-512x512-1-270x270.png" />
+<style type="text/css">
+		/* Styles loading from Erident Custom Login and Dashboard Plugin*/
+		html {
+			background: none !important;
+		}
+        html body.login {
+			background: #000000 url(https://toonily.net/wp-content/uploads/2017/10/toonily.jpg) repeat top left !important;
+			background-size: auto !important;
+		}
+		body.login div#login h1 a {
+            background-image: url(https://toonily.net/wp-content/uploads/2017/10/toonily-01-1-e1596717591329.png) !important;
+            padding-bottom: 30px;
+			margin: 0 auto;
+			background-size: 400px 100px;
+			width: 400px;
+			height: 100px;
+        }
+		body.login #login {
+		width:550px;
+		}
+		.login form {
+			border-radius:10px !important;
+			border:4px solid #000000 !important;
+			background:rgba(219,219,219,1) url(https://toonily.net/wp-content/uploads/2017/10/bg-search.jpg) repeat top left !important;
+			-moz-box-shadow:    0 4px 10px -1px #C8C8C8 !important;
+			-webkit-box-shadow: 0 4px 10px -1px #C8C8C8 !important;
+			box-shadow:         0 4px 10px -1px #C8C8C8 !important;
+		}
+		body.login div#login form label, p#reg_passmail {
+			color:#000000 !important;
+			font-size:14px !important;
+		}
+		body.login #loginform p.submit .button-primary, body.wp-core-ui .button-primary {
+			background: #5E5E5E !important;
+      color: #FFFFFF !important;
+			border: none !important;
+            text-shadow: #ffffff 0 1px 0 !important;
+		}
+		body.login #loginform p.submit .button-primary:hover, body.login #loginform p.submit .button-primary:focus, body.wp-core-ui .button-primary:hover {
+			background: rgba(94,94,94, 0.9) !important;
+		}
+		body.login div#login form .input, .login input[type="text"] {
+				color: #555555 !important;
+				font-size:24px !important;
+		}
+		body.login #nav a, body.login #backtoblog a {
+			color: #21759B !important;
+		}
+		body.login #nav, body.login #backtoblog {
+			text-shadow: #ffffff 0 1px 0 !important;
+		}
+    .login form .input, .login input[type=text], .wp-core-ui .button-primary:focus {
+      box-shadow: none !important;
+    }
+    body.login #loginform p.submit .button-primary, body.wp-core-ui .button-primary { box-shadow: none; }
+    body.login p#nav { display: block !important; }
+    body.login #backtoblog { display: block !important; }
+    </style>
+<form name="loginform" id="loginform" method="post">
+<p>
+<label>Username or Email Address * <br> <input type="text" name="log" class="input user_login" value="" size="20">
+</label>
+</p>
+<p>
+<label>Password * <br> <input type="password" autocomplete="" name="pwd" class="input user_pass" value="" size="20">
+</label>
+</p>
+<p>
+</p>
+<p class="forgetmenot">
+<label>
+<input name="rememberme" type="checkbox" id="rememberme" value="forever">Remember Me </label>
+</p>
+<p class="submit">
+<input type="submit" name="wp-submit" class="button button-primary button-large wp-submit" value="Log In"> <input type="hidden" name="redirect_to" value="https://toonily.net/wp-admin/">
+<input type="hidden" name="testcookie" value="1">
+</p>
+</form>
+<p class="nav">
+<a href="javascript:avoid(0)" class="to-reset">Lost your password?</a>
+</p>
+<p class="backtoblog">
+<a href="javascript:void(0)">&larr; Back to Toonily.net</a>
+</p>
+</div>
+</div>
+ <div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="form-sign-up" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+<div id="sign-up" class="login">
+<h3>
+<a href="https://toonily.net/" title="Toonily.net" tabindex="-1">Sign Up</a>
+</h3>
+<p class="message register">Register For This Site.</p>
+<form name="registerform" id="registerform" novalidate="novalidate">
+<p>
+<label>Username * <br>
+<input type="text" name="user_sign-up" class="input user_login" value="" size="20">
+</label>
+</p>
+<p>
+<label>Email Address * <br>
+<input type="email" name="email_sign-up" class="input user_email" value="" size="20">
+</label>
+</p>
+<p>
+<label>Password *<br>
+<input type="password" name="pass_sign-up" autocomplete="" class="input user_pass" value="" size="25">
+</label>
+</p>
+<p>
+</p>
+<input type="hidden" name="redirect_to" value="">
+<p class="submit">
+<input type="submit" name="wp-submit" class="button button-primary button-large wp-submit" value="Register">
+</p>
+</form>
+<p class="nav">
+<a href="javascript:void(0)" class="to-login">Log in</a>
+|
+<a href="javascript:void(0)" class="to-reset">Lost your password?</a>
+</p>
+<p class="backtoblog">
+<a href="javascript:void(0)">&larr; Back to Toonily.net</a>
+</p>
+</div>
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<div class="modal fade" id="form-reset" tabindex="-1" role="dialog">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span></button>
+</div>
+<div class="modal-body">
+<div id="reset" class="login">
+<h3>
+<a href="javascript:void(0)" class="to-reset">Lost your password?</a>
+</h3>
+<p class="message reset">Please enter your username or email address. You will receive a link to create a new password via email.</p>
+<form name="resetform" id="resetform" method="post">
+<p>
+<label>Username or Email Address <br>
+<input type="text" name="user_reset" id="user_reset" class="input" value="" size="20">
+</label>
+</p>
+ <p class="submit">
+<input type="submit" name="wp-submit" class="button button-primary button-large wp-submit" value="Get New Password">
+<input type="hidden" name="testcookie" value="1">
+</p>
+</form>
+<p>
+<a class="backtoblog" href="javascript:void(0)">&larr; Back to Toonily.net</a>
+</p>
+</div>
+</div>
+<div class="modal-footer"></div>
+</div>
+</div>
+</div>
+<script type="301ea602da68574562841fa4-text/javascript">
+
+		function wpMangaSubmitSwitch() {
+			jQuery('.g-recaptcha-response').each(function () {
+				var submitBtn = jQuery(this).parents('form').find('input[type="submit"]');
+
+				if (jQuery(this).val() !== '') {
+					submitBtn.prop('disabled', false);
+				} else {
+					submitBtn.prop('disabled', true);
+				}
+			});
+		}
+
+		jQuery(function ($) {
+			$(document).ready(function () {
+
+				$('.modal form').each(function () {
+					if ($(this).find('.g-recaptcha').length !== 0) {
+						var submitBtn = $(this).find('input[type="submit"]');
+
+						if (typeof submitBtn !== 'undefined') {
+							submitBtn.prop('disabled', true);
+						}
+					}
+				});
+
+				var gRecaptcha = $('#form-login .g-recaptcha, #form-sign-up .g-recaptcha, #form-reset .g-recaptcha');
+				gRecaptcha.attr('data-callback', 'wpMangaSubmitSwitch');
+				gRecaptcha.attr('data-expired-callback', 'wpMangaSubmitSwitch');
+				gRecaptcha.attr('data-error', 'wpMangaSubmitSwitch');
+			});
+		});
+
+    </script>
+</div>
+<script id="dsq-count-scr" src="https://toonily-net.disqus.com/count.js" async type="301ea602da68574562841fa4-text/javascript"></script>
+<link rel='stylesheet' id='llar-login-page-styles-css' href='https://toonily.net/wp-content/plugins/limit-login-attempts-reloaded/assets/css/login-page-styles.css?ver=2.23.2' type='text/css' media='all' />
+<script type="301ea602da68574562841fa4-text/javascript" id='wp-manga-single-js-js-extra'>
+/* <![CDATA[ */
+var wpMangaSingle = {"ajax_url":"https:\/\/toonily.net\/wp-admin\/admin-ajax.php","home_url":"https:\/\/toonily.net"};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/madara-core/assets/js/manga-single.js?ver=5.7.5' id='wp-manga-single-js-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='disqus_count-js-extra'>
+/* <![CDATA[ */
+var countVars = {"disqusShortname":"toonily-net"};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22' id='disqus_count-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='manga_disqus_embed-js-extra'>
+/* <![CDATA[ */
+var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.12"},"disqusIdentifier":"1899 https:\/\/toonily.net\/?post_type=wp-manga&p=1899","disqusShortname":"toonily-net","disqusTitle":"Solo Leveling","disqusUrl":"https:\/\/toonily.net\/manga\/solo-leveling-2\/","postId":"1899"};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/disqus-comment-system/public/js/comment_embed.js?ver=5.7.5' id='manga_disqus_embed-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/comment-reply.min.js?ver=5.7.5' id='comment-reply-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/core.js?ver=5.7.5' id='madara-core-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/smoothscroll.js?ver=1.4.5' id='smoothscroll-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/bootstrap.min.js?ver=4.3.1' id='bootstrap-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/shuffle.min.js?ver=5.7.5' id='shuffle-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/aos.js?ver=5.7.5' id='aos-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='madara-js-js-extra'>
+/* <![CDATA[ */
+var madara = {"ajaxurl":"https:\/\/toonily.net\/wp-admin\/admin-ajax.php","query_vars":{"page":0,"manga-core":"solo-leveling-2","post_type":"wp-manga","name":"solo-leveling-2","error":"","m":"","p":0,"post_parent":"","subpost":"","subpost_id":"","attachment":"","attachment_id":0,"pagename":"","page_id":0,"second":"","minute":"","hour":"","day":0,"monthnum":0,"year":0,"w":0,"category_name":"","tag":"","cat":"","tag_id":"","author":"","author_name":"","feed":"","tb":"","paged":0,"meta_key":"","meta_value":"","preview":"","s":"","sentence":"","title":"","fields":"","menu_order":"","embed":"","category__in":[],"category__not_in":[],"category__and":[],"post__in":[],"post__not_in":[],"post_name__in":[],"tag__in":[],"tag__not_in":[],"tag__and":[],"tag_slug__in":[],"tag_slug__and":[],"post_parent__in":[],"post_parent__not_in":[],"author__in":[],"author__not_in":[],"ignore_sticky_posts":false,"suppress_filters":false,"cache_results":true,"update_post_term_cache":true,"lazy_load_term_meta":true,"update_post_meta_cache":true,"posts_per_page":12,"nopaging":false,"comments_per_page":"50","no_found_rows":false,"order":"DESC"},"current_url":"https:\/\/toonily.net\/manga\/solo-leveling-2"};
+var single_manga_show_more = {"show_more":"Show more  ","show_less":"Show less  "};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/template.js?ver=1.6.3' id='madara-js-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/ajax.js?ver=5.7.5' id='madara-ajax-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='wp-manga-login-ajax-js-extra'>
+/* <![CDATA[ */
+var wpMangaLogin = {"admin_ajax":"https:\/\/toonily.net\/wp-admin\/admin-ajax.php","home_url":"https:\/\/toonily.net","messages":{"please_enter_username":"Please enter username","please_enter_password":"Please enter password","invalid_username_or_password":"Invalid username or password","server_error":"Server Error!","username_or_email_cannot_be_empty":"Username or Email cannot be empty","please_fill_all_fields":"Please fill in all password fields.","password_cannot_less_than_12":"Password cannot has less than 12 characters","password_doesnot_match":"Password doesn&#039;t match. Please  try again.","username_cannot_empty":"Username cannot be empty","email_cannot_empty":"Email cannot be empty","password_cannot_empty":"Password cannot be empty"}};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/madara-core/assets/js/login.js?ver=5.7.5' id='wp-manga-login-ajax-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/madara-core/assets/slick/slick.min.js?ver=5.7.5' id='wp-manga-slick-js-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/jquery/ui/core.min.js?ver=1.12.1' id='jquery-ui-core-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/jquery/ui/menu.min.js?ver=1.12.1' id='jquery-ui-menu-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=7.4.4' id='wp-polyfill-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='wp-polyfill-js-after'>
+( 'fetch' in window ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-fetch.min.js?ver=3.0.0"></scr' + 'ipt>' );( document.contains ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-node-contains.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.DOMRect ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-dom-rect.min.js?ver=3.42.0"></scr' + 'ipt>' );( window.URL && window.URL.prototype && window.URLSearchParams ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-url.min.js?ver=3.6.4"></scr' + 'ipt>' );( window.FormData && window.FormData.prototype.keys ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-formdata.min.js?ver=3.0.12"></scr' + 'ipt>' );( Element.prototype.matches && Element.prototype.closest ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-element-closest.min.js?ver=2.0.2"></scr' + 'ipt>' );( 'objectFit' in document.documentElement.style ) || document.write( '<script src="https://toonily.net/wp-includes/js/dist/vendor/wp-polyfill-object-fit.min.js?ver=2.3.4"></scr' + 'ipt>' );
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/dist/dom-ready.min.js?ver=93db39f6fe07a70cb9217310bec0a531' id='wp-dom-ready-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/dist/hooks.min.js?ver=d0188aa6c336f8bb426fe5318b7f5b72' id='wp-hooks-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/dist/i18n.min.js?ver=6ae7d829c963a7d8856558f3f9b32b43' id='wp-i18n-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='wp-i18n-js-after'>
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" id='wp-a11y-js-translations'>
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", { "locale_data": { "messages": { "": {} } } } );
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/dist/a11y.min.js?ver=f38c4dee80fd4bb43131247e3175c99a' id='wp-a11y-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='jquery-ui-autocomplete-js-extra'>
+/* <![CDATA[ */
+var uiAutocompleteL10n = {"noResults":"No results found.","oneResult":"1 result found. Use up and down arrow keys to navigate.","manyResults":"%d results found. Use up and down arrow keys to navigate.","itemSelected":"Item selected."};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-includes/js/jquery/ui/autocomplete.min.js?ver=1.12.1' id='jquery-ui-autocomplete-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" id='wp-manga-js-extra'>
+/* <![CDATA[ */
+var manga = {"ajax_url":"https:\/\/toonily.net\/wp-admin\/admin-ajax.php","home_url":"https:\/\/toonily.net","manga_paged_var":"manga-paged","manga_id":"1899"};
+/* ]]> */
+</script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/madara-core/assets/js/script.js?ver=1.6.3' id='wp-manga-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/themes/madara/js/slick/slick.min.js?ver=1.7.1' id='slick-js'></script>
+<script type="301ea602da68574562841fa4-text/javascript" src='https://toonily.net/wp-content/plugins/madara-shortcodes/shortcodes/js/ct-shortcodes.js?ver=1.5.2.1' id='ct-shortcode-js-js'></script>
+<script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="301ea602da68574562841fa4-|49" defer=""></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/v652eace1692a40cfa3763df669d7439c1639079717194" integrity="sha512-Gi7xpJR8tSkrpF7aordPZQlW2DLtzUlZcumS8dMQjwDHEnw9I7ZLyiOj/6tZStRBGtGgN6ceN6cMH8z7etPGlw==" data-cf-beacon='{"rayId":"6e72d3ac7d249a1e","version":"2021.12.0","r":1,"token":"b4edc341709a49f086dbf8bdc7459cf9","si":100}' crossorigin="anonymous"></script>
+</body></html>
+
+
+
