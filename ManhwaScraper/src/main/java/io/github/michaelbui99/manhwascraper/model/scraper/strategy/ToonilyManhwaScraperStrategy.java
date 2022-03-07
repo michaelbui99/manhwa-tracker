@@ -96,7 +96,9 @@ public class ToonilyManhwaScraperStrategy implements ManhwaScrapeStrategy {
         Element chapterTag = chapterTags.get(0);
         String chapterTagContent = chapterTag.text();
 
-        int chapterCount = Integer.parseInt(chapterTagContent.split(" ")[1]);
+        // a bit of an ugly hack since some manhwa have half chapters such as 365.5
+        // in case of half chapters, the number of full chapters will be returned instead.
+        int chapterCount = (int) Math.floor(Double.parseDouble(chapterTagContent.split(" ")[1]));
 
         return chapterCount;
     }
