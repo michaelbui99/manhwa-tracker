@@ -1,5 +1,15 @@
-<mat-sidenav-container>
-  <mat-sidenav mode="side" #sidenav opened>Sidenav</mat-sidenav>
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" #sidenav opened>
+    <h3>Scraper Controls</h3>
+    <ul>
+      <li class="sidenav-item">
+        <a routerLink="addscrapetask">Add Scrape Task</a>
+      </li>
+      <li class="sidenav-item">
+        <a routerLink="addscrapetasks">Add Scrape Tasks</a>
+      </li>
+    </ul>
+  </mat-sidenav>
   <mat-sidenav-content>
     <router-outlet></router-outlet>
   </mat-sidenav-content>
