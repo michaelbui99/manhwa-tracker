@@ -62,6 +62,12 @@ builder.Services.AddAuthorization(options =>
     {
         policy.RequireClaim("Role", "Moderator");
     });
+
+    options.AddPolicy("MustBeService", policy =>
+    {
+        policy.RequireClaim("Role", "Service");
+        policy.RequireClaim("Role", "Moderator");
+    });
 });
 
 builder.Services.AddTransient<ManhwaTrackerDbContext>();
@@ -75,7 +81,10 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IManhwaListRepository, ManhwaListRepository>();
 builder.Services.AddScoped<IManhwaListService, ManhwaListService>();
+builder.Services.AddScoped<IServiceUserRepository, ServiceUserRepository>();
 builder.Services.AddScoped<IJwtAuthenticationManager, JwtAuthenticationManager>();
+
+
 
 
 builder.Services.AddEndpointsApiExplorer();

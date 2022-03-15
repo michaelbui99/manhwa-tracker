@@ -83,7 +83,7 @@ public class UserService : IUserService
 
     public async Task<User> ValidateUserAsync(string email, string password)
     {
-        var validatedUser = await _jwtAuthenticationManager.AuthenticateAsync(email, password);
+        var validatedUser = await _jwtAuthenticationManager.AuthenticateUserAsync(email, password);
         return validatedUser;
     }
 }

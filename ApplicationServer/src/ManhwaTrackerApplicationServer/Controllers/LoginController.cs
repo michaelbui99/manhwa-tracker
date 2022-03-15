@@ -23,7 +23,7 @@ namespace ManhwaTrackerApplicationServer.Controllers
         /// </summary>
         /// <param name="validateUserDto">DTO containing the user's email and password</param>
         /// <returns>DTO containing the users id, email and bearer token</returns>
-        [HttpPost]
+        [HttpPost("/users")]
         public async Task<ActionResult<ReadUserDto>> LoginUser([FromBody] ValidateUserDto validateUserDto)
         {
             try
