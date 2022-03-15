@@ -42,6 +42,5 @@ namespace ManhwaTrackerApplicationServer.Controllers
                 return StatusCode(500);
             }
         }
-
     }
 }
