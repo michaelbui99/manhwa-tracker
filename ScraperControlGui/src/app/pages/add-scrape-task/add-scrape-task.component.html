@@ -1,1 +1,45 @@
-<p>add-scrape-task works!</p>
+<div class="container">
+  <h1>Scrape page (Single)</h1>
+
+  <mat-form-field appearance="outline">
+    <mat-label for="email">Url</mat-label>
+    <input
+      id="url"
+      type="text"
+      name="url"
+      class="form-control"
+      matInput
+      placeholder="E.g. https://toonily.net/manga/the-beginning-after-the-end/"
+      [(ngModel)]="pageUrl"
+    />
+  </mat-form-field>
+  <button mat-stroked-button (click)="onScrape()">Scrape page</button>
+
+  <div class="result-container">
+    <div class="result-preview">
+      <h3>Result</h3>
+      <mat-form-field appearance="outline">
+        <mat-label for="title">Title</mat-label>
+        <input
+          type="text"
+          name="title"
+          matInput
+          disabled
+          [(ngModel)]="result.title"
+        />
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label for="description">Description</mat-label>
+        <textarea
+          type="text"
+          name="title"
+          matInput
+          disabled
+          [(ngModel)]="result.description"
+        ></textarea>
+      </mat-form-field>
+
+      <mat-progress-bar *ngIf="loading"></mat-progress-bar>
+    </div>
+  </div>
+</div>

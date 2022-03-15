@@ -4,7 +4,8 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class UserService {
-  private _isLoggedIn: boolean = false;
+  //TODO: Currently defaults to true for debugging. Change this to false
+  private _isLoggedIn: boolean = true;
 
   constructor() {}
 

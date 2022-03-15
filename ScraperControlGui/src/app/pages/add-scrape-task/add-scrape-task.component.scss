@@ -1,0 +1,18 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+  height: 100%;
+
+  .result-container {
+    width: 100%;
+
+    .result-preview {
+      width: 50%;
+      margin-top: 2rem;
+      mat-form-field {
+        width: 100%;
+      }
+    }
+  }
+}
