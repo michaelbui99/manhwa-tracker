@@ -14,6 +14,7 @@ namespace UnitTests;
 public class UserServiceTests
 {
     private Mock<IUserRepository> _userRepositoryMock;
+    private Mock<IServiceUserRepository> _serviceUserRepositoryMock;
     private IJwtAuthenticationManager _authenticationManager;
     private IUserService _userService;
 
@@ -21,7 +22,8 @@ public class UserServiceTests
     public void Setup()
     {
         _userRepositoryMock = new Mock<IUserRepository>();
-        _authenticationManager = new JwtAuthenticationManager(_userRepositoryMock.Object);
+        _serviceUserRepositoryMock = new Mock<IServiceUserRepository>();
+        _authenticationManager = new JwtAuthenticationManager(_userRepositoryMock.Object, _serviceUserRepositoryMock.Object);
         _userService = new UserService(_userRepositoryMock.Object, _authenticationManager);
     }
 
