@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observer } from 'rxjs';
 import { ScrapeResult } from 'src/app/model/scrape-result';
 import { ScraperService } from 'src/app/services/scraper.service';
 import { UserService } from 'src/app/services/user.service';
@@ -34,14 +35,20 @@ export class AddScrapeTaskComponent implements OnInit {
 
   onScrape() {
     this.loading = true;
-    this.scraperService.scrapeToonilyPage(this.pageUrl).subscribe(
-      (result) => {
+    const observer: Observer<ScrapeResult> = {
+      next: (result) => {
         this.pageUrl = '';
         this.resultDisplay = JSON.stringify(result, null, 4);
         this.result = result;
         this.loading = false;
       },
-      (err) => (this.loading = false)
-    );
+      error: (err) => {
+        this.loading = false;
+        this.pageUrl = '';
+      },
+      complete: () => {},
+    };
+
+    this.scraperService.scrapeToonilyPage(this.pageUrl).subscribe(observer);
   }
 }
