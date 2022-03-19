@@ -14,9 +14,10 @@
     />
   </mat-form-field>
   <button mat-stroked-button (click)="onScrape()">Scrape page</button>
+  <mat-progress-bar *ngIf="loading"></mat-progress-bar>
 
   <div class="result-container">
-    <div class="result-preview">
+    <div class="result-preview--left">
       <h3>Result</h3>
       <mat-form-field appearance="outline">
         <mat-label for="title">Title</mat-label>
@@ -31,6 +32,8 @@
       <mat-form-field appearance="outline">
         <mat-label for="description">Description</mat-label>
         <textarea
+          cdkTextareaAutosize
+          #autosize="cdkTextareaAutosize"
           type="text"
           name="title"
           matInput
@@ -38,8 +41,8 @@
           [(ngModel)]="result.description"
         ></textarea>
       </mat-form-field>
-
-      <mat-progress-bar *ngIf="loading"></mat-progress-bar>
     </div>
+
+    <div class="result-preview--right"></div>
   </div>
 </div>

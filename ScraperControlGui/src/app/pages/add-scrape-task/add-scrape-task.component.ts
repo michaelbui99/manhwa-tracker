@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { CdkTextareaAutosize } from '@angular/cdk/text-field';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observer } from 'rxjs';
 import { ScrapeResult } from 'src/app/model/scrape-result';
@@ -11,6 +12,8 @@ import { UserService } from 'src/app/services/user.service';
   styleUrls: ['./add-scrape-task.component.scss'],
 })
 export class AddScrapeTaskComponent implements OnInit {
+  @ViewChild('autosize') autosize: CdkTextareaAutosize;
+
   pageUrl: string = '';
   resultDisplay: string = '';
   result: ScrapeResult = {
