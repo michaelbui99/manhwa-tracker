@@ -2,6 +2,7 @@
 using ManhwaTrackerApplicationServer.Models.Manhwa;
 using ManhwaTrackerApplicationServer.Models.ManhwaList;
 using ManhwaTrackerApplicationServer.Models.ManhwaRequest;
+using ManhwaTrackerApplicationServer.Models.ThirdParty;
 using ManhwaTrackerApplicationServer.Models.User;
 using Microsoft.EntityFrameworkCore;
 using Npgsql;
@@ -17,6 +18,8 @@ public class ManhwaTrackerDbContext : DbContext
     public DbSet<ManhwaRequest> ManhwaRequests { get; set; }
     
     public DbSet<ManhwaList> ManhwaLists { get; set; }
+
+    public DbSet<ServiceUser> ServiceUsers { get; set; }
 
     public ManhwaTrackerDbContext()
     {
@@ -47,5 +50,6 @@ public class ManhwaTrackerDbContext : DbContext
 
         // Excluding properties
         modelBuilder.Entity<User>().Ignore(user => user.Token);
+        modelBuilder.Entity<ServiceUser>().Ignore(s_user => s_user.Token);
     }
 }

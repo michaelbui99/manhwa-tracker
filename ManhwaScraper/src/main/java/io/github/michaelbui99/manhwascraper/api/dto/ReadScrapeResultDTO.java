@@ -1,4 +1,4 @@
-package io.github.michaelbui99.manhwascraper.dto;
+package io.github.michaelbui99.manhwascraper.api.dto;
 
 import java.util.ArrayList;
 import java.util.List;

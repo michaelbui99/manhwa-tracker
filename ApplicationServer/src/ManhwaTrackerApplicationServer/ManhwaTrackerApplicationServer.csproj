@@ -4,7 +4,7 @@
         <TargetFramework>net6.0</TargetFramework>
         <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
-        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <!--<GenerateDocumentationFile>true</GenerateDocumentationFile>-->
     </PropertyGroup>
 
     <ItemGroup>
@@ -30,7 +30,6 @@
     <ItemGroup>
       <Folder Include="Authentication" />
       <Folder Include="Models\Domain" />
-      <Folder Include="Models\ThirdParty" />
     </ItemGroup>
 
 </Project>

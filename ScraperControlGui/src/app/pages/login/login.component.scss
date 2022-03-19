@@ -1,0 +1,38 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 2rem);
+
+  .login-card {
+    background-color: white;
+    min-width: 550px;
+    min-height: calc(80vh - 2rem);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+    &__header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 20%;
+      width: 100%;
+      background-color: #222;
+
+      h3 {
+        color: #eee;
+        font-size: 25px;
+      }
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin-top: 3rem;
+    }
+  }
+}

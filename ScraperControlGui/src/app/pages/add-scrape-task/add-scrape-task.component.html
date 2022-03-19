@@ -1,0 +1,84 @@
+<div class="container">
+  <h1>Scrape page (Single)</h1>
+
+  <mat-form-field appearance="outline">
+    <mat-label for="email">Url</mat-label>
+    <input
+      id="url"
+      type="text"
+      name="url"
+      class="form-control"
+      matInput
+      placeholder="E.g. https://toonily.net/manga/the-beginning-after-the-end/"
+      [(ngModel)]="pageUrl"
+    />
+  </mat-form-field>
+  <button mat-stroked-button (click)="onScrape()">Scrape page</button>
+  <mat-progress-bar *ngIf="loading"></mat-progress-bar>
+
+  <div class="result-container">
+    <div class="result-preview--left">
+      <h3>Result</h3>
+      <mat-form-field appearance="outline">
+        <mat-label for="title">Title</mat-label>
+        <input
+          type="text"
+          name="title"
+          matInput
+          disabled
+          [(ngModel)]="result.title"
+        />
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label for="description">Description</mat-label>
+
+        <textarea
+          cdkTextareaAutosize
+          #autosize="cdkTextareaAutosize"
+          type="text"
+          name="title"
+          matInput
+          disabled
+          [(ngModel)]="result.description"
+        ></textarea>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label for="genres">Genres</mat-label>
+        <input
+          type="text"
+          name="genres"
+          matInput
+          disabled
+          [(ngModel)]="result.genres"
+        />
+      </mat-form-field>
+    </div>
+
+    <div class="result-preview--right">
+      <h3>Save results</h3>
+      <div class="buttons-container">
+        <button
+          mat-stroked-button
+          (mouseover)="onHoverSave()"
+          (mouseleave)="setHelperText('')"
+        >
+          Save results
+        </button>
+        <button
+          mat-stroked-button
+          (click)="clearResults()"
+          (mouseenter)="onHoverClear()"
+          (mouseleave)="setHelperText('')"
+        >
+          Clear results
+        </button>
+      </div>
+
+      <div class="helper-text-container">
+        <p>{{ helperText }}</p>
+      </div>
+    </div>
+  </div>
+</div>

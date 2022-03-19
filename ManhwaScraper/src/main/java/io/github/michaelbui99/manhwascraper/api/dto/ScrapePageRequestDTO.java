@@ -1,4 +1,4 @@
-package io.github.michaelbui99.manhwascraper.dto;
+package io.github.michaelbui99.manhwascraper.api.dto;
 
 public class ScrapePageRequestDTO {
     private String url;
