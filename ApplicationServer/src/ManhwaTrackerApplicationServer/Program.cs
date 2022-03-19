@@ -82,6 +82,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IManhwaListRepository, ManhwaListRepository>();
 builder.Services.AddScoped<IManhwaListService, ManhwaListService>();
 builder.Services.AddScoped<IServiceUserRepository, ServiceUserRepository>();
+builder.Services.AddScoped<IServiceUserService, ServiceUserService>();
 builder.Services.AddScoped<IJwtAuthenticationManager, JwtAuthenticationManager>();
 
 
