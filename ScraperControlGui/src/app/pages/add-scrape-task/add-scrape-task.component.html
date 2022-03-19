@@ -29,8 +29,10 @@
           [(ngModel)]="result.title"
         />
       </mat-form-field>
+
       <mat-form-field appearance="outline">
         <mat-label for="description">Description</mat-label>
+
         <textarea
           cdkTextareaAutosize
           #autosize="cdkTextareaAutosize"
@@ -41,8 +43,42 @@
           [(ngModel)]="result.description"
         ></textarea>
       </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label for="genres">Genres</mat-label>
+        <input
+          type="text"
+          name="genres"
+          matInput
+          disabled
+          [(ngModel)]="result.genres"
+        />
+      </mat-form-field>
     </div>
 
-    <div class="result-preview--right"></div>
+    <div class="result-preview--right">
+      <h3>Save results</h3>
+      <div class="buttons-container">
+        <button
+          mat-stroked-button
+          (mouseover)="onHoverSave()"
+          (mouseleave)="setHelperText('')"
+        >
+          Save results
+        </button>
+        <button
+          mat-stroked-button
+          (click)="clearResults()"
+          (mouseenter)="onHoverClear()"
+          (mouseleave)="setHelperText('')"
+        >
+          Clear results
+        </button>
+      </div>
+
+      <div class="helper-text-container">
+        <p>{{ helperText }}</p>
+      </div>
+    </div>
   </div>
 </div>

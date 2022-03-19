@@ -13,16 +13,18 @@ import { UserService } from 'src/app/services/user.service';
 })
 export class AddScrapeTaskComponent implements OnInit {
   @ViewChild('autosize') autosize: CdkTextareaAutosize;
-
-  pageUrl: string = '';
-  resultDisplay: string = '';
-  result: ScrapeResult = {
+  private _emptyScrapeResults: ScrapeResult = {
     title: '',
     chapterCount: 0,
     genres: [],
     description: '',
   };
+
+  pageUrl: string = '';
+  resultDisplay: string = '';
+  result: ScrapeResult = this._emptyScrapeResults;
   loading = false;
+  helperText = '';
 
   constructor(
     private router: Router,
@@ -53,5 +55,26 @@ export class AddScrapeTaskComponent implements OnInit {
     };
 
     this.scraperService.scrapeToonilyPage(this.pageUrl).subscribe(observer);
+  }
+
+  clearResults() {
+    this.result = this._emptyScrapeResults;
+  }
+
+  setHelperText(text: string) {
+    this.helperText = text;
+  }
+
+  onHoverSave() {
+    const text =
+      'Saves the results to the database.\n If an entry with same title already exists, then the entry will be updated.\n If entry does not exist, then new entry will be created';
+
+    this.setHelperText(text);
+  }
+
+  onHoverClear() {
+    const text = 'Clears the results. Clear cannot be undone';
+
+    this.setHelperText(text);
   }
 }
