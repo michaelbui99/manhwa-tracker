@@ -1,6 +1,15 @@
 <div class="container">
   <h1>Scrape page (Single)</h1>
 
+  <mat-form-field>
+    <mat-select>
+      <mat-option disabled> ---- Select scraper ---- </mat-option>
+      <mat-option *ngFor="let scraper of supportedScrapers" [value]="scraper">
+        {{ scraper }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
   <mat-form-field appearance="outline">
     <mat-label for="email">Url</mat-label>
     <input

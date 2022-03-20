@@ -1,8 +1,10 @@
 import { CdkTextareaAutosize } from '@angular/cdk/text-field';
+import { KeyedWrite } from '@angular/compiler';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { Observer } from 'rxjs';
 import { ScrapeResult } from 'src/app/model/scrape-result';
+import { SupportedScrapers } from 'src/app/model/supported-scrapers';
 import { ScraperService } from 'src/app/services/scraper.service';
 import { UserService } from 'src/app/services/user.service';
 
@@ -20,6 +22,7 @@ export class AddScrapeTaskComponent implements OnInit {
     description: '',
   };
 
+  supportedScrapers: string[] = [];
   pageUrl: string = '';
   resultDisplay: string = '';
   result: ScrapeResult = this._emptyScrapeResults;
@@ -36,6 +39,8 @@ export class AddScrapeTaskComponent implements OnInit {
     if (!this.userService.isLoggedIn()) {
       this.router.navigate(['login']);
     }
+
+    this.supportedScrapers = this.getSupportedScraperKeys();
   }
 
   onScrape() {
@@ -76,5 +81,9 @@ export class AddScrapeTaskComponent implements OnInit {
     const text = 'Clears the results. Clear cannot be undone';
 
     this.setHelperText(text);
+  }
+
+  private getSupportedScraperKeys(): any[] {
+    return Object.keys(SupportedScrapers);
   }
 }

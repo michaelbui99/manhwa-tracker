@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { LoginComponent } from './pages/login/login.component';
 import { AddScrapeTaskComponent } from './pages/add-scrape-task/add-scrape-task.component';
@@ -33,6 +34,7 @@ import { AddScrapeTaskComponent } from './pages/add-scrape-task/add-scrape-task.
     MatButtonModule,
     MatInputModule,
     MatProgressBarModule,
+    MatSelectModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
