@@ -23,6 +23,7 @@ export class AddScrapeTaskComponent implements OnInit {
   };
 
   supportedScrapers: string[] = [];
+  selectedScraper: string;
   pageUrl: string = '';
   resultDisplay: string = '';
   result: ScrapeResult = this._emptyScrapeResults;
