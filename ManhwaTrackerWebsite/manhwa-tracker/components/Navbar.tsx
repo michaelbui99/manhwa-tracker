@@ -30,35 +30,45 @@ const Navbar: React.FC = () => {
                     <Typography
                         variant="h6"
                         component="div"
-                        sx={{ flexGrow: 1 }}
+                        sx={{
+                            flexGrow: 1,
+                        }}
                     >
                         Manhwa Tracker
                     </Typography>
                     <Box sx={{ display: { xs: "none", sm: "flex" } }}>
                         <Button
                             color="inherit"
-                            onClick={(event) => navigateTo(event, "/")}
+                            onClick={(event) => navigateTo(event, "/", "")}
                         >
                             Home
                         </Button>
 
                         <Button
                             color="inherit"
-                            onClick={(event) => navigateTo(event, "/search")}
+                            onClick={(event) =>
+                                navigateTo(event, "/browse", "Browse")
+                            }
                         >
                             Browse
                         </Button>
                         <Button
                             color="inherit"
                             onClick={(event) =>
-                                navigateTo(event, "requestmanhwa")
+                                navigateTo(
+                                    event,
+                                    "requestmanhwa",
+                                    "Request Manhwa"
+                                )
                             }
                         >
                             Request Manhwa
                         </Button>
                         <Button
                             color="inherit"
-                            onClick={(event) => navigateTo(event, "login")}
+                            onClick={(event) =>
+                                navigateTo(event, "login", "Login")
+                            }
                         >
                             Login
                         </Button>
