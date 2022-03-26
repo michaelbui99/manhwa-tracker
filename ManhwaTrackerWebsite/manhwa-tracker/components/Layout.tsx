@@ -1,8 +1,8 @@
 import React from "react";
 import Navbar from "./Navbar";
-import styles from "../styles/Layout.module.scss";
 import Meta from "./Meta";
 import { useRouter } from "next/router";
+import styles from "../styles/Layout.module.scss";
 
 export const Layout: React.FC = ({ children }) => {
     const router = useRouter();

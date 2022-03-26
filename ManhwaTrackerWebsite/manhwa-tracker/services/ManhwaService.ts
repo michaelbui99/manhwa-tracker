@@ -1,0 +1,5 @@
+import Manhwa from "../models/manhwa/manhwa";
+
+export interface ManhwaService {
+    getAllManhwas(): Promise<Manhwa[]>;
+}
