@@ -19,7 +19,7 @@ export const Layout: React.FC = ({ children }) => {
             />
             <div>
                 <Navbar />
-                <main className={styles.main}>{children}</main>
+                <main className={styles.container}>{children}</main>
             </div>
         </>
     );

@@ -52,7 +52,7 @@ const Navbar: React.FC = () => {
                         >
                             Browse
                         </Button>
-                        <Button
+                        {/* <Button
                             color="inherit"
                             onClick={(event) =>
                                 navigateTo(
@@ -63,7 +63,7 @@ const Navbar: React.FC = () => {
                             }
                         >
                             Request Manhwa
-                        </Button>
+                        </Button> */}
                         <Button
                             color="inherit"
                             onClick={(event) =>
