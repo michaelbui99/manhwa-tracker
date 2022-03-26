@@ -18,7 +18,7 @@ interface ManhwaCardProps {
 
 const ManhwaCard: React.FC<ManhwaCardProps> = ({ manhwa }) => {
     return (
-        <Card sx={{ width: "250px", minHeight: "350px" }}>
+        <Card sx={{ width: "250px", minHeight: "350px" }} elevation={6}>
             <CardActionArea>
                 <Tooltip title={manhwa.description} placement="right-start">
                     <CardContent>
