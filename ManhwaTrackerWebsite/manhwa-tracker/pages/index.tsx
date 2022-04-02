@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from "react";
 import { Box, Button, Fade, Stack, Typography } from "@mui/material";
 import type { NextPage } from "next";
+import { useNavigate } from "../hooks/useNavigate";
 
 const Home: NextPage = () => {
     const [pageLoad, setPageLoad] = useState(false);
+
+    const navigate = useNavigate();
 
     useEffect(() => {
         setPageLoad(true);
@@ -35,8 +38,19 @@ const Home: NextPage = () => {
                     </Typography>
 
                     <Stack direction="row" spacing={3} marginTop="1rem">
-                        <Button variant="contained">Sign up today</Button>
-                        <Button variant="contained">Login</Button>
+                        <Button
+                            variant="contained"
+                            onClick={(e) => navigate(e, "/signup", "Sign Up")}
+                        >
+                            Sign up today
+                        </Button>
+
+                        <Button
+                            variant="contained"
+                            onClick={(e) => navigate(e, "/login", "Login")}
+                        >
+                            Login
+                        </Button>
                     </Stack>
                 </Box>
             </Fade>
