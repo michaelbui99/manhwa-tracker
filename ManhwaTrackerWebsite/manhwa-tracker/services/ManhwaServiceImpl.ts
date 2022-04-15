@@ -13,7 +13,6 @@ export class ManhwaServiceImpl extends BaseService implements ManhwaService {
         try {
             const url = `${this.baseUrl}/manhwas/${id}`;
             const response = await fetch(url);
-            console.log(response.body);
             const manhwa = await response.json();
 
             return manhwa;

@@ -12,14 +12,26 @@ import {
     Typography,
 } from "@mui/material";
 import GenreAttribute from "./GenreAttribute";
+import { useNavigate } from "../hooks/useNavigate";
 
 interface ManhwaCardProps {
     manhwa: Manhwa;
 }
 
 const ManhwaCard: React.FC<ManhwaCardProps> = ({ manhwa }) => {
+    const navigate = useNavigate();
     return (
-        <Card sx={{ width: "250px", minHeight: "350px" }} elevation={6}>
+        <Card
+            sx={{ width: "250px", minHeight: "350px" }}
+            elevation={6}
+            onClick={(e) =>
+                navigate(
+                    e,
+                    `/manhwaDetails/${manhwa.id}`,
+                    `/manhwaDetails/${manhwa.id}`
+                )
+            }
+        >
             <CardActionArea>
                 <Tooltip title={manhwa.description} placement="right-start">
                     <CardContent>
