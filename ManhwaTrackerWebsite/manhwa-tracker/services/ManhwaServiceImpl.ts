@@ -9,6 +9,20 @@ export class ManhwaServiceImpl extends BaseService implements ManhwaService {
         super();
     }
 
+    async getManhwaById(id: number): Promise<manhwa | null> {
+        try {
+            const url = `${this.baseUrl}/manhwas/${id}`;
+            const response = await fetch(url);
+            console.log(response.body);
+            const manhwa = await response.json();
+
+            return manhwa;
+        } catch (err) {
+            console.log(err);
+            return null;
+        }
+    }
+
     async getAllManhwas(): Promise<manhwa[]> {
         try {
             const url = `${this.baseUrl}/manhwas`;
