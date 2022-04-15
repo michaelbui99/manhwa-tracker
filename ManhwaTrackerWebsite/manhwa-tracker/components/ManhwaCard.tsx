@@ -11,6 +11,7 @@ import {
     Tooltip,
     Typography,
 } from "@mui/material";
+import GenreAttribute from "./GenreAttribute";
 
 interface ManhwaCardProps {
     manhwa: Manhwa;
@@ -25,8 +26,8 @@ const ManhwaCard: React.FC<ManhwaCardProps> = ({ manhwa }) => {
                         <Typography variant="h6">{manhwa.title}</Typography>
                         <CardMedia component="img" image={manhwa.coverImage} />
                         <Stack direction="row" spacing={2} paddingTop={2}>
-                            <Typography>{manhwa.genres[0].name}</Typography>
-                            <Typography>{manhwa.genres[1].name}</Typography>
+                            <GenreAttribute text={manhwa.genres[0].name} />
+                            <GenreAttribute text={manhwa.genres[1].name} />
                         </Stack>
                     </CardContent>
                 </Tooltip>
